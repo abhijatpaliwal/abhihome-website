@@ -10,6 +10,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Textile placeholder patterns */
+    .ph-stripe-tc {
+      background: repeating-linear-gradient(0deg, #c4a882 0px, #c4a882 14px, #f0e8dc 14px, #f0e8dc 34px);
+    }
+    .ph-stripe-ind {
+      background: repeating-linear-gradient(0deg, #2d4a3e 0px, #2d4a3e 10px, #f0e8dc 10px, #f0e8dc 42px);
+    }
+    .ph-linen {
+      background-color: #e8ddd0;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(160,140,110,0.18) 0px, rgba(160,140,110,0.18) 1px, transparent 1px, transparent 8px),
+        repeating-linear-gradient(90deg, rgba(160,140,110,0.18) 0px, rgba(160,140,110,0.18) 1px, transparent 1px, transparent 8px);
+    }
+    .ph-waffle {
+      background-color: #ddd6c8;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(140,120,90,0.28) 0px, rgba(140,120,90,0.28) 2px, transparent 2px, transparent 14px),
+        repeating-linear-gradient(90deg, rgba(140,120,90,0.28) 0px, rgba(140,120,90,0.28) 2px, transparent 2px, transparent 14px);
+    }
+    .ph-herring {
+      background-color: #e2dbd0;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(160,140,110,0.22) 0px, rgba(160,140,110,0.22) 3px, transparent 3px, transparent 14px),
+        repeating-linear-gradient(-45deg, rgba(160,140,110,0.22) 0px, rgba(160,140,110,0.22) 3px, transparent 3px, transparent 14px);
+    }
+    .ph-blockprint {
+      background-color: #ede6da;
+      background-image: radial-gradient(circle, #c4a882 1.5px, transparent 1.5px);
+      background-size: 18px 18px;
+    }
+    .ph-sage {
+      background-color: #d0d8cc;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(80,110,80,0.14) 0px, rgba(80,110,80,0.14) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(90deg, rgba(80,110,80,0.14) 0px, rgba(80,110,80,0.14) 1px, transparent 1px, transparent 10px);
+    }
+  </style>
 </head>
 <body>
 
@@ -103,7 +142,7 @@
     <div class="product-grid">
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#e8ddd0 0%,#d4c4b0 100%);"></div>
+        <div class="product-image ph-stripe-ind"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-001</p>
           <h3 class="product-name">Indigo Block Print Cotton Runner</h3>
@@ -114,7 +153,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#f0ebe4 0%,#ddd5c8 100%);"></div>
+        <div class="product-image ph-linen"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-002</p>
           <h3 class="product-name">Natural Linen Herringbone Runner</h3>
@@ -125,7 +164,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#ddd0c0 0%,#c9b89e 100%);"></div>
+        <div class="product-image ph-stripe-tc"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-003</p>
           <h3 class="product-name">Terracotta Yarn-Dyed Stripe Runner</h3>
@@ -136,7 +175,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#eae4d8 0%,#d8cebc 100%);"></div>
+        <div class="product-image ph-blockprint"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-004</p>
           <h3 class="product-name">Embroidered Wildflower Linen Runner</h3>
@@ -159,7 +198,7 @@
     <div class="product-grid">
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#f2ede6 0%,#e0d8cc 100%);"></div>
+        <div class="product-image ph-linen"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-001</p>
           <h3 class="product-name">Natural Linen Hemstitched Tablecloth</h3>
@@ -170,7 +209,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#e5ddd4 0%,#d0c8bc 100%);"></div>
+        <div class="product-image ph-herring"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-002</p>
           <h3 class="product-name">Dobby Stripe Cotton Tablecloth</h3>
@@ -181,7 +220,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#ede7de 0%,#dbd3c6 100%);"></div>
+        <div class="product-image ph-blockprint"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-003</p>
           <h3 class="product-name">Block Print Corner Tablecloth</h3>
@@ -204,7 +243,7 @@
     <div class="product-grid">
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#e8e0d4 0%,#d6cec2 100%);"></div>
+        <div class="product-image ph-herring"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-001</p>
           <h3 class="product-name">Woven Dobby Placemat Set</h3>
@@ -215,7 +254,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#ede5d8 0%,#dbd1c4 100%);"></div>
+        <div class="product-image ph-linen"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-002</p>
           <h3 class="product-name">Linen Mitered Napkin Set</h3>
@@ -226,7 +265,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#e0d8cc 0%,#cec6b8 100%);"></div>
+        <div class="product-image ph-blockprint"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-003</p>
           <h3 class="product-name">Block Print Co-ordinated Set</h3>
@@ -237,7 +276,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#ebe3d6 0%,#d9cfbf 100%);"></div>
+        <div class="product-image ph-stripe-tc"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-004</p>
           <h3 class="product-name">Reversible Quilted Placemat Set</h3>
@@ -260,7 +299,7 @@
     <div class="product-grid">
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#e6dfd6 0%,#d4cdc4 100%);"></div>
+        <div class="product-image ph-waffle"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-001</p>
           <h3 class="product-name">Waffle Weave Cotton Kitchen Towel</h3>
@@ -271,7 +310,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#ddd6cc 0%,#ccc4ba 100%);"></div>
+        <div class="product-image ph-stripe-ind"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-002</p>
           <h3 class="product-name">Classic Yarn-Dyed Stripe Tea Towel</h3>
@@ -282,7 +321,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#ece5dc 0%,#dbd4cb 100%);"></div>
+        <div class="product-image ph-sage"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-003</p>
           <h3 class="product-name">Botanical Screen Print Tea Towel</h3>
@@ -293,7 +332,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#e8e2d8 0%,#d6d0c6 100%);"></div>
+        <div class="product-image ph-herring"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-004</p>
           <h3 class="product-name">Linen-Cotton Blend Herringbone Towel</h3>
@@ -316,7 +355,7 @@
     <div class="product-grid">
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#ddd5c8 0%,#cbc3b6 100%);"></div>
+        <div class="product-image ph-linen"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-AP-001</p>
           <h3 class="product-name">Classic Cotton Canvas Bib Apron</h3>
@@ -327,7 +366,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#e8e0d4 0%,#d6cec0 100%);"></div>
+        <div class="product-image ph-linen"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-AP-002</p>
           <h3 class="product-name">Washed Linen Cross-Back Apron</h3>
@@ -338,7 +377,7 @@
       </div>
 
       <div class="product-card">
-        <div class="product-image" style="background:linear-gradient(135deg,#e4dcce 0%,#d2cab8 100%);"></div>
+        <div class="product-image ph-stripe-tc"></div>
         <div class="product-info">
           <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-AP-003</p>
           <h3 class="product-name">Yarn-Dyed Stripe Half Apron</h3>
