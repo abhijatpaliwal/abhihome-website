@@ -134,15 +134,64 @@
             <label class="required">Email</label>
             <input type="email" name="email" required>
           </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Phone (with country code)</label>
-              <input type="tel" name="phone">
+          <div class="form-group">
+            <label class="required">Country</label>
+            <select name="country" id="country-select" required>
+              <option value="">Select your country</option>
+              <option value="India" data-code="+91">🇮🇳 India</option>
+              <option value="United States" data-code="+1">🇺🇸 United States</option>
+              <option value="United Kingdom" data-code="+44">🇬🇧 United Kingdom</option>
+              <option value="Australia" data-code="+61">🇦🇺 Australia</option>
+              <option value="Canada" data-code="+1">🇨🇦 Canada</option>
+              <option value="Germany" data-code="+49">🇩🇪 Germany</option>
+              <option value="France" data-code="+33">🇫🇷 France</option>
+              <option value="Italy" data-code="+39">🇮🇹 Italy</option>
+              <option value="Spain" data-code="+34">🇪🇸 Spain</option>
+              <option value="Netherlands" data-code="+31">🇳🇱 Netherlands</option>
+              <option value="Belgium" data-code="+32">🇧🇪 Belgium</option>
+              <option value="Sweden" data-code="+46">🇸🇪 Sweden</option>
+              <option value="Norway" data-code="+47">🇳🇴 Norway</option>
+              <option value="Denmark" data-code="+45">🇩🇰 Denmark</option>
+              <option value="Finland" data-code="+358">🇫🇮 Finland</option>
+              <option value="Switzerland" data-code="+41">🇨🇭 Switzerland</option>
+              <option value="Austria" data-code="+43">🇦🇹 Austria</option>
+              <option value="Poland" data-code="+48">🇵🇱 Poland</option>
+              <option value="Portugal" data-code="+351">🇵🇹 Portugal</option>
+              <option value="Ireland" data-code="+353">🇮🇪 Ireland</option>
+              <option value="Greece" data-code="+30">🇬🇷 Greece</option>
+              <option value="United Arab Emirates" data-code="+971">🇦🇪 United Arab Emirates</option>
+              <option value="Saudi Arabia" data-code="+966">🇸🇦 Saudi Arabia</option>
+              <option value="Qatar" data-code="+974">🇶🇦 Qatar</option>
+              <option value="Kuwait" data-code="+965">🇰🇼 Kuwait</option>
+              <option value="Bahrain" data-code="+973">🇧🇭 Bahrain</option>
+              <option value="Oman" data-code="+968">🇴🇲 Oman</option>
+              <option value="South Africa" data-code="+27">🇿🇦 South Africa</option>
+              <option value="New Zealand" data-code="+64">🇳🇿 New Zealand</option>
+              <option value="Singapore" data-code="+65">🇸🇬 Singapore</option>
+              <option value="Japan" data-code="+81">🇯🇵 Japan</option>
+              <option value="South Korea" data-code="+82">🇰🇷 South Korea</option>
+              <option value="China" data-code="+86">🇨🇳 China</option>
+              <option value="Hong Kong" data-code="+852">🇭🇰 Hong Kong</option>
+              <option value="Malaysia" data-code="+60">🇲🇾 Malaysia</option>
+              <option value="Thailand" data-code="+66">🇹🇭 Thailand</option>
+              <option value="Indonesia" data-code="+62">🇮🇩 Indonesia</option>
+              <option value="Pakistan" data-code="+92">🇵🇰 Pakistan</option>
+              <option value="Bangladesh" data-code="+880">🇧🇩 Bangladesh</option>
+              <option value="Sri Lanka" data-code="+94">🇱🇰 Sri Lanka</option>
+              <option value="Israel" data-code="+972">🇮🇱 Israel</option>
+              <option value="Turkey" data-code="+90">🇹🇷 Turkey</option>
+              <option value="Mexico" data-code="+52">🇲🇽 Mexico</option>
+              <option value="Brazil" data-code="+55">🇧🇷 Brazil</option>
+              <option value="Other" data-code="">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <div style="display:flex; gap:0;">
+              <div id="dial-code-box" style="display:flex; align-items:center; padding:0 14px; background:var(--sand); border:1px solid var(--stone); border-right:none; font-size:14px; color:var(--charcoal); white-space:nowrap; min-width:64px; justify-content:center; font-weight:600; transition: all 0.2s;">—</div>
+              <input type="tel" id="phone-local" placeholder="Local number" style="flex:1; border-left:none !important;" autocomplete="tel-national">
             </div>
-            <div class="form-group">
-              <label class="required">Country</label>
-              <input type="text" name="country" required>
-            </div>
+            <input type="hidden" name="phone" id="phone-combined">
           </div>
           <div class="form-group">
             <label class="required">Enquiry Type</label>
@@ -165,8 +214,31 @@
         </form>
 
         <script>
+          // Auto-populate dial code when country is selected
+          var countrySelect = document.getElementById('country-select');
+          var dialCodeBox = document.getElementById('dial-code-box');
+          countrySelect.addEventListener('change', function() {
+            var selected = this.options[this.selectedIndex];
+            var code = selected.getAttribute('data-code');
+            if (code) {
+              dialCodeBox.textContent = code;
+              dialCodeBox.style.color = 'var(--green)';
+              dialCodeBox.style.borderColor = 'var(--green)';
+            } else {
+              dialCodeBox.textContent = '—';
+              dialCodeBox.style.color = 'var(--charcoal)';
+              dialCodeBox.style.borderColor = 'var(--stone)';
+            }
+          });
+
+          // On submit: combine dial code + local number into hidden field
           document.getElementById('enquiry-form').addEventListener('submit', async function(e) {
             e.preventDefault();
+            var selected = countrySelect.options[countrySelect.selectedIndex];
+            var code = selected.getAttribute('data-code') || '';
+            var local = document.getElementById('phone-local').value.trim();
+            document.getElementById('phone-combined').value = local ? (code + ' ' + local) : '';
+
             var btn = document.getElementById('submit-btn');
             btn.disabled = true;
             btn.textContent = 'Sending…';
