@@ -871,20 +871,130 @@ textarea {
 }
 
 @media (max-width: 768px) {
-  .header-top { padding: 14px 30px; }
-  .nav-inner { padding: 10px 30px; gap: 20px; font-size: 11px; }
-  .section { padding: 60px 30px; }
-  .pillars-grid {
-    grid-template-columns: 1fr;
+  /* Announcement bar */
+  .announcement-bar {
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
   }
-  .product-grid {
-    grid-template-columns: 1fr;
+
+  /* Header */
+  .header-top {
+    padding: 12px 20px;
   }
-  .form-row {
-    grid-template-columns: 1fr;
+  .header-actions > span,
+  .header-actions > a:not(.btn-catalogue) {
+    display: none;
   }
+  .header-actions {
+    gap: 0;
+  }
+
+  /* Nav — horizontal scroll, no wrapping */
+  nav { overflow: hidden; }
+  .nav-inner {
+    padding: 10px 20px;
+    gap: 20px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+  }
+  .nav-inner::-webkit-scrollbar { display: none; }
+  .nav-inner a { white-space: nowrap; }
+
+  /* Hero */
+  .hero { height: 70vh; min-height: 480px; }
+  .hero-headline { font-size: clamp(40px, 11vw, 64px); }
+  .hero-sub { font-size: 14px; }
+
+  /* Sections */
+  .section { padding: 56px 20px; }
+  .cert-bar { padding: 24px 20px; }
+  .sustainability-banner { padding: 60px 20px; }
+
+  /* Collections grid — 2 cols on tablet, fix span */
+  .collections-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .collection-tile:first-child {
+    grid-column: span 2;
+  }
+  .tile-title { font-size: 22px; }
+
+  /* Heritage / two-col grids */
+  .heritage-grid, .two-col, .sust-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .heritage-text { padding-left: 0; }
+  .sust-certs { grid-template-columns: repeat(4, 1fr); }
+
+  /* Pillars */
+  .pillars-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .pillar { padding: 24px 16px; }
+
+  /* Products */
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+
+  /* Forms */
+  .form-row { grid-template-columns: 1fr; }
+
+  /* Footer */
   .footer-top {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
   }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  footer { padding: 56px 20px 32px; }
+}
+
+@media (max-width: 480px) {
+  /* Logo */
+  .logo { font-size: 20px; }
+  .logo span { font-size: 11px; letter-spacing: 3px; }
+
+  /* Hero */
+  .hero { height: 65vh; min-height: 420px; }
+  .hero-content { padding: 0 20px; }
+  .hero-headline { font-size: clamp(36px, 12vw, 52px); }
+  .hero-sub { font-size: 13px; letter-spacing: 0; }
+  .hero-ctas { flex-direction: column; align-items: center; }
+
+  /* Collections — single column on small phones */
+  .collections-grid { grid-template-columns: 1fr; gap: 12px; }
+  .collection-tile:first-child { grid-column: span 1; }
+  .tile-image { aspect-ratio: 16/9 !important; }
+
+  /* Products — single column */
+  .product-grid { grid-template-columns: 1fr; gap: 20px; }
+
+  /* Pillars — single column */
+  .pillars-grid { grid-template-columns: 1fr; }
+
+  /* Sust certs — 2 cols */
+  .sust-certs { grid-template-columns: repeat(2, 1fr); }
+
+  /* Footer — single column */
+  .footer-top { grid-template-columns: 1fr; gap: 32px; }
+  .footer-cert-strip { gap: 6px; }
+
+  /* Section padding */
+  .section { padding: 44px 16px; }
+  .sustainability-banner { padding: 44px 16px; }
+
+  /* Cert bar */
+  .cert-logos { gap: 8px; }
+  .cert-logo-item { font-size: 8px; padding: 6px 10px; }
+
+  /* Section title */
+  .section-title { font-size: clamp(28px, 8vw, 40px); }
 }
