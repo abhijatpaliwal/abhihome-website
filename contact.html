@@ -115,44 +115,69 @@
       </div>
       <div>
         <p class="section-label">Trade Enquiry Form</p>
-        <form style="background: var(--white); padding: 32px; border: 1px solid var(--stone);">
+
+        <!-- Formspree success / error banners -->
+        <div data-fs-success style="display:none; margin-bottom:24px; padding:24px 28px; background:var(--sand); border-left:4px solid var(--green);">
+          <p style="font-family:'Cormorant Garamond',serif; font-size:22px; color:var(--green); margin-bottom:6px;">Thank you for your enquiry.</p>
+          <p style="font-size:13px; color:var(--charcoal);">We've received your message and will be in touch within 48 hours.</p>
+        </div>
+        <div data-fs-error style="display:none; margin-bottom:24px; padding:16px 20px; background:#fff0f0; border-left:4px solid #c0392b; font-size:13px; color:#c0392b;"></div>
+
+        <form id="enquiry-form" style="background: var(--white); padding: 32px; border: 1px solid var(--stone);">
+
           <div class="form-group">
             <label class="required">Company Name</label>
-            <input type="text" required>
+            <input type="text" name="company_name" data-fs-field required>
+            <span data-fs-error="company_name" style="font-size:12px; color:#c0392b;"></span>
           </div>
+
           <div class="form-group">
             <label class="required">Email</label>
-            <input type="email" required>
+            <input type="email" name="email" data-fs-field required>
+            <span data-fs-error="email" style="font-size:12px; color:#c0392b;"></span>
           </div>
+
           <div class="form-row">
             <div class="form-group">
               <label>Phone (with country code)</label>
-              <input type="tel">
+              <input type="tel" name="phone" data-fs-field>
             </div>
             <div class="form-group">
               <label class="required">Country</label>
-              <input type="text" required>
+              <input type="text" name="country" data-fs-field required>
+              <span data-fs-error="country" style="font-size:12px; color:#c0392b;"></span>
             </div>
           </div>
+
           <div class="form-group">
             <label class="required">Enquiry Type</label>
-            <select required>
+            <select name="enquiry_type" data-fs-field required>
               <option value="">Select an option</option>
-              <option value="new-business">New Business</option>
-              <option value="catalogue">Catalogue Request</option>
-              <option value="custom">Custom Development</option>
-              <option value="private-label">Private Label</option>
-              <option value="hospitality">Hospitality</option>
-              <option value="other">Other</option>
+              <option value="New Business">New Business</option>
+              <option value="Catalogue Request">Catalogue Request</option>
+              <option value="Custom Development">Custom Development</option>
+              <option value="Private Label">Private Label</option>
+              <option value="Hospitality">Hospitality</option>
+              <option value="Other">Other</option>
             </select>
+            <span data-fs-error="enquiry_type" style="font-size:12px; color:#c0392b;"></span>
           </div>
+
           <div class="form-group">
             <label class="required">Message</label>
-            <textarea required></textarea>
+            <textarea name="message" data-fs-field required></textarea>
+            <span data-fs-error="message" style="font-size:12px; color:#c0392b;"></span>
           </div>
-          <button type="submit" class="btn-submit">Send Enquiry</button>
+
+          <button type="submit" class="btn-submit" data-fs-submit-btn>Send Enquiry</button>
           <p style="font-size: 12px; color: var(--gray-mid); margin-top: 16px;">We'll respond within 48 hours.</p>
         </form>
+
+        <script>
+          window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+          formspree('initForm', { formElement: '#enquiry-form', formId: 'mnjlvorr' });
+        </script>
+        <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
       </div>
     </div>
   </div>
