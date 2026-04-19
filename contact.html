@@ -116,42 +116,37 @@
       <div>
         <p class="section-label">Trade Enquiry Form</p>
 
-        <!-- Formspree success / error banners -->
-        <div data-fs-success style="display:none; margin-bottom:24px; padding:24px 28px; background:var(--sand); border-left:4px solid var(--green);">
+        <!-- Success / error messages -->
+        <div id="form-success" style="display:none; margin-bottom:24px; padding:24px 28px; background:var(--sand); border-left:4px solid var(--green);">
           <p style="font-family:'Cormorant Garamond',serif; font-size:22px; color:var(--green); margin-bottom:6px;">Thank you for your enquiry.</p>
           <p style="font-size:13px; color:var(--charcoal);">We've received your message and will be in touch within 48 hours.</p>
         </div>
-        <div data-fs-error style="display:none; margin-bottom:24px; padding:16px 20px; background:#fff0f0; border-left:4px solid #c0392b; font-size:13px; color:#c0392b;"></div>
+        <div id="form-error" style="display:none; margin-bottom:24px; padding:16px 20px; background:#fff0f0; border-left:4px solid #c0392b; font-size:13px; color:#c0392b;">
+          Something went wrong. Please try again or email us directly at <a href="mailto:info@abhihome.in" style="color:#c0392b;">info@abhihome.in</a>
+        </div>
 
         <form id="enquiry-form" style="background: var(--white); padding: 32px; border: 1px solid var(--stone);">
-
           <div class="form-group">
             <label class="required">Company Name</label>
-            <input type="text" name="company_name" data-fs-field required>
-            <span data-fs-error="company_name" style="font-size:12px; color:#c0392b;"></span>
+            <input type="text" name="company_name" required>
           </div>
-
           <div class="form-group">
             <label class="required">Email</label>
-            <input type="email" name="email" data-fs-field required>
-            <span data-fs-error="email" style="font-size:12px; color:#c0392b;"></span>
+            <input type="email" name="email" required>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label>Phone (with country code)</label>
-              <input type="tel" name="phone" data-fs-field>
+              <input type="tel" name="phone">
             </div>
             <div class="form-group">
               <label class="required">Country</label>
-              <input type="text" name="country" data-fs-field required>
-              <span data-fs-error="country" style="font-size:12px; color:#c0392b;"></span>
+              <input type="text" name="country" required>
             </div>
           </div>
-
           <div class="form-group">
             <label class="required">Enquiry Type</label>
-            <select name="enquiry_type" data-fs-field required>
+            <select name="enquiry_type" required>
               <option value="">Select an option</option>
               <option value="New Business">New Business</option>
               <option value="Catalogue Request">Catalogue Request</option>
@@ -160,24 +155,41 @@
               <option value="Hospitality">Hospitality</option>
               <option value="Other">Other</option>
             </select>
-            <span data-fs-error="enquiry_type" style="font-size:12px; color:#c0392b;"></span>
           </div>
-
           <div class="form-group">
             <label class="required">Message</label>
-            <textarea name="message" data-fs-field required></textarea>
-            <span data-fs-error="message" style="font-size:12px; color:#c0392b;"></span>
+            <textarea name="message" required></textarea>
           </div>
-
-          <button type="submit" class="btn-submit" data-fs-submit-btn>Send Enquiry</button>
+          <button type="submit" id="submit-btn" class="btn-submit">Send Enquiry</button>
           <p style="font-size: 12px; color: var(--gray-mid); margin-top: 16px;">We'll respond within 48 hours.</p>
         </form>
 
         <script>
-          window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-          formspree('initForm', { formElement: '#enquiry-form', formId: 'mnjlvorr' });
+          document.getElementById('enquiry-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            var btn = document.getElementById('submit-btn');
+            btn.disabled = true;
+            btn.textContent = 'Sending…';
+            document.getElementById('form-error').style.display = 'none';
+            try {
+              var response = await fetch('https://formspree.io/f/mnjlvorr', {
+                method: 'POST',
+                body: new FormData(this),
+                headers: { 'Accept': 'application/json' }
+              });
+              if (response.ok) {
+                this.style.display = 'none';
+                document.getElementById('form-success').style.display = 'block';
+              } else {
+                throw new Error('Server error');
+              }
+            } catch(err) {
+              document.getElementById('form-error').style.display = 'block';
+              btn.disabled = false;
+              btn.textContent = 'Send Enquiry';
+            }
+          });
         </script>
-        <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
       </div>
     </div>
   </div>
