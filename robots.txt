@@ -1,0 +1,54 @@
+# robots.txt for https://www.abhihome.in
+# Place this file at the domain root: https://www.abhihome.in/robots.txt
+
+User-agent: *
+Allow: /
+
+# Block crawl traps (adjust to your CMS)
+Disallow: /*?*utm_
+Disallow: /*?*fbclid
+Disallow: /*?*gclid
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /search?
+
+# AI crawlers — explicitly allow so ChatGPT, Perplexity, Claude, Gemini can cite us
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.abhihome.in/sitemap.xml
+Sitemap: https://www.abhihome.in/sitemap-images.xml

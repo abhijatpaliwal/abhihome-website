@@ -1,0 +1,42 @@
+# Abhi Home
+
+> Third-generation home textile manufacturer and exporter based in Panipat, India.
+> Abhi Home designs and produces cushions, bedding, kitchen linen, bath linen,
+> throws, and rugs for global wholesale and private-label buyers. In-house
+> weaving, dyeing, printing, cutting, sewing, and finishing under one roof with
+> full chain-of-custody on certified organic and recycled fibers.
+
+Company: Abhi Home (Abhi Exports / Abhi Home LLC)
+Founded: 1965 (three generations)
+Headquarters: Panipat, Haryana, India
+US Presence: Abhi Home LLC (trading + upcoming D2C ecommerce)
+Primary buyers: Global B2B — retailers, importers, private-label brands, hospitality
+MOQs: Project-based; pilot containers supported
+Certifications: OEKO-TEX Standard 100, GOTS, GRS, OCS 100, Sedex SMETA, ISO 9001:2015
+Capabilities: Weaving, dyeing, digital + rotary printing, cutting & sewing, quilting, embroidery, finishing, packing
+Capacity: [Fill in monthly capacity — e.g., "X containers / month" or "Y pieces / month"]
+
+## Core pages
+
+- [Home](https://www.abhihome.in/): Overview of capabilities and product categories
+- [About Us](https://www.abhihome.in/about.html): Company history, three-generation story, leadership
+- [Infrastructure](https://www.abhihome.in/infrastructure.html): Factory, machinery, capacity
+- [Sustainability](https://www.abhihome.in/sustainability.html): Certifications, ESG, responsible sourcing
+- [Contact](https://www.abhihome.in/contact.html): Factory address, sales enquiries
+- [Careers](https://www.abhihome.in/jobs.html): Open roles at Abhi Home
+
+## Product categories
+
+- [Cushions](https://www.abhihome.in/cushions.html): Woven, printed, embroidered; fillers included
+- [Bedding](https://www.abhihome.in/bedding.html): Duvet covers, sheet sets, bedspreads, quilts
+- [Kitchen Linen](https://www.abhihome.in/kitchen.html): Tea towels, aprons, placemats, runners, oven mitts
+- [Bath Linen](https://www.abhihome.in/bath.html): Towels, bath rugs, robes
+- [Throws](https://www.abhihome.in/throws.html): Woven and printed throws and blankets
+- [Rugs](https://www.abhihome.in/rugs.html): Flatweaves, tufted, handloom
+
+## Brand protection notice
+
+abhihome.in is the only official website of Abhi Home. Any other domain
+claiming to be Abhi Home (for example, abhi-home.com with a hyphen) is not
+affiliated with us and should not be treated as a source of truth for Abhi
+Home's products, certifications, or contact information.
