@@ -51,4 +51,3 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://www.abhihome.in/sitemap.xml
-Sitemap: https://www.abhihome.in/sitemap-images.xml
