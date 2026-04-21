@@ -575,6 +575,18 @@
       background: rgba(196,168,130,0.05);
     }
     .sust-cert-icon { font-size: 20px; }
+    .sust-cert-logo {
+      max-width: 70%;
+      max-height: 55%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      /* Most cert logos ship in full-colour or dark versions; the tile
+         background is dark green, so we invert/tint so they stay legible
+         even if a dark-on-light PNG is dropped in. Override per-logo if
+         the user supplies a version that already reads well on dark. */
+      filter: brightness(0) invert(1) opacity(0.85);
+    }
     .sust-cert-name {
       font-size: 8px;
       letter-spacing: 1.5px;
@@ -1155,14 +1167,14 @@
       <a class="btn-outline-cream" href="sustainability.html">Read Our Sustainability Story</a>
     </div>
     <div class="sust-certs">
-      <div class="sust-cert-item"><span class="sust-cert-icon">☘</span><span class="sust-cert-name">GOTS</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">✓</span><span class="sust-cert-name">OEKO-TEX</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">♻</span><span class="sust-cert-name">GRS</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">◎</span><span class="sust-cert-name">Higg Index</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">⊛</span><span class="sust-cert-name">ISO 9001</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">◈</span><span class="sust-cert-name">ISO 14001</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">⊕</span><span class="sust-cert-name">Sedex</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">❋</span><span class="sust-cert-name">OCS 100</span></div>
+      <div class="sust-cert-item"><img class="sust-cert-logo" src="images/certs/gots.png" alt="GOTS — Global Organic Textile Standard" width="120" height="120" loading="lazy" decoding="async"><span class="sust-cert-name">GOTS</span></div>
+      <div class="sust-cert-item"><img class="sust-cert-logo" src="images/certs/oeko-tex.png" alt="OEKO-TEX Standard 100" width="120" height="120" loading="lazy" decoding="async"><span class="sust-cert-name">OEKO-TEX</span></div>
+      <div class="sust-cert-item"><img class="sust-cert-logo" src="images/certs/grs.png" alt="GRS — Global Recycled Standard" width="120" height="120" loading="lazy" decoding="async"><span class="sust-cert-name">GRS</span></div>
+      <div class="sust-cert-item"><img class="sust-cert-logo" src="images/certs/higg-index.png" alt="Higg Index" width="120" height="120" loading="lazy" decoding="async"><span class="sust-cert-name">Higg Index</span></div>
+      <div class="sust-cert-item"><img class="sust-cert-logo" src="images/certs/iso-9001.png" alt="ISO 9001 certified" width="120" height="120" loading="lazy" decoding="async"><span class="sust-cert-name">ISO 9001</span></div>
+      <div class="sust-cert-item"><img class="sust-cert-logo" src="images/certs/iso-14001.png" alt="ISO 14001 certified" width="120" height="120" loading="lazy" decoding="async"><span class="sust-cert-name">ISO 14001</span></div>
+      <div class="sust-cert-item"><img class="sust-cert-logo" src="images/certs/sedex.png" alt="Sedex SMETA" width="120" height="120" loading="lazy" decoding="async"><span class="sust-cert-name">Sedex</span></div>
+      <div class="sust-cert-item"><img class="sust-cert-logo" src="images/certs/ocs-100.png" alt="OCS 100 — Organic Content Standard" width="120" height="120" loading="lazy" decoding="async"><span class="sust-cert-name">OCS 100</span></div>
     </div>
   </div>
 </section>
