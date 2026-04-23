@@ -82,8 +82,44 @@
     { "source": "/career",                 "destination": "/jobs.html",           "permanent": true },
 
     { "source": "/blank-1",                "destination": "/about.html",          "permanent": true },
-    { "source": "/website/info",           "destination": "/",                    "permanent": true }
-  ],
+    { "source": "/website/info",           "destination": "/",                    "permanent": true },
+
+    { "source": "/printed-shower-curtain",       "destination": "/bath.html",     "permanent": true },
+    { "source": "/showercurtains",               "destination": "/bath.html",     "permanent": true },
+    { "source": "/christmas-bathmats",           "destination": "/bath.html",     "permanent": true },
+
+    { "source": "/shaped-cushion",               "destination": "/cushions.html", "permanent": true },
+    { "source": "/soft-seating-floor-cushion",   "destination": "/cushions.html", "permanent": true },
+    { "source": "/macrame-cushion",              "destination": "/cushions.html", "permanent": true },
+    { "source": "/copy-of-decorative-cushions",  "destination": "/cushions.html", "permanent": true },
+
+    { "source": "/outdoor-throws",               "destination": "/throws.html",   "permanent": true },
+    { "source": "/valentine-throws",             "destination": "/throws.html",   "permanent": true },
+    { "source": "/christmas-tree-skirts",        "destination": "/throws.html",   "permanent": true },
+
+    { "source": "/dining-napkin",                "destination": "/kitchen.html",  "permanent": true },
+    { "source": "/dining-placemat",              "destination": "/kitchen.html",  "permanent": true },
+    { "source": "/dining-round-placemat",        "destination": "/kitchen.html",  "permanent": true },
+    { "source": "/diningset",                    "destination": "/kitchen.html",  "permanent": true },
+    { "source": "/harvest-kitchen-dining-linen", "destination": "/kitchen.html",  "permanent": true },
+    { "source": "/copy-of-outdoor-dining-linen", "destination": "/kitchen.html",  "permanent": true },
+
+    { "source": "/printed-quilt",                "destination": "/bedding.html",  "permanent": true },
+
+    { "source": "/chindi-rug",                   "destination": "/rugs.html",     "permanent": true },
+    { "source": "/outdoor-woven-rugs",           "destination": "/rugs.html",     "permanent": true },
+    { "source": "/tufted-boho",                  "destination": "/rugs.html",     "permanent": true },
+    { "source": "/area-and-scatter-rugs",        "destination": "/rugs.html",     "permanent": true },
+    { "source": "/copy-of-outdoor-rugs",         "destination": "/rugs.html",     "permanent": true },
+
+    { "source": "/copy-of-job-inquiry",          "destination": "/jobs.html",     "permanent": true },
+
+    { "source": "/artisanal",                    "destination": "/about.html",    "permanent": true },
+    { "source": "/privacy",                      "destination": "/about.html",    "permanent": true },
+
+    { "source": "/shop",                         "destination": "/",              "permanent": true },
+    { "source": "/products",                     "destination": "/",              "permanent": true },
+    { "source": "/acessiories",                  "destination": "/",              "permanent": true }  ],
   "headers": [
     {
       "source": "/(.*)",
