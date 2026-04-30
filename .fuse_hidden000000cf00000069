@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#2D4A3E">
+  <title>Kitchen Linen Manufacturer | Tea Towels & Aprons | Abhi Home®</title>
+  <meta name="description" content="Tea towels, aprons, placemats, runners, oven mitts, napkins. Woven and printed kitchen linen from India. OEKO-TEX and GOTS options for global private-label buyers.">
+  <meta property="og:title" content="Kitchen Linen Manufacturer | Abhi Home®">
+  <meta property="og:description" content="Tea towels, aprons, placemats, runners, oven mitts. Private-label ready.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- CSS_DEFER:BEGIN -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/style.css"></noscript>
+<!-- CSS_DEFER:END -->
+
+<style>
+    /* Textile placeholder patterns */
+    .ph-stripe-tc {
+      background: repeating-linear-gradient(0deg, #c4a882 0px, #c4a882 14px, #f0e8dc 14px, #f0e8dc 34px);
+    }
+    .ph-stripe-ind {
+      background: repeating-linear-gradient(0deg, #2d4a3e 0px, #2d4a3e 10px, #f0e8dc 10px, #f0e8dc 42px);
+    }
+    .ph-linen {
+      background-color: #e8ddd0;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(160,140,110,0.18) 0px, rgba(160,140,110,0.18) 1px, transparent 1px, transparent 8px),
+        repeating-linear-gradient(90deg, rgba(160,140,110,0.18) 0px, rgba(160,140,110,0.18) 1px, transparent 1px, transparent 8px);
+    }
+    .ph-waffle {
+      background-color: #ddd6c8;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(140,120,90,0.28) 0px, rgba(140,120,90,0.28) 2px, transparent 2px, transparent 14px),
+        repeating-linear-gradient(90deg, rgba(140,120,90,0.28) 0px, rgba(140,120,90,0.28) 2px, transparent 2px, transparent 14px);
+    }
+    .ph-herring {
+      background-color: #e2dbd0;
+      background-image:
+        repeating-linear-gradient(45deg, rgba(160,140,110,0.22) 0px, rgba(160,140,110,0.22) 3px, transparent 3px, transparent 14px),
+        repeating-linear-gradient(-45deg, rgba(160,140,110,0.22) 0px, rgba(160,140,110,0.22) 3px, transparent 3px, transparent 14px);
+    }
+    .ph-blockprint {
+      background-color: #ede6da;
+      background-image: radial-gradient(circle, #c4a882 1.5px, transparent 1.5px);
+      background-size: 18px 18px;
+    }
+    .ph-sage {
+      background-color: #d0d8cc;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(80,110,80,0.14) 0px, rgba(80,110,80,0.14) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(90deg, rgba(80,110,80,0.14) 0px, rgba(80,110,80,0.14) 1px, transparent 1px, transparent 10px);
+    }
+  </style>
+  <!-- BEGIN SEO BLOCK (auto-generated) -->
+  <link rel="canonical" href="https://www.abhihome.in/kitchen.html" />
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="Abhi Home">
+  <meta name="theme-color" content="#2D4A3E">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.abhihome.in/kitchen.html">
+  <meta property="og:site_name" content="Abhi Home">
+  <meta property="og:image" content="https://www.abhihome.in/images/og-default.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kitchen Linen Manufacturer | Abhi Home®">
+  <meta name="twitter:description" content="Tea towels, aprons, placemats, runners, oven mitts. Private-label ready.">
+  <meta name="twitter:image" content="https://www.abhihome.in/images/og-default.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Manufacturer",
+      "@id": "https://www.abhihome.in/#organization",
+      "name": "Abhi Home",
+      "alternateName": [
+        "Abhi Home®",
+        "Abhi Exports"
+      ],
+      "url": "https://www.abhihome.in/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.abhihome.in/images/logo.png",
+        "width": 600,
+        "height": 200
+      },
+      "foundingDate": "1965",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Panipat, Haryana, India",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Panipat",
+          "addressRegion": "Haryana",
+          "addressCountry": "IN"
+        }
+      },
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "minValue": 51,
+        "maxValue": 200
+      },
+      "description": "Third-generation home textile manufacturer and exporter based in India. Cushions, bedding, kitchen linen, bath linen, throws, rugs and pouffes for global wholesale and private-label buyers.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Panipat",
+        "addressRegion": "Haryana",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/13447691/"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "info@abhihome.in",
+          "telephone": "+91-98170-31900",
+          "availableLanguage": [
+            "English",
+            "Hindi"
+          ],
+          "areaServed": [
+            "US",
+            "GB",
+            "DE",
+            "FR",
+            "NL",
+            "AU",
+            "CA",
+            "JP",
+            "AE"
+          ]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "info@abhihome.in",
+          "telephone": "+91-98170-31900",
+          "availableLanguage": [
+            "English",
+            "Hindi"
+          ]
+        }
+      ],
+      "knowsAbout": [
+        "Home textiles",
+        "Cushion covers",
+        "Bed linen",
+        "Kitchen linen",
+        "Bath linen",
+        "Throws and blankets",
+        "Rugs",
+        "Pouffes",
+        "OEKO-TEX",
+        "GOTS organic cotton",
+        "GRS recycled textiles",
+        "BCI Better Cotton",
+        "Private label manufacturing"
+      ],
+      "industry": "Home Textile Manufacturing",
+      "areaServed": ["United Kingdom", "United States", "Germany", "France", "Netherlands", "Spain", "Italy", "Sweden", "Denmark", "Norway", "Finland", "Ireland", "Belgium", "Austria", "Portugal", "Switzerland", "Australia", "New Zealand", "Japan", "South Korea", "United Arab Emirates", "Saudi Arabia", "Canada"],
+      "makesOffer": {
+      "@type": "OfferCatalog",
+      "name": "Kitchen Linen Manufacturing Services",
+      "itemListElement": [
+      {
+      "@type": "Offer",
+      "itemOffered": {
+      "@type": "Service",
+      "name": "Tea towels manufacturing",
+      "serviceType": "Contract manufacturing / private label",
+      "category": "Kitchen Linen",
+      "provider": {
+      "@id": "https://www.abhihome.in/#organization"
+      },
+      "areaServed": [
+      "United Kingdom",
+      "United States",
+      "Germany",
+      "France",
+      "Netherlands",
+      "Spain",
+      "Italy",
+      "Sweden",
+      "Denmark",
+      "Norway",
+      "Finland",
+      "Ireland",
+      "Belgium",
+      "Austria",
+      "Portugal",
+      "Switzerland",
+      "Australia",
+      "New Zealand",
+      "Japan",
+      "South Korea",
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Canada"
+      ]
+      }
+      },
+      {
+      "@type": "Offer",
+      "itemOffered": {
+      "@type": "Service",
+      "name": "Kitchen aprons manufacturing",
+      "serviceType": "Contract manufacturing / private label",
+      "category": "Kitchen Linen",
+      "provider": {
+      "@id": "https://www.abhihome.in/#organization"
+      },
+      "areaServed": [
+      "United Kingdom",
+      "United States",
+      "Germany",
+      "France",
+      "Netherlands",
+      "Spain",
+      "Italy",
+      "Sweden",
+      "Denmark",
+      "Norway",
+      "Finland",
+      "Ireland",
+      "Belgium",
+      "Austria",
+      "Portugal",
+      "Switzerland",
+      "Australia",
+      "New Zealand",
+      "Japan",
+      "South Korea",
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Canada"
+      ]
+      }
+      },
+      {
+      "@type": "Offer",
+      "itemOffered": {
+      "@type": "Service",
+      "name": "Placemats manufacturing",
+      "serviceType": "Contract manufacturing / private label",
+      "category": "Kitchen Linen",
+      "provider": {
+      "@id": "https://www.abhihome.in/#organization"
+      },
+      "areaServed": [
+      "United Kingdom",
+      "United States",
+      "Germany",
+      "France",
+      "Netherlands",
+      "Spain",
+      "Italy",
+      "Sweden",
+      "Denmark",
+      "Norway",
+      "Finland",
+      "Ireland",
+      "Belgium",
+      "Austria",
+      "Portugal",
+      "Switzerland",
+      "Australia",
+      "New Zealand",
+      "Japan",
+      "South Korea",
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Canada"
+      ]
+      }
+      },
+      {
+      "@type": "Offer",
+      "itemOffered": {
+      "@type": "Service",
+      "name": "Table runners manufacturing",
+      "serviceType": "Contract manufacturing / private label",
+      "category": "Kitchen Linen",
+      "provider": {
+      "@id": "https://www.abhihome.in/#organization"
+      },
+      "areaServed": [
+      "United Kingdom",
+      "United States",
+      "Germany",
+      "France",
+      "Netherlands",
+      "Spain",
+      "Italy",
+      "Sweden",
+      "Denmark",
+      "Norway",
+      "Finland",
+      "Ireland",
+      "Belgium",
+      "Austria",
+      "Portugal",
+      "Switzerland",
+      "Australia",
+      "New Zealand",
+      "Japan",
+      "South Korea",
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Canada"
+      ]
+      }
+      },
+      {
+      "@type": "Offer",
+      "itemOffered": {
+      "@type": "Service",
+      "name": "Oven mitts and pot holders manufacturing",
+      "serviceType": "Contract manufacturing / private label",
+      "category": "Kitchen Linen",
+      "provider": {
+      "@id": "https://www.abhihome.in/#organization"
+      },
+      "areaServed": [
+      "United Kingdom",
+      "United States",
+      "Germany",
+      "France",
+      "Netherlands",
+      "Spain",
+      "Italy",
+      "Sweden",
+      "Denmark",
+      "Norway",
+      "Finland",
+      "Ireland",
+      "Belgium",
+      "Austria",
+      "Portugal",
+      "Switzerland",
+      "Australia",
+      "New Zealand",
+      "Japan",
+      "South Korea",
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Canada"
+      ]
+      }
+      },
+      {
+      "@type": "Offer",
+      "itemOffered": {
+      "@type": "Service",
+      "name": "Napkins manufacturing",
+      "serviceType": "Contract manufacturing / private label",
+      "category": "Kitchen Linen",
+      "provider": {
+      "@id": "https://www.abhihome.in/#organization"
+      },
+      "areaServed": [
+      "United Kingdom",
+      "United States",
+      "Germany",
+      "France",
+      "Netherlands",
+      "Spain",
+      "Italy",
+      "Sweden",
+      "Denmark",
+      "Norway",
+      "Finland",
+      "Ireland",
+      "Belgium",
+      "Austria",
+      "Portugal",
+      "Switzerland",
+      "Australia",
+      "New Zealand",
+      "Japan",
+      "South Korea",
+      "United Arab Emirates",
+      "Saudi Arabia",
+      "Canada"
+      ]
+      }
+      }
+      ]
+      },
+"hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "OEKO-TEX Standard 100"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "GOTS - Global Organic Textile Standard"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "GRS - Global Recycled Standard"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "BCI - Better Cotton Initiative"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "SA 8000"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "BSCI"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "CTPAT"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "ISO 9001:2015"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.abhihome.in/#website",
+      "url": "https://www.abhihome.in/",
+      "name": "Abhi Home",
+      "publisher": {
+        "@id": "https://www.abhihome.in/#organization"
+      },
+      "inLanguage": "en"
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.abhihome.in/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Products",
+      "item": "https://www.abhihome.in/#products"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Kitchen Linen",
+      "item": "https://www.abhihome.in/kitchen.html"
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://www.abhihome.in/kitchen.html#collection",
+  "url": "https://www.abhihome.in/kitchen.html",
+  "name": "Kitchen Linen Manufacturer | Tea Towels & Aprons | Abhi Home®",
+  "description": "Tea towels, aprons, placemats, runners, oven mitts, napkins. Woven and printed kitchen linen from India. OEKO-TEX and GOTS options for global private-label buyers.",
+  "isPartOf": {
+    "@id": "https://www.abhihome.in/#website"
+  },
+  "publisher": {
+    "@id": "https://www.abhihome.in/#organization"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Kitchen Linen",
+    "description": "Kitchen Linen manufactured by Abhi Home for global wholesale and private-label buyers. Constructed in Cotton, Linen and Waffle weave."
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Kitchen Linen",
+    "description": "Product variants of kitchen linen manufactured by Abhi Home in India.",
+    "numberOfItems": 9,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Tea towels"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Kitchen towels"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Aprons"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Oven mitts"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Pot holders"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Placemats"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Table runners"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Napkins"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "Dining chair pads"
+      }
+    ]
+  }
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What kitchen textiles does Abhi Home manufacture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tea towels, kitchen towels, aprons, oven mitts, pot holders, placemats, table runners, napkins, and dining chair pads. Woven, printed, and embroidered finishes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the MOQ for kitchen textiles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MOQs typically start at 1,000 pieces per design for printed tea towels and aprons. Woven jacquards and handloom styles may require higher MOQs."
+      }
+    }
+  ]
+}
+</script>
+  <!-- END SEO BLOCK -->
+<!-- CRITICAL_CSS:BEGIN -->
+<style id="critical-css">
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#2D4A3E;--green-light:#3D5F52;--cream:#FAF8F5;--sand:#F0E8DC;--terracotta:#C4A882;--gold:#B5904A;--charcoal:#2C2C2C;--gray-mid:#8A8480;--stone:#E8E2D9;--white:#FFFFFF}
+html{scroll-behavior:smooth}
+body{font-family:'Raleway',sans-serif;background:var(--cream);color:var(--charcoal);font-size:16px;line-height:1.7}
+.announcement-bar{background:var(--green);color:var(--cream);text-align:center;font-size:12px;letter-spacing:2px;text-transform:uppercase;padding:10px 20px;font-weight:500}
+header{background:var(--cream);border-bottom:1px solid var(--stone);position:sticky;top:0;z-index:100}
+.header-top{display:flex;justify-content:space-between;align-items:center;padding:18px 60px;max-width:1400px;margin:0 auto}
+.logo{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;color:var(--green);letter-spacing:3px;text-transform:uppercase}
+.logo span{font-size:13px;display:block;letter-spacing:4px;color:var(--terracotta);font-weight:400;margin-top:-4px}
+.header-actions{display:flex;align-items:center;gap:24px;font-size:13px;color:var(--gray-mid);letter-spacing:1px}
+.header-actions a{color:var(--green);text-decoration:none;font-weight:500}
+.btn-catalogue{background:var(--green);color:var(--cream)!important;padding:10px 22px;font-size:11px;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;font-weight:600;font-family:'Raleway',sans-serif}
+nav{border-top:1px solid var(--stone);background:var(--cream)}
+.nav-inner{display:flex;justify-content:center;gap:36px;padding:14px 60px;max-width:1400px;margin:0 auto;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.nav-inner a{color:var(--charcoal);text-decoration:none}
+.nav-inner a:hover{color:var(--green)}
+.hero{position:relative;height:90vh;min-height:600px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#3D5F52 0%,#2D4A3E 30%,#1E3329 60%,#4A6B5A 100%)}
+.hero-texture{position:absolute;inset:0;opacity:.08;background-image:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(255,255,255,.3) 10px,rgba(255,255,255,.3) 11px)}
+.hero-pattern{position:absolute;inset:0;opacity:.05;background-image:radial-gradient(circle at 25% 50%,rgba(196,168,130,.8) 0%,transparent 50%),radial-gradient(circle at 75% 30%,rgba(250,248,245,.4) 0%,transparent 40%)}
+.hero-content{position:relative;z-index:2;text-align:center;color:var(--cream);max-width:800px;padding:0 40px}
+.hero-eyebrow{font-size:11px;letter-spacing:5px;text-transform:uppercase;color:var(--terracotta);font-weight:600;margin-bottom:20px}
+.hero-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,7vw,88px);font-weight:300;line-height:1.1;color:var(--cream);margin-bottom:24px;letter-spacing:-1px}
+.hero-headline em{font-style:italic;color:var(--terracotta)}
+.hero-sub{font-size:16px;letter-spacing:1px;color:rgba(250,248,245,.8);margin-bottom:32px;font-weight:300}
+.scroll-hint{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);color:rgba(250,248,245,.5);font-size:11px;letter-spacing:3px;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint::after{content:'';width:1px;height:40px;background:rgba(196,168,130,.6);display:block}
+@media (max-width:768px){
+.announcement-bar{font-size:10px;letter-spacing:1px;padding:8px 16px}
+.header-top{padding:12px 20px}
+.header-actions>span,.header-actions>a:not(.btn-catalogue){display:none}
+.header-actions{gap:0}
+nav{overflow:hidden}
+.nav-inner{padding:10px 20px;gap:20px;font-size:10px;letter-spacing:1.5px;justify-content:flex-start;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;flex-wrap:nowrap}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav-inner a{white-space:nowrap}
+.hero{height:70vh;min-height:480px}
+.hero-headline{font-size:clamp(40px,11vw,64px)}
+.hero-sub{font-size:14px}
+}
+@media (max-width:480px){
+.logo{font-size:20px}
+.logo span{font-size:11px;letter-spacing:3px}
+.hero{height:65vh;min-height:420px}
+.hero-content{padding:0 20px}
+.hero-headline{font-size:clamp(36px,12vw,52px)}
+.hero-sub{font-size:13px;letter-spacing:0}
+}
+</style>
+<!-- CRITICAL_CSS:END -->
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  Third-Generation Certified Home Textiles Manufacturer · India · info@abhihome.in · <a href="https://wa.me/919817031900" target="_blank" style="color:inherit;">WhatsApp: +91 98170 31900</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo">
+      Abhi Home®
+      <span>By Abhijat Paliwal</span>
+    </div>
+    <div class="header-actions">
+      <span>info@abhihome.in</span>
+      <a href="infrastructure.html">Infrastructure</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html" class="btn-catalogue" style="text-decoration:none;">Request Trade Catalogue</a>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="bedding.html">Bedding</a>
+      <a href="cushions.html">Cushions ▾</a>
+      <a href="throws.html">Throws & Blankets</a>
+      <a href="curtains.html">Curtains</a>
+      <a href="bath.html">Bath Textiles ▾</a>
+      <a href="kitchen.html">Kitchen & Dining ▾</a>
+      <a href="pouffe.html">Pouffe & Seating</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+<!-- INDIA_HUB_LINK -->
+<div style="background:#fff;border-bottom:1px solid rgba(45,74,62,0.12);padding:14px 24px;text-align:center;font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;">
+  Sourcing from India? See our full <a href="kitchen-linen-manufacturers-india.html" style="color:var(--green);font-weight:600;text-decoration:underline;">Kitchen Linen Manufacturers in India</a> programme &rarr;
+</div>
+<!-- /INDIA_HUB_LINK -->
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-texture"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Kitchen & Dining</p>
+    <h1 class="hero-headline">Style Your<br>Kitchen &<br><em>Table</em></h1>
+    <p class="hero-sub">Premium Kitchen and Dining Textiles for Every Occasion</p>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- INTRO SECTION -->
+<section class="section">
+  <div class="section-inner">
+    <p class="section-label">Kitchen & Dining</p>
+    <h2 class="section-title">The Art of the<br><em>Table</em></h2>
+    <p class="section-body">From the morning kitchen to the evening table, every textile we make for this collection is designed to work as hard as it looks beautiful. Pure cotton and linen — woven, printed, embroidered and block-printed by skilled artisans in India. Available for bulk orders, private label and custom development.</p>
+    <p class="section-body" style="margin-top:16px;">All products OEKO-TEX certified. Custom colourways, sizes and branded programmes available. GOTS certification available on request.</p>
+    <!-- CATEGORY NAV TILES -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px;">
+      <a href="#runners" style="text-decoration:none;padding:24px 16px;background:var(--sand);border-top:3px solid var(--terracotta);display:block;">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--green);margin-bottom:6px;">Table Runners</h3>
+        <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;">Explore ↓</span>
+      </a>
+      <a href="#tablecloths" style="text-decoration:none;padding:24px 16px;background:var(--sand);border-top:3px solid var(--terracotta);display:block;">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--green);margin-bottom:6px;">Tablecloths</h3>
+        <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;">Explore ↓</span>
+      </a>
+      <a href="#placemats" style="text-decoration:none;padding:24px 16px;background:var(--sand);border-top:3px solid var(--terracotta);display:block;">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--green);margin-bottom:6px;">Placemats & Napkins</h3>
+        <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;">Explore ↓</span>
+      </a>
+      <a href="#chair-pads" style="text-decoration:none;padding:24px 16px;background:var(--sand);border-top:3px solid var(--terracotta);display:block;">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--green);margin-bottom:6px;">Chair Pads</h3>
+        <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;">Explore ↓</span>
+      </a>
+      <a href="#coordinated-sets" style="text-decoration:none;padding:24px 16px;background:var(--sand);border-top:3px solid var(--terracotta);display:block;">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--green);margin-bottom:6px;">Co-ordinated Sets</h3>
+        <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;">Explore ↓</span>
+      </a>
+      <a href="#towels" style="text-decoration:none;padding:24px 16px;background:var(--sand);border-top:3px solid var(--terracotta);display:block;">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--green);margin-bottom:6px;">Kitchen Towels</h3>
+        <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;">Explore ↓</span>
+      </a>
+      <a href="#aprons" style="text-decoration:none;padding:24px 16px;background:var(--sand);border-top:3px solid var(--terracotta);display:block;">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--green);margin-bottom:6px;">Aprons</h3>
+        <span style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;">Explore ↓</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TABLE RUNNERS -->
+<section class="section section-alt" id="runners">
+  <div class="section-inner">
+    <p class="section-label">Kitchen & Dining</p>
+    <h2 class="section-title">Table <em>Runners</em></h2>
+    <p class="section-body" style="margin-bottom:48px;">A well-chosen runner transforms a table from functional to considered. Our range spans hand block-printed cotton to woven linen dobby — each designed to layer beautifully with our placemat and napkin collections. Available in standard lengths and custom cuts for hospitality programmes.</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-001.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-001.jpeg" alt="AH-KD-TR-001 Indigo Diamond Block Print Runner" style="width:100%;height:100%;object-fit:contain;"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-001</p>
+          <h3 class="product-name">Indigo Diamond Block Print Cotton Runner</h3>
+          <p class="product-desc">100% cotton runner hand block-printed in classic indigo on white using traditional Indian woodblocks. Bold diamond lattice motifs run the full length — the kind of piece that anchors a table and starts a conversation. Available in 150cm, 180cm and 240cm lengths.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Block Printed</span><span class="product-badge">Custom Lengths</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-002.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-002.jpeg" alt="AH-KD-TR-002 Terracotta Thin Multi-Stripe Runner" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-002</p>
+          <h3 class="product-name">Terracotta Multi-Stripe Cotton Runner</h3>
+          <p class="product-desc">Yarn-dyed cotton runner in warm terracotta and cream with fine multi-stripe detailing across the width. Crisp and considered — a versatile everyday runner that coordinates beautifully with our placemat and napkin sets. Available in custom colourways and lengths.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Custom Colours</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-003.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-003.jpeg" alt="AH-KD-TR-003 Bold Terracotta White Stripe Runner" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-003</p>
+          <h3 class="product-name">Bold Terracotta & White Stripe Runner</h3>
+          <p class="product-desc">A statement runner in bold terracotta and white yarn-dyed stripes — graphic and confident without being loud. The wide stripe proportion is designed to read well on both small breakfast tables and long banquet settings. A perennial bestseller for lifestyle retail.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Custom Lengths</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-004.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-004.jpeg" alt="AH-KD-TR-004 Rust Terracotta Stripe Runner with Fringe" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-004</p>
+          <h3 class="product-name">Rust Stripe Runner with Hand-Knotted Fringe</h3>
+          <p class="product-desc">Rust and terracotta yarn-dyed stripe runner with hand-knotted fringe at both ends — a relaxed, artisanal finish that adds warmth to any table. Styled beautifully on wooden surfaces, equally at home in a café or a Scandi-inspired dining room. Available in standard and custom lengths.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Hand-Knotted Fringe</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-005.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-005.jpeg" alt="AH-KD-TR-005 Broad Terracotta Cream Stripe Runner with Fringe" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-005</p>
+          <h3 class="product-name">Broad Terracotta & Cream Stripe Fringe Runner</h3>
+          <p class="product-desc">Wide-stripe cotton runner in terracotta and natural cream, finished with generous hand-knotted fringe. The relaxed, sun-drenched palette works beautifully for summer table settings, seasonal hospitality programmes and lifestyle retail. A natural pair with our TC-007 multicolour tablecloth.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Hand-Knotted Fringe</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-006.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-006.jpeg" alt="AH-KD-TR-006 Hand Embroidered Wildflower Linen Runner" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-006</p>
+          <h3 class="product-name">Hand Embroidered Wildflower Linen Runner</h3>
+          <p class="product-desc">White washed linen runner with hand-embroidered wildflower and botanical motifs in rust, sage, cream and terracotta threads. Each piece carries the beautiful variation of handcraft — no two are identical. Styled beautifully for artisan lifestyle retail, gift shops and boutique hospitality.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Embroidered</span><span class="product-badge">Pure Linen</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-007.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Runner/AH-KD-TR-007.jpeg" alt="AH-KD-TR-007 Natural Linen Embroidered Botanical Runner" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TR-007</p>
+          <h3 class="product-name">Natural Grey Linen Embroidered Botanical Runner</h3>
+          <p class="product-desc">Natural grey-linen runner with a scattered hand-embroidered botanical print — wildflowers, daisies and meadow grasses in rust, sage and ochre. A wider embroidery field than TR-006, giving a more abundant, garden-inspired feel. Ideal for premium table styling and editorial retail displays.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Embroidered</span><span class="product-badge">Pure Linen</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TABLECLOTHS -->
+<section class="section" id="tablecloths">
+  <div class="section-inner">
+    <p class="section-label">Kitchen & Dining</p>
+    <h2 class="section-title"><em>Tablecloths</em></h2>
+    <p class="section-body" style="margin-bottom:48px;">Tablecloths that dress a table properly. From crisp linen for formal dining to relaxed washed cotton for everyday use — all produced to the tolerances that wholesale retail and hospitality demand. Available in round, rectangular and custom sizes.</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-001.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-001.png" alt="AH-KD-TC-001 Natural Linen Artisan Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-001</p>
+          <h3 class="product-name">Natural Linen Artisan Tablecloth</h3>
+          <p class="product-desc">Pure natural linen tablecloth with an undyed, organic character that speaks to handcraft and provenance. Shown here styled with artisan block printing tools — the kind of table story that resonates with premium lifestyle retail and interior-led buyers. Available in 6 and 8-seater rectangular sizes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Pure Linen</span><span class="product-badge">Natural Undyed</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-002.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-002.jpeg" alt="AH-KD-TC-002 White with Grey Stripe Border Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-002</p>
+          <h3 class="product-name">Crisp White & Grey Stripe Border Tablecloth</h3>
+          <p class="product-desc">White cotton tablecloth with a formal grey woven stripe border and hand-knotted fringe — dressed for restaurant and fine dining service. The crisp, tailored proportions and fringe finish make this a favourite for hospitality contracts, wedding caterers and private dining rooms.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Hospitality Grade</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-003.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-003.jpeg" alt="AH-KD-TC-003 White Self-Stripe Woven Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-003</p>
+          <h3 class="product-name">White Self-Stripe Woven Fine Dining Tablecloth</h3>
+          <p class="product-desc">All-white cotton tablecloth with a subtle self-woven tonal stripe that adds texture without colour — the kind of refined simplicity that fine dining demands. Machine washable to hospitality standards. Available in all standard rectangular and round sizes with custom drop lengths.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Self-Stripe Weave</span><span class="product-badge">Machine Washable</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-004.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-004.jpeg" alt="AH-KD-TC-004 Ivory Linen with Brown Woven Stripe Border" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-004</p>
+          <h3 class="product-name">Ivory Linen with Natural Brown Stripe Border</h3>
+          <p class="product-desc">Ivory and natural cotton-linen blend tablecloth with a warm brown woven stripe border — earthy and considered without being rustic. The tonal palette works beautifully in both modern Scandinavian and traditional Indian interiors. A strong performer for lifestyle retail and boutique hospitality.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Cotton-Linen Blend</span><span class="product-badge">Yarn Dyed</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-005.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-005.jpeg" alt="AH-KD-TC-005 White Linen with Silver Stripe Border" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-005</p>
+          <h3 class="product-name">White Linen with Silver-Grey Stripe Border</h3>
+          <p class="product-desc">White linen tablecloth with a refined silver-grey woven stripe border — contemporary, elegant and versatile. Suited to modern fine dining and premium event hire. The cool grey border gives it a crisp, contemporary edge that pairs with metallic tableware and neutral interiors.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Pure Linen</span><span class="product-badge">Fine Dining</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-006.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-006.png" alt="AH-KD-TC-006 White Indigo Block Print Botanical Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-006</p>
+          <h3 class="product-name">White Indigo Hand Block Print Botanical Tablecloth</h3>
+          <p class="product-desc">White cotton tablecloth with an all-over indigo hand block-printed botanical motif — floral and foliage designs drawn from traditional Indian printing traditions. Shown here with matching napkins; available as a co-ordinated table set. One of our most popular designs with global lifestyle retailers.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Block Printed</span><span class="product-badge">Matching Napkins Available</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-007.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-007.png" alt="AH-KD-TC-007 Natural Linen Multicolour Stripe Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-007</p>
+          <h3 class="product-name">Natural Linen Multicolour Stripe Tablecloth</h3>
+          <p class="product-desc">Natural linen tablecloth with a cheerful yarn-dyed multicolour stripe in terracotta, mustard, sage and teal — a palette that brings warmth to any gathering. The relaxed, artisanal character makes it a natural fit for summer dining, delis, farm shops and destination hospitality. Pairs beautifully with TR-005.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Pure Linen</span><span class="product-badge">Yarn Dyed</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-008.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-008.jpg" alt="AH-KD-TC-008 Indigo Paisley Buti Block Print Cotton Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-008</p>
+          <h3 class="product-name">Indigo Paisley Buti Block Print Tablecloth</h3>
+          <p class="product-desc">A heritage Indian paisley buti hand block-printed across the cotton ground, with a contrasting deep-indigo geometric trellis border — a true heritage craft piece for retailers who lead with story. Dye-fast natural indigo, pre-washed for soft handfeel. Pairs with our paisley napkins and runners.</p>
+          <div class="product-badges"><span class="product-badge">Hand Block Print</span><span class="product-badge">Natural Indigo</span><span class="product-badge">Heritage Craft</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-009.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-009.jpg" alt="AH-KD-TC-009 Black and White Tropical Botanical Print Tablecloth with Tassel Trim" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-009</p>
+          <h3 class="product-name">Monochrome Tropical Botanical Tablecloth with Tassels</h3>
+          <p class="product-desc">A graphic black-on-cream tropical print — birds, monkeys, palm fronds and botanicals in a maximalist, hand-illustrated style — finished with chunky cotton tassels at each corner. The statement piece for boutique hospitality, concept stores and editorial styling. Reactive print on heavyweight cotton.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Tassel Trim</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-010.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-010.jpg" alt="AH-KD-TC-010 Olive Green Ikat Style Print Cotton Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-010</p>
+          <h3 class="product-name">Olive Green Ikat Trellis Print Tablecloth</h3>
+          <p class="product-desc">An ikat-inspired trellis print in soft olive on natural cotton — the slightly blurred edges give a hand-woven authenticity that's hard to fake. Heavyweight cotton ground with a clean stitched hem. A versatile shade that bridges spring/summer and autumn dining programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Ikat Inspired</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-011.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-011.jpg" alt="AH-KD-TC-011 Forest Green Palm Leaf Print Tablecloth with Olive Tassel Fringe" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-011</p>
+          <h3 class="product-name">Forest Green Palm Leaf Print with Olive Tassel Fringe</h3>
+          <p class="product-desc">An over-scaled palm leaf print in forest green and deep teal on cotton — bold, leafy, full of energy — finished with a hand-knotted olive tassel fringe on all four sides. A destination summer-dining piece for boutique hotels, garden centres and lifestyle boutiques. Heavyweight cotton; reactive printed.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Hand-Knotted Fringe</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-012.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-012.jpg" alt="AH-KD-TC-012 Multicolour Cross-Stitch Geometric Tablecloth with Fringe" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-012</p>
+          <h3 class="product-name">Multicolour Cross-Stitch Geometric Print Tablecloth with Fringe</h3>
+          <p class="product-desc">A cross-stitch-inspired patchwork geometric print in coral, mustard, sage and chalk — folk-craft warmth on a heavyweight cotton ground. Finished with a self-fringe on all four sides. Strong fit for boho lifestyle retail, country-cottage homewares and Mediterranean hospitality.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Self Fringe</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-013.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-013.jpg" alt="AH-KD-TC-013 Rust Linen Tablecloth with White and Mustard Ric-Rac Trim" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-013</p>
+          <h3 class="product-name">Rust Linen Tablecloth with Ric-Rac Trim</h3>
+          <p class="product-desc">A solid-dyed pure linen tablecloth in warm rust, finished with a double-row ric-rac trim — chalk white sitting just inside warm mustard — that runs along the inset border. Quietly sophisticated; the easy-to-style anchor piece for autumn and festive dining programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Pure Linen</span><span class="product-badge">Ric-Rac Trim</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-014.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-014.jpg" alt="AH-KD-TC-014 Off White Cotton Tablecloth with Rust Chevron Border and Tassel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-014</p>
+          <h3 class="product-name">Off-White Tablecloth with Rust Chevron Border and Tassel</h3>
+          <p class="product-desc">A clean off-white cotton ground with a hand block-printed rust chevron centre panel and matching wide chevron border — graphic, restrained, easy to merchandise. Single corner tassel detail. Layers beautifully over our solid linen tablecloths for an editorial table setting.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Block Print</span><span class="product-badge">Tassel Corner</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-015.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-015.jpg" alt="AH-KD-TC-015 Pale Blue Multi Concentric Circles Print Tablecloth with Fringe" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-015</p>
+          <h3 class="product-name">Pale Blue Concentric Circles Print Tablecloth with Fringe</h3>
+          <p class="product-desc">A modern abstract print — concentric circle motifs in cobalt, mustard and coral on a soft pale-blue cotton ground — finished with a chunky pale-blue self-fringe along the foot. The fresh, contemporary statement piece for design-led hospitality and homeware retail.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Self Fringe</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-016.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-016.jpg" alt="AH-KD-TC-016 Sage Green and White Wide Stripe Yarn-Dyed Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-016</p>
+          <h3 class="product-name">Sage and Cream Wide Stripe Yarn-Dyed Tablecloth</h3>
+          <p class="product-desc">A timeless yarn-dyed wide stripe tablecloth in sage green and cream — woven on our shuttle looms with a slightly slubby cotton-linen blend yarn for a relaxed, lived-in handfeel. Strong everyday-dining SKU; ships well in retail packs alongside coordinating napkins.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Cotton-Linen Blend</span><span class="product-badge">Yarn Dyed</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-017.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-017.jpg" alt="AH-KD-TC-017 Indigo Blue Block Stripe Heavyweight Cotton Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-017</p>
+          <h3 class="product-name">Indigo Block Stripe Heavyweight Cotton Tablecloth</h3>
+          <p class="product-desc">A wide-band indigo and chambray block stripe on a heavyweight natural cotton — woven with a fine charcoal contrast piping that gives the stripe definition. Pre-washed for the soft, slightly creased character premium hospitality buyers gravitate toward. Generous drop, hemstitched border.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Pre-Washed</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-018.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-018.jpg" alt="AH-KD-TC-018 Black and Charcoal Waffle Weave Window Pane Check Tablecloth with Tassels" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-018</p>
+          <h3 class="product-name">Black Waffle Weave Window Pane Check Tablecloth with Tassels</h3>
+          <p class="product-desc">A heavyweight waffle-weave tablecloth in deep black with chalk window-pane checks and a subtle stone contrast border — finished with chunky hand-knotted tassels at each corner. Strong, masculine handfeel; the textural choice for design-forward hospitality and concept-store dining.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Waffle Weave</span><span class="product-badge">Hand-Knotted Tassels</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-019.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Table%20cover/AH-KD-TC-019.jpg" alt="AH-KD-TC-019 Mustard and Stone Window Pane Check Waffle Weave Tablecloth" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-TC-019</p>
+          <h3 class="product-name">Mustard and Stone Window Pane Waffle Weave Tablecloth</h3>
+          <p class="product-desc">The warm-palette companion to AH-KD-TC-018 — a waffle-weave tablecloth in cream, stone and golden mustard with a wide mustard contrast border. The textural waffle ground catches light beautifully and brings warmth to a tonal table setting. Sold individually or in coordinated retail packs.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Waffle Weave</span><span class="product-badge">Yarn Dyed</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PLACEMATS & NAPKINS -->
+<section class="section section-alt" id="placemats">
+  <div class="section-inner">
+    <p class="section-label">Kitchen & Dining</p>
+    <h2 class="section-title">Placemats &<em> Napkins</em></h2>
+    <p class="section-body" style="margin-bottom:48px;">Co-ordinated sets that pull a table together. All placemats are produced with a padded or lined backing for protection and drape. Napkins finished with mitered corners or hand-rolled hems. Available individually or as co-ordinated sets of 4 or 6, with custom branding for hospitality programmes.</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-001.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-001.jpeg" alt="AH-KD-PM-001 Natural White Ribbed Woven Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-001</p>
+          <h3 class="product-name">Natural White Ribbed Cotton Placemat</h3>
+          <p class="product-desc">White cotton placemat in a classic rib weave — clean, casual and versatile. A morning-light essential for everyday dining that photographs beautifully for retail. Heat-resistant padded back, easy-care and machine washable. Set of 4 or 6, also available as a matching napkin set.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Rib Weave</span><span class="product-badge">Set of 4 or 6</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-002.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-002.jpeg" alt="AH-KD-PM-002 Sandy Botanical Block Print Placemat Set" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-002</p>
+          <h3 class="product-name">Sandy Botanical Block Print Placemat & Napkin Set</h3>
+          <p class="product-desc">White cotton placemat and napkin set with an all-over sandy/tan botanical block print — lush leaf and foliage motifs that bring warmth to any table. The neutral palette co-ordinates easily with ceramics and natural wood. Set of 4 with matching napkins; custom colourways available.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Block Printed</span><span class="product-badge">Co-ordinated Set</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-004.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-004.jpeg" alt="AH-KD-PM-004 Natural Mustard Stripe Quilted Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-004</p>
+          <h3 class="product-name">Natural & Mustard Yarn-Dyed Stripe Quilted Placemat</h3>
+          <p class="product-desc">Warm natural and mustard yarn-dyed stripe placemat with a quilted finish — earthy, artisanal and full of character. The padded quilting adds body and heat protection while the bold stripe reads well in both boho and modern interiors. Set of 4, pairs with our linen tablecloths.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Quilted</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-005.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-005.jpeg" alt="AH-KD-PM-005 Grey Fine Stripe Quilted Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-005</p>
+          <h3 class="product-name">Grey Fine Stripe Quilted Placemat</h3>
+          <p class="product-desc">Sophisticated grey and white fine-stripe quilted placemat — a contemporary choice for evening dining and fine hospitality settings. The subtle quilted texture adds depth and elegance without pattern. Set of 4, co-ordinates beautifully with our white and grey stripe tablecloths.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Fine Stripe</span><span class="product-badge">Quilted</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-006.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-006.jpeg" alt="AH-KD-PM-006 White Olive Sage Botanical Print Placemat Full Setting" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-006</p>
+          <h3 class="product-name">White & Olive Botanical Block Print Table Set</h3>
+          <p class="product-desc">White cotton placemat and napkin set with an olive and sage hand block-printed botanical motif — shown here as a full 6-seater setting with matching napkins. A gorgeous showpiece for lifestyle retail and premium gifting. Available as individual pieces or as a complete table set for 4 or 6.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Block Printed</span><span class="product-badge">Full Table Set Available</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-008.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-008.jpeg" alt="AH-KD-PM-008 Charcoal Quilted Ribbed Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-008</p>
+          <h3 class="product-name">Charcoal Quilted Ribbed Placemat</h3>
+          <p class="product-desc">Dark charcoal slate cotton placemat with a bold quilted rib texture — dramatic and modern. An evening-dining statement that works with both minimal white tableware and warm terracotta ceramics. Shown with a fine white stripe napkin. Set of 4, available in slate, navy and forest.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Quilted Rib</span><span class="product-badge">Set of 4</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-011.jpg" alt="AH-KD-PM-011 Coral and Mustard Centre Stripe Tassel Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-011</p>
+          <h3 class="product-name">Coral & Mustard Centre Stripe Tassel Placemat</h3>
+          <p class="product-desc">Hand-woven natural cotton placemat with a warm coral, peach and mustard centre stripe and chunky hand-knotted tassels at each end. The textured weave and hand-tied tassels give a clear artisan, hand-made feel — strong appeal for lifestyle retail and Mediterranean / Coastal Grandmother-led table programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Woven</span><span class="product-badge">Hand-Knotted Tassel</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-012.jpg" alt="AH-KD-PM-012 Olive Green and Mustard Stripe Tassel Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-012</p>
+          <h3 class="product-name">Olive Green & Mustard Stripe Tassel Placemat</h3>
+          <p class="product-desc">A coordinating colourway to AH-KD-PM-011 in olive, sage and mustard centre stripes on natural hand-woven cotton, with hand-knotted tassels on each end. Photographs beautifully alongside the coral version for retail merchandising or as a curated mixed-set proposition for warm earthy table settings.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Woven</span><span class="product-badge">Hand-Knotted Tassel</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-013.jpg" alt="AH-KD-PM-013 Indigo Hand Woven Fringed Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-013</p>
+          <h3 class="product-name">Indigo Hand-Woven Fringed Placemat</h3>
+          <p class="product-desc">A solid indigo hand-woven cotton placemat with horizontal rows of contrast white dotted weft and self-fringed sides. The deep indigo with white speckled detail gives a quietly textural, hand-crafted look that works beautifully with whitewares and natural-finish timber. A boutique hospitality and premium retail staple.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Woven</span><span class="product-badge">Self-Fringed</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-014.jpg" alt="AH-KD-PM-014 Natural Slub Weave Pale Blue Stripe Fringed Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-014</p>
+          <h3 class="product-name">Natural Slub Weave Pale Blue Stripe Placemat</h3>
+          <p class="product-desc">A textured natural cotton slub-weave placemat with subtle pale blue and stone weft stripes and a soft tasselled fringe on all four sides. The relaxed, undyed handle reads natural, breezy and coastal — well-suited to summer lifestyle ranges and resort hospitality. Available in custom stripe colourways.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Slub Weave</span><span class="product-badge">All-Round Fringe</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-015.jpg" alt="AH-KD-PM-015 Mustard Sunburst Quilted Star Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-015</p>
+          <h3 class="product-name">Mustard Sunburst Quilted Star Placemat</h3>
+          <p class="product-desc">A scalloped, star-shaped placemat in warm mustard cotton with a concentric quilted sunburst stitch — a sculptural, decorative shape rather than a rectangle. Bound and overlocked at the scalloped edge for clean finishing. Strong shelf-appeal as an unexpected, photogenic table piece for boutique retail and gifting.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Quilted Sunburst</span><span class="product-badge">Scalloped Edge</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-016.jpg" alt="AH-KD-PM-016 Stone and Navy Distressed Persian Medallion Print Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-016</p>
+          <h3 class="product-name">Stone & Navy Distressed Medallion Placemat</h3>
+          <p class="product-desc">A printed cotton placemat with a distressed, vintage-rug medallion design in soft stone, taupe and navy — the deliberate "faded heirloom" aesthetic that works beautifully against dark dining tables and matt black cutlery. Photographs as a styled, considered tabletop. Strong premium retail proposition.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Heirloom Look</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-017.jpg" alt="AH-KD-PM-017 Cobalt and Mustard Persian Medallion Print Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-017</p>
+          <h3 class="product-name">Cobalt & Mustard Persian Medallion Placemat</h3>
+          <p class="product-desc">A vibrant cobalt blue, mustard and pink Persian-rug-inspired medallion print on cotton — the strongest colourway in the medallion family, with real on-shelf impact. Pairs beautifully with white tableware to let the print do the work. A standout SKU for ranges with a global / boho positioning.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Bold Colourway</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-018.jpg" alt="AH-KD-PM-018 Confetti Tweed Multi Colour Woven Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-018</p>
+          <h3 class="product-name">Confetti Tweed Multi-Colour Placemat</h3>
+          <p class="product-desc">A tweed-style hand-woven cotton placemat in a confetti palette of indigo, terracotta, mustard and ivory — the effect of multi-coloured yarns blending across the weave. The tactile, almost rug-like surface adds warmth and dimension to a table. A versatile, character-led SKU that mixes effortlessly with both prints and solids.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Woven Tweed</span><span class="product-badge">Multi-Colour Yarn</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Placemat/AH-KD-PM-019.jpg" alt="AH-KD-PM-019 Rose and Sky Blue Persian Medallion Print Placemat" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-PM-019</p>
+          <h3 class="product-name">Rose & Sky Blue Persian Medallion Placemat</h3>
+          <p class="product-desc">The softest colourway in the medallion print family — dusty rose, sky blue and mustard on a pale blush ground with a contrast indigo floral border. Reads romantic, feminine and slightly faded — beautifully suited to brunch, bridal-table and gifting programmes. Available alongside the stone and cobalt versions for a co-ordinated three-piece set.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Soft Colourway</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Napkin/AH-KD-NP-002.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Napkin/AH-KD-NP-002.jpeg" alt="AH-KD-NP-002 Natural Linen Napkin Bishop Fold" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-NP-002</p>
+          <h3 class="product-name">Natural Linen Napkin — Fine Dining</h3>
+          <p class="product-desc">Pure natural linen napkin with the body and drape to hold a bishop fold beautifully — the gold standard for restaurant table service. Pre-washed for softness, with mitered corners and a clean hemmed edge. Set of 6; available in natural, bleached white and custom dye colours.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Pure Linen</span><span class="product-badge">Restaurant Grade</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Napkin/AH-KD-NP-003.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Napkin/AH-KD-NP-003.jpeg" alt="AH-KD-NP-003 Natural Linen Napkin Casual Fine Dining" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-NP-003</p>
+          <h3 class="product-name">Natural Linen Napkin — Casual Dining</h3>
+          <p class="product-desc">Relaxed natural linen napkin with a soft washed finish and generous size — draped rather than folded for a casual, lived-in table aesthetic. Ideal for bistros, wine bars and the growing segment of premium casual dining. Set of 6; co-ordinates with our linen tablecloth range.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Pure Linen</span><span class="product-badge">Washed Finish</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Napkin/AH-KD-NP-004.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Napkin/AH-KD-NP-004.jpeg" alt="AH-KD-NP-004 Gold Botanical Block Print Napkin and Placemat Set" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-NP-004</p>
+          <h3 class="product-name">Gold Botanical Block Print Napkin & Placemat Set</h3>
+          <p class="product-desc">White cotton napkin and placemat set with a gold and sage hand block-printed botanical — delicate leaf and berry motifs that feel both artisan and refined. Pairs naturally with gold cutlery and neutral ceramics. A premium gifting and lifestyle retail bestseller. Set of 4 with matching placemats.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Block Printed</span><span class="product-badge">Co-ordinated Set</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CHAIR PADS -->
+<section class="section" id="chair-pads">
+  <div class="section-inner">
+    <p class="section-label">Kitchen & Dining</p>
+    <h2 class="section-title">Dining <em>Chair Pads</em></h2>
+    <p class="section-body" style="margin-bottom:48px;">Channel-stitched and tufted dining chair pads in pure cotton — yarn-dyed stripes, scatter prints and solid-dye finishes. Generously filled with recycled-fibre pads for everyday comfort, with tie-back fastenings to fit standard dining and kitchen chairs. Available in standard sizing (40×40cm) and custom sizes for hospitality. Co-ordinates with our placemats, runners and napkin programmes.</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Chair%20pads/AH-KD-CP-001.jpg" alt="AH-KD-CP-001 Navy and White Wide Stripe Chambray Chair Pad" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CP-001</p>
+          <h3 class="product-name">Navy & White Wide Stripe Chambray Chair Pad</h3>
+          <p class="product-desc">A classic navy and ivory yarn-dyed wide-stripe chair pad in soft chambray cotton — channel-quilted with hand-tied stitches and finished with bias binding and tie-back fastenings. The relaxed coastal palette pairs effortlessly with white painted and natural timber chairs. A consistent retail bestseller for casual dining ranges.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Channel Quilted</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Chair%20pads/AH-KD-CP-002.jpg" alt="AH-KD-CP-002 Coral Terrazzo Scatter Print Chair Pad" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CP-002</p>
+          <h3 class="product-name">Coral Terrazzo Scatter Print Chair Pad</h3>
+          <p class="product-desc">A printed cotton chair pad with a soft terrazzo scatter motif in coral, taupe and sage on a clean white ground — modern, gender-neutral and easy to layer with mixed table settings. Quilt-tufted and finished with tie fastenings. A strong, on-trend addition to lifestyle and home retail programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Tie-Back</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Chair%20pads/AH-KD-CP-003.jpg" alt="AH-KD-CP-003 Indigo Terrazzo Scatter Print Chair Pad" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CP-003</p>
+          <h3 class="product-name">Indigo Terrazzo Scatter Print Chair Pad</h3>
+          <p class="product-desc">A coordinating colourway to AH-KD-CP-002 in tonal indigo, navy and pale blue terrazzo scatter on white cotton — quilt-tufted with tie fastenings. Photographs beautifully alongside its coral counterpart for retail merchandising or as a curated mixed-set proposition for casual coastal interiors.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Reactive Print</span><span class="product-badge">Tie-Back</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Chair%20pads/AH-KD-CP-004.jpg" alt="AH-KD-CP-004 Mustard Ticking Stripe Chair Pad" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CP-004</p>
+          <h3 class="product-name">Mustard Ticking Stripe Chair Pad</h3>
+          <p class="product-desc">A heritage-style ticking-stripe chair pad in warm mustard on natural cotton — yarn-dyed, channel-quilted and bound with matching bias trim. The familiar narrow-stripe tickings work across farmhouse, country and contemporary settings, and stack beautifully when merchandised as a colour family alongside the navy variant.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed Ticking</span><span class="product-badge">Bias Bound</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Chair%20pads/AH-KD-CP-005.jpg" alt="AH-KD-CP-005 Taupe and Charcoal Multi-Stripe Woven Chair Pad" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CP-005</p>
+          <h3 class="product-name">Taupe & Charcoal Multi-Stripe Woven Chair Pad</h3>
+          <p class="product-desc">A sophisticated multi-stripe chair pad in taupe, charcoal, ivory and stone — yarn-dyed cotton woven with a textured slub finish for a natural, lived-in handle. Channel-quilted, tie-back. The neutral palette is well-suited to modern country and Scandinavian-leaning interiors and is a strong year-round retail proposition.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Slub Texture</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Chair%20pads/AH-KD-CP-006.jpg" alt="AH-KD-CP-006 Mustard Geometric Stripe Chair Pad" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CP-006</p>
+          <h3 class="product-name">Mustard Geometric Stripe Chair Pad</h3>
+          <p class="product-desc">A graphic mustard chair pad with rectangular ivory stripe blocks — yarn-dyed cotton with channel quilting and a clean bound edge. The bold but warm palette works beautifully in contemporary kitchens and casual dining rooms. Available as part of a colour family with grey and navy options for cross-merchandised retail sets.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Channel Quilted</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Chair%20pads/AH-KD-CP-007.jpg" alt="AH-KD-CP-007 Sage Green Solid Cotton Chair Pad with Ties" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CP-007</p>
+          <h3 class="product-name">Sage Green Solid Cotton Chair Pad</h3>
+          <p class="product-desc">A clean, solid sage green chair pad in piece-dyed cotton — densely tufted with self-coloured stitching for a tailored finish, with two tie-backs to secure to standard dining chairs. The muted green sits beautifully with natural timber, oak and white-painted furniture. Available across our full piece-dyed colour card as a private-label staple.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Piece Dyed</span><span class="product-badge">Custom Colours</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Chair%20pads/AH-KD-CP-008.jpg" alt="AH-KD-CP-008 Sage Pinstripe Buttoned Chair Pad" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CP-008</p>
+          <h3 class="product-name">Sage Pinstripe Buttoned Chair Pad</h3>
+          <p class="product-desc">A refined sage and ivory pinstripe chair pad with five fabric-covered buttons giving a clean upholstered finish in place of channel quilting. Yarn-dyed cotton, with co-ordinating tie-backs. The pinstripe and button detailing reads more "considered" than typical dining pads, giving it strong appeal for premium home retail and boutique hospitality programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed Pinstripe</span><span class="product-badge">Button Tufted</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CO-ORDINATED SETS -->
+<section class="section section-alt" id="coordinated-sets">
+  <div class="section-inner">
+    <p class="section-label">Kitchen & Dining</p>
+    <h2 class="section-title">Co-ordinated <em>Table Sets</em></h2>
+    <p class="section-body" style="margin-bottom:48px;">The complete table story — runner, tablecloth, placemats, napkins and kitchen accessories designed as one cohesive collection. Each co-ordinated set is available as a complete programme or in individual components for mix-and-match flexibility. Designed for retailers who want range coherence without the complexity of sourcing individual pieces. Available in custom colourways for private label.</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-001.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-001.jpeg" alt="AH-KD-CS-001 Blue Stripe Co-ordinated Table Set" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CS-001</p>
+          <h3 class="product-name">Blue Stripe Co-ordinated Table Set</h3>
+          <p class="product-desc">A relaxed, coastal-inspired table set in navy and sky blue yarn-dyed stripes — tassel-trimmed runner, coordinated peach-coral flat napkins, round quilted pot holder and quilted oven mitt. The contrast of cool blue and warm terracotta accessories gives the set a sophisticated, layered look. A versatile co-ordinated programme for lifestyle retail and boutique hospitality.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Set of 5 Pieces</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-002.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-002.jpeg" alt="AH-KD-CS-002 Terracotta Herringbone Co-ordinated Table Set" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CS-002</p>
+          <h3 class="product-name">Terracotta Herringbone Co-ordinated Table Set</h3>
+          <p class="product-desc">A full table programme in warm terracotta and natural cream — tassel-trimmed runner, herringbone arrow-print placemats, terracotta folded napkins, round quilted pot holder and oven mitt. The complete set dresses a 6-seater table cohesively and photographs beautifully in a natural interiors setting. A consistent bestseller for home and lifestyle retail.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Herringbone Weave</span><span class="product-badge">Full Table Set</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-003.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-003.jpeg" alt="AH-KD-CS-003 Terracotta Plaid Co-ordinated Table Set" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CS-003</p>
+          <h3 class="product-name">Terracotta Plaid Co-ordinated Table Set</h3>
+          <p class="product-desc">A statement table setting built around a bold terracotta and cream plaid — full tablecloth, coordinated textured runner with tassel trim, matching placemats, folded napkins and oven mitt at each place. The large-scale plaid is bold enough to anchor a formal dining occasion while staying warm and accessible for everyday use. A strong premium retail proposition.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Plaid Weave</span><span class="product-badge">Full Table Set</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-004.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-004.jpeg" alt="AH-KD-CS-004 Boho Tribal Print Co-ordinated Set" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CS-004</p>
+          <h3 class="product-name">Boho Tribal Print Co-ordinated Set</h3>
+          <p class="product-desc">A vibrant, graphic co-ordinated set centred on a bold boho tribal block-print runner and placemats — multicolour geometric motifs in pink, dusty blue, mustard and white on natural cotton, paired with plain sage-mint quilted oven mitt and pot holder. The contrast of graphic print against clean sage accessories creates a cohesive, on-trend boho table moment. Strong appeal for independent retailers.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Block Print</span><span class="product-badge">Set of 4 Pieces</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-005.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Co-Ordinates%20Sets/AH-KD-CS-005.jpeg" alt="AH-KD-CS-005 Terracotta Stripe Co-ordinated Table Set" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-CS-005</p>
+          <h3 class="product-name">Terracotta Stripe Co-ordinated Table Set</h3>
+          <p class="product-desc">An elegant, restrained co-ordinated set in terracotta and ivory yarn-dyed stripes — tassel-trimmed runner, matching stripe placemats at each setting, terracotta napkins, quilted oven mitt and a coordinated hamper/gift box. The clean stripe design works effortlessly across casual dining and formal settings. The gift box option makes this an exceptional retail gifting proposition for food and lifestyle brands.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed Stripe</span><span class="product-badge">Gift Box Available</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- KITCHEN TOWELS -->
+<section class="section" id="towels">
+  <div class="section-inner">
+    <p class="section-label">Kitchen & Dining</p>
+    <h2 class="section-title">Kitchen &<em> Tea Towels</em></h2>
+    <p class="section-body" style="margin-bottom:48px;">Tea towels that do both jobs beautifully — hardworking and handsome. Woven in pure cotton and linen-cotton blends on our shuttle looms, with yarn-dyed stripes, screen-prints, hand block prints, dobby checks and natural khadi textures. Available as singles, gift sets of 2 / 3 / 6 for retail, and bulk rolls for hospitality.</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-001.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-001.jpg" alt="AH-KD-KT-001 Sage Daisy Botanical Print Cotton Tea Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-001</p>
+          <h3 class="product-name">Sage Daisy Botanical Print Tea Towel</h3>
+          <p class="product-desc">A soft cream cotton tea towel printed with a delicate trailing daisy and chamomile motif in muted sage green — quiet, English-cottage charm. Pre-washed for a relaxed handfeel and finished with hemstitched edges. Reorder favourite for lifestyle and homeware retailers; ships well in gift sets of two.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Pre-Washed Cotton</span><span class="product-badge">Botanical Print</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-002.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-002.jpg" alt="AH-KD-KT-002 Lavender Marigold Block Print Cotton Tea Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-002</p>
+          <h3 class="product-name">Lavender Marigold Block Print Tea Towel</h3>
+          <p class="product-desc">A heritage Indian buti motif — small marigold sprigs hand block-printed in dusty lavender on a soft cream cotton ground. Beautifully understated and pairs back to almost any palette. Pre-washed cotton with hand-rolled hems. A natural co-ordinate for our placemat and napkin programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Hand Block Print</span><span class="product-badge">Heritage Buti</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-003.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-003.jpg" alt="AH-KD-KT-003 Stone Gingham Check Yarn-Dyed Tea Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-003</p>
+          <h3 class="product-name">Stone Gingham Check Yarn-Dyed Tea Towel</h3>
+          <p class="product-desc">A soft stone-and-cream gingham, yarn-dyed and woven on our shuttle looms — the kind of timeless check that anchors any kitchen palette. Brushed for softness and absorbency, with a hanging loop and clean mitered corners. Custom check sizes and colourways available for private-label programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Gingham Check</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-004.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-004.jpg" alt="AH-KD-KT-004 Mauve Gingham Check Yarn-Dyed Tea Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-004</p>
+          <h3 class="product-name">Mauve Gingham Check Yarn-Dyed Tea Towel</h3>
+          <p class="product-desc">A larger-scale yarn-dyed gingham in soft mauve and cream — a warm, retro palette that brings personality to a kitchen line-up. Woven from long-staple combed cotton, brushed and pre-shrunk. Reorder favourite that ships beautifully alongside our solid-dye and stripe ranges.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Combed Cotton</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-005.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-005.jpg" alt="AH-KD-KT-005 Indigo Sage Diagonal Candy Stripe Tea Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-005</p>
+          <h3 class="product-name">Indigo Sage Diagonal Candy Stripe Tea Towel</h3>
+          <p class="product-desc">A bias-cut yarn-dyed candy stripe — broad indigo bands separated by fine sage pinstripes on cream cotton — hung on the diagonal for a fresh, modern look. Brushed twill weave for fast drying and great absorbency. Customisable stripe palette for own-label programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Bias Cut</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-006.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-006.jpg" alt="AH-KD-KT-006 Orange Diagonal Stripe with Red Border Tea Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-006</p>
+          <h3 class="product-name">Orange Candy Stripe with Crimson Border Tea Towel</h3>
+          <p class="product-desc">A vibrant warm-orange and white candy stripe on cotton, finished with a contrast crimson woven selvedge — the kind of cheerful pop that lifts a tonal kitchen. Yarn-dyed for colour-fast performance even after intense laundering. Strong gifting and Italian-deli SKU.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Selvedge Border</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-007.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-007.jpg" alt="AH-KD-KT-007 Terracotta and Indigo Block Stripe Tea Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-007</p>
+          <h3 class="product-name">Terracotta and Indigo Colour-Block Stripe Tea Towel</h3>
+          <p class="product-desc">A sophisticated colour-block tea towel — fine terracotta-on-cream stripes through the body with a deep indigo and white striped border at the foot. The mixed-scale stripe story photographs beautifully for editorial and lifestyle retail. Hand-rolled hems and a hidden hanging loop.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Colour Block</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-008.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-008.jpg" alt="AH-KD-KT-008 Natural Khadi Tea Towel with Multi-Colour Hand Painted Stripe Border" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-008</p>
+          <h3 class="product-name">Natural Khadi Tea Towel with Multi-Colour Painted Border</h3>
+          <p class="product-desc">A handloom-woven natural slub khadi tea towel finished with a hand-painted multi-colour stripe border — hints of rust, mustard, sage and lilac on undyed cotton. Each piece is unique. The story-led artisan SKU for premium lifestyle, museum and gift retailers.</p>
+          <div class="product-badges"><span class="product-badge">Handloom</span><span class="product-badge">Natural Khadi</span><span class="product-badge">Hand Painted</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-009.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-009.jpg" alt="AH-KD-KT-009 Navy and Emerald Hibiscus Floral Print Tea Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-009</p>
+          <h3 class="product-name">Navy and Emerald Hibiscus Floral Print Tea Towel</h3>
+          <p class="product-desc">A bold tropical hibiscus screen-print on a deep navy ground, with cream and emerald layers giving the bloom a beautiful sense of depth. Printed on a slub-weave cotton-linen blend that drapes beautifully. Statement gifting SKU; pairs with our coordinated apron AH-KD-AP-006.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Cotton-Linen Blend</span><span class="product-badge">Screen Print</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-010.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-010.jpg" alt="AH-KD-KT-010 Mustard and Ivory Hibiscus Floral Print Tea Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-010</p>
+          <h3 class="product-name">Mustard and Ivory Hibiscus Floral Print Tea Towel</h3>
+          <p class="product-desc">The warm-palette colourway of our hibiscus print — golden mustard and ivory blooms outlined in charcoal — printed on a slub-weave cotton-linen blend. Strong story for autumn / winter retail drops. Sold individually or as a co-ordinated pair with the navy version (AH-KD-KT-009).</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Cotton-Linen Blend</span><span class="product-badge">Screen Print</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><picture><source srcset="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-011.webp" type="image/webp"><img src="images/Kitchen%20and%20Dining/Kitchen%20Towels/AH-KD-KT-011.jpg" alt="AH-KD-KT-011 Pre-Washed Solid Coral Cotton Kitchen Towel" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></picture></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-KT-011</p>
+          <h3 class="product-name">Pre-Washed Solid Coral Cotton Kitchen Towel</h3>
+          <p class="product-desc">A heavyweight solid-dye cotton kitchen towel in a pre-washed, soft coral that develops a beautiful patina with use. Brushed twill construction for outstanding absorbency and fast drying. The everyday workhorse SKU — available in our full solid colour palette including natural, sage, mustard, terracotta and indigo.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Pre-Washed</span><span class="product-badge">Custom Colours</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- APRONS -->
+<section class="section section-alt" id="aprons">
+  <div class="section-inner">
+    <p class="section-label">Kitchen & Dining</p>
+    <h2 class="section-title"><em>Aprons</em></h2>
+    <p class="section-body" style="margin-bottom:48px;">Aprons that people actually want to wear. Made in durable cotton canvas and washed linen, designed for both function and style. Available in bib and cross-back styles, with custom embroidery, printed branding and private label programmes for hospitality and lifestyle retail.</p>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Apron/AH-KD-AP-001.jpg" alt="AH-KD-AP-001 Olive Sage Washed Linen Full Bib Apron" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-AP-001</p>
+          <h3 class="product-name">Olive Sage Washed Linen Full Bib Apron</h3>
+          <p class="product-desc">A relaxed full-bib apron in pre-washed pure linen, dyed in a soft olive-sage — the kind that gets better with every wash. Long waist ties knot at the front, with a generous twin front pocket. Cut for everyday wear in the home and front-of-house hospitality. Available in natural, sage, dusty rose and custom dye colours.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Pure Linen</span><span class="product-badge">Pre-Washed</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Apron/AH-KD-AP-002.jpg" alt="AH-KD-AP-002 Mustard Floral Block Print Bib Apron" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-AP-002</p>
+          <h3 class="product-name">Mustard Floral Block Print Bib Apron</h3>
+          <p class="product-desc">A statement cotton bib apron in warm mustard with a bold ivory floral block-print and contrast black centre detailing. Solid mustard contrast pocket and adjustable neck strap with long waist ties. The graphic, gender-neutral palette makes this a strong gifting and lifestyle retail SKU. Pairs beautifully with our coral and mustard table programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Block Print</span><span class="product-badge">Cotton</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Apron/AH-KD-AP-003.jpg" alt="AH-KD-AP-003 Navy and Terracotta Yarn-Dyed Stripe Bib Apron" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-AP-003</p>
+          <h3 class="product-name">Navy & Terracotta Stripe Yoke Bib Apron</h3>
+          <p class="product-desc">A confident, contrast-stripe cotton bib apron — fine navy and white horizontal stripes on the body, with a bold terracotta and ivory stripe yoke, pocket and waist tie. Yarn-dyed cotton, pre-shrunk. The two-stripe combination reads heritage, considered and a step above standard ticking aprons. A strong premium retail proposition.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Yarn Dyed</span><span class="product-badge">Contrast Yoke</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Apron/AH-KD-AP-004.jpg" alt="AH-KD-AP-004 Natural Cotton Floral Block Print Yoke Apron" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-AP-004</p>
+          <h3 class="product-name">Natural Cotton Floral Yoke Apron</h3>
+          <p class="product-desc">A natural cotton bib apron with a warm green and coral floral block-print yoke, matching pocket and contrast-printed hem. The contrast-print panelling on a clean undyed body keeps the look modern and considered, rather than busy. A versatile mid-price-point SKU that sits well in lifestyle, kitchen and gifting ranges.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Block Print</span><span class="product-badge">Contrast Panelled</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Apron/AH-KD-AP-005.jpg" alt="AH-KD-AP-005 Sage and Rust Botanical Kantha Style Print Apron" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-AP-005</p>
+          <h3 class="product-name">Sage & Rust Botanical Kantha-Print Apron</h3>
+          <p class="product-desc">A printed cotton bib apron in a colour-blocked sage and rust botanical design with kantha-effect stitch motifs, finished with a contrast natural cotton patch pocket and a scalloped hem. The earthy palette and craft-led print give it a rich, story-driven look — ideal for premium lifestyle and gifting programmes.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Kantha Print</span><span class="product-badge">Scalloped Hem</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image" style="background:#f0e8dc;"><img src="images/Kitchen%20and%20Dining/Apron/AH-KD-AP-006.jpg" alt="AH-KD-AP-006 Navy and Green Hibiscus Floral Block Print Bib Apron" style="width:100%;height:100%;object-fit:contain;" loading="lazy"></div>
+        <div class="product-info">
+          <p class="product-ref" style="font-size:10px;letter-spacing:2px;color:var(--terracotta);font-weight:700;margin-bottom:6px;">AH-KD-AP-006</p>
+          <h3 class="product-name">Navy & Green Hibiscus Block Print Apron</h3>
+          <p class="product-desc">A cotton bib apron in deep navy with an oversized green hibiscus floral block-print and ivory button-flower centres. Solid navy patch pocket and adjustable neck strap. The bold-scale floral on a saturated dark ground reads as an on-trend "modern tropical" — strong appeal for lifestyle and design-led retail programmes. Co-ordinates with our mustard floral apron AH-KD-AP-002.</p>
+          <div class="product-badges"><span class="product-badge">OEKO-TEX</span><span class="product-badge">Block Print</span><span class="product-badge">Co-ordinated Range</span></div>
+          <a href="contact.html" class="product-options">Request Details →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="section section-white">
+  <div class="section-inner" style="text-align: center;">
+    <h2 class="section-title" style="margin-bottom: 32px;">Elevate Your Kitchen</h2>
+    <p class="section-body" style="margin: 0 auto 40px; max-width: 600px;">
+      Explore our full kitchen and dining collection. Request samples, discuss custom options, or place wholesale orders for your retail or hospitality needs.
+    </p>
+    <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+      <button class="btn-primary">Request Trade Catalogue</button>
+      <a href="contact.html" style="padding: 16px 36px; border: 2px solid var(--green); color: var(--green); text-decoration: none; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; font-family: 'Raleway', sans-serif; cursor: pointer; display: inline-block;">Contact Sales</a>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED_COLLECTIONS -->
+<section class="section section-alt" style="padding:80px 0;">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:56px;">
+      <p class="section-label">Explore More Collections</p>
+      <h2 class="section-title">The Full Abhi Home <em>Range</em></h2>
+      <p class="section-body" style="max-width:680px;margin:16px auto 0;">From bedding to bath, kitchen to floor coverings &mdash; every textile we make is woven, printed or hand-finished at our India facility under the same international certifications.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+      <a href="cushions.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--terracotta);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">Soft Furnishings</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Decorative Cushion Covers</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Embroidered, tufted, woven and printed cushions for global retail and hospitality programmes.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">Explore Cushions &rarr;</span>
+      </a>
+      <a href="bedding.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--terracotta);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">Signature Collection</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Duvet Covers, Quilts & Bedspreads</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Quilts, bedspreads, duvet covers and sheet sets — GOTS organic and BCI cotton on request.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">Explore Bedding &rarr;</span>
+      </a>
+      <a href="bath.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--terracotta);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">Bath Collection</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Towels, Bath Mats & Shower Curtains</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">OEKO-TEX certified bath mats, towels and shower curtains in tufted and woven constructions.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">Explore Bath &rarr;</span>
+      </a>
+      <a href="throws.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--terracotta);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">Soft Furnishings</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Cotton & Linen Throws and Blankets</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Block print, bouclé, stripe and pom-pom throws woven in cotton and recycled blends.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">Explore Throws &rarr;</span>
+      </a>
+      <a href="pouffe.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--terracotta);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">Floor & Seating</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Handcrafted Pouffes & Floor Cushions</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Handcrafted pouffes and floor seating in cotton, recycled blends and mixed textiles.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">Explore Pouffes &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- /RELATED_COLLECTIONS -->
+<!-- COUNTRY_PROGRAMMES -->
+<section class="section section-white" style="padding:80px 0;">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:56px;">
+      <p class="section-label">Country Programmes</p>
+      <h2 class="section-title">Kitchen Linen for <em>Global Retailers</em></h2>
+      <p class="section-body" style="max-width:680px;margin:16px auto 0;">Country-specific sourcing pages for buyers in our priority markets. Each page covers import logistics, port routing, certifications and MOQs for that market.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+      <a href="kitchen-linen-manufacturer-us.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--green);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">USA</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Kitchen Linen for USA Retailers</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Private-label tea towels, aprons, table runners and placemats shipped to <strong>Los Angeles / Long Beach</strong> and <strong>New York / Newark</strong>, with full OEKO-TEX, GOTS and GRS certification.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">View USA Programme &rarr;</span>
+      </a>
+      <a href="kitchen-linen-manufacturer-uk.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--green);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">UK</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Kitchen Linen for UK Retailers</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Private-label tea towels, aprons, table runners and placemats shipped to <strong>Felixstowe</strong> and <strong>Southampton</strong>, with full OEKO-TEX, GOTS and GRS certification.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">View UK Programme &rarr;</span>
+      </a>
+      <a href="kitchen-linen-manufacturer-de.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--green);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">Germany</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Kitchen Linen for Germany Retailers</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Private-label tea towels, aprons, table runners and placemats shipped to <strong>Hamburg</strong> and <strong>Bremerhaven</strong>, with full OEKO-TEX, GOTS and GRS certification.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">View Germany Programme &rarr;</span>
+      </a>
+      <a href="kitchen-linen-manufacturer-fr.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--green);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">France</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Kitchen Linen for France Retailers</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Private-label tea towels, aprons, table runners and placemats shipped to <strong>Le Havre</strong> and <strong>Marseille-Fos</strong>, with full OEKO-TEX, GOTS and GRS certification.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">View France Programme &rarr;</span>
+      </a>
+      <a href="kitchen-linen-manufacturer-ca.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--green);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">Canada</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Kitchen Linen for Canada Retailers</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Private-label tea towels, aprons, table runners and placemats shipped to <strong>Vancouver</strong> and <strong>Montreal</strong>, with full OEKO-TEX, GOTS and GRS certification.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">View Canada Programme &rarr;</span>
+      </a>
+      <a href="kitchen-linen-manufacturer-au.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--green);padding:32px 28px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 32px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:12px;">Australia</p>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--green);margin-bottom:12px;line-height:1.3;">Kitchen Linen for Australia Retailers</h3>
+        <p style="font-family:'Raleway',sans-serif;font-size:14px;color:#4a4a4a;line-height:1.6;margin-bottom:20px;">Private-label tea towels, aprons, table runners and placemats shipped to <strong>Sydney (Port Botany)</strong> and <strong>Melbourne</strong>, with full OEKO-TEX, GOTS and GRS certification.</p>
+        <span style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:700;">View Australia Programme &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- /COUNTRY_PROGRAMMES -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-cert-strip">
+      <span class="footer-cert">Sedex Registered</span>
+      <span class="footer-cert">ISO 9001:2015</span>
+      <span class="footer-cert">ISO 14001</span>
+      <span class="footer-cert">OEKO-TEX® 100</span>
+      <span class="footer-cert">GRS Certified</span>
+      <span class="footer-cert">GOTS Approved</span>
+      <span class="footer-cert">OCS 100</span>
+      <span class="footer-cert">BCI Member</span>
+      <span class="footer-cert">Higg Index Verified</span>
+    </div>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">Abhi Home® <span>By Abhijat Paliwal</span></div>
+        <p class="footer-tagline">"Bringing warmth to every corner, responsibly."</p>
+        <div class="footer-contact">
+          info@abhihome.in<br>
+          <a href="https://wa.me/919817031900" target="_blank" style="color: var(--terracotta);">WhatsApp: +91 98170 31900</a><br>
+          www.abhihome.in
+        </div>
+        <!-- LINKEDIN_LINK:BEGIN -->
+        <div class="footer-social" style="margin-top:20px;display:flex;align-items:center;gap:10px;">
+          <a href="https://www.linkedin.com/company/13447691/" target="_blank" rel="noopener noreferrer" aria-label="Follow Abhi Home on LinkedIn" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(196,168,130,0.4);border-radius:50%;color:#C4A882;text-decoration:none;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='#C4A882';this.style.color='#2C2C2C';" onmouseout="this.style.background='transparent';this.style.color='#C4A882';"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.452 20.452h-3.554V14.84c0-1.34-.026-3.06-1.867-3.06-1.867 0-2.153 1.458-2.153 2.963v5.71H9.324V9h3.414v1.561h.048c.476-.9 1.637-1.852 3.369-1.852 3.6 0 4.268 2.37 4.268 5.451v6.292zM5.337 7.433a2.064 2.064 0 01-2.064-2.065 2.064 2.064 0 112.064 2.065zm1.777 13.019H3.56V9h3.554v11.452zM22.227 0H1.77C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.454C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0h.002z"/></svg></a>
+          <span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(196,168,130,0.9);font-weight:600;">Follow on LinkedIn</span>
+        </div>
+        <!-- LINKEDIN_LINK:END -->
+        <!-- BRAND_NOTICE -->
+        <p class="footer-notice" style="font-size: 10px; opacity: 0.7; margin-top: 14px; line-height: 1.55; letter-spacing: 0.3px;">
+          Official website: <strong>www.abhihome.in</strong> &mdash; Abhi Home<sup>&reg;</sup> is a registered trademark, trading since 1965. We are not affiliated with any other domain or business.
+        </p>
+        <!-- /BRAND_NOTICE -->
+      </div>
+      <div>
+        <p class="footer-col-title">Products</p>
+        <ul class="footer-links">
+          <li><a href="bedding.html">Bedding</a></li>
+          <li><a href="cushions.html">Cushions</a></li>
+          <li><a href="throws.html">Throws & Blankets</a></li>
+          <li><a href="curtains.html">Curtains</a></li>
+          <li><a href="bath.html">Bath Textiles</a></li>
+          <li><a href="kitchen.html">Kitchen & Dining</a></li>
+          <li><a href="pouffe.html">Pouffe & Seating</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="jobs.html">Job Inquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Trade</p>
+        <ul class="footer-links">
+          <li><a href="contact.html">Request a Catalogue</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Private Label</a></li>
+          <li><a href="contact.html">Custom Development</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Abhi Home® is a registered trademark of Abhijat Paliwal. All rights reserved.</span>
+      <span>India's Premier Certified Sustainable Home Textiles Manufacturer</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/lightbox.js"></script>
+</body>
+</html>
