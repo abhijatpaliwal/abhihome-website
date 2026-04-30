@@ -99,18 +99,22 @@ nav {
 .nav-inner {
   display: flex;
   justify-content: center;
-  gap: 36px;
-  padding: 14px 60px;
-  max-width: 1400px;
+  align-items: center;
+  gap: 30px;
+  padding: 14px 40px;
+  max-width: 1600px;
   margin: 0 auto;
   font-size: 12px;
-  letter-spacing: 2px;
+  letter-spacing: 1.6px;
   text-transform: uppercase;
   font-weight: 600;
+  flex-wrap: wrap;
 }
 .nav-inner a {
   color: var(--charcoal);
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .nav-inner a:hover { color: var(--green); }
 
