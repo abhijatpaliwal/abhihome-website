@@ -485,6 +485,16 @@ nav {
   text-decoration: none;
   border-bottom: 1px solid var(--terracotta);
 }
+/* Whole-tile clickable: tile is now an <a> tag */
+a.collection-tile {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+a.collection-tile:hover .tile-link {
+  color: var(--cream);
+  border-bottom-color: var(--cream);
+}
 
 /* ── WHY ABHI HOME ── */
 .pillars-grid {
