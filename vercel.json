@@ -93,6 +93,13 @@
     { "source": "/macrame-cushion",              "destination": "/cushions.html", "permanent": true },
     { "source": "/copy-of-decorative-cushions",  "destination": "/cushions.html", "permanent": true },
 
+    { "source": "/floor-cushion",                "destination": "/pouffe.html",   "permanent": true },
+    { "source": "/floor-cushions",               "destination": "/pouffe.html",   "permanent": true },
+    { "source": "/ottomans",                     "destination": "/pouffe.html",   "permanent": true },
+    { "source": "/ottoman",                      "destination": "/pouffe.html",   "permanent": true },
+    { "source": "/poufs",                        "destination": "/pouffe.html",   "permanent": true },
+    { "source": "/pouf",                         "destination": "/pouffe.html",   "permanent": true },
+
     { "source": "/outdoor-throws",               "destination": "/throws.html",   "permanent": true },
     { "source": "/valentine-throws",             "destination": "/throws.html",   "permanent": true },
     { "source": "/christmas-tree-skirts",        "destination": "/throws.html",   "permanent": true },
