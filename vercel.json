@@ -99,6 +99,17 @@
     { "source": "/ottoman",                      "destination": "/pouffe.html",   "permanent": true },
     { "source": "/poufs",                        "destination": "/pouffe.html",   "permanent": true },
     { "source": "/pouf",                         "destination": "/pouffe.html",   "permanent": true },
+    { "source": "/drum-cylinder-pouf",           "destination": "/pouffe.html",   "permanent": true },
+
+    { "source": "/woven-throws",                 "destination": "/throws.html",   "permanent": true },
+
+    { "source": "/yarn-dyed-loom-rug",           "destination": "/rugs.html",     "permanent": true },
+
+    { "source": "/solid-core",                   "destination": "/cushions.html", "permanent": true },
+    { "source": "/valentine-cushions",           "destination": "/cushions.html", "permanent": true },
+
+    { "source": "/valentine-categories",         "destination": "/",              "permanent": true },
+    { "source": "/laundry-basket",               "destination": "/",              "permanent": true },
 
     { "source": "/outdoor-throws",               "destination": "/throws.html",   "permanent": true },
     { "source": "/valentine-throws",             "destination": "/throws.html",   "permanent": true },
