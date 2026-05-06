@@ -1012,3 +1012,56 @@ textarea {
   /* Section title */
   .section-title { font-size: clamp(28px, 8vw, 40px); }
 }
+
+/* ── WHATSAPP ICON BUTTON ──
+   Clean branded button used wherever a WhatsApp contact appears */
+.wa-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #25D366;
+  color: #fff !important;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+  font-family: 'Raleway', sans-serif;
+}
+.wa-btn:hover {
+  background: #1ebe5b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37,211,102,0.35);
+}
+.wa-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+/* Compact icon-only variant (for tight spaces like announcement bar) */
+.wa-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #25D366;
+  color: #fff !important;
+  border-radius: 50%;
+  text-decoration: none !important;
+  vertical-align: middle;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.wa-icon:hover {
+  transform: scale(1.08);
+  box-shadow: 0 3px 10px rgba(37,211,102,0.35);
+}
+.wa-icon svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
