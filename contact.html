@@ -329,21 +329,21 @@
       <div>
         <p class="section-label">Trade Enquiry Form</p>
         <!-- MS Forms iframe wrapped in overflow:hidden container to crop Microsoft branding footer.
-             Adjust heights below if form is cut off on your screen size:
-               desktop wrap = 1100px, iframe = 1300px (200px clip at bottom)
-               mobile  wrap = 1500px, iframe = 1700px (200px clip at bottom) -->
-        <div class="ms-form-wrap" style="position: relative; width: 100%; max-width: 640px; height: 1100px; overflow: hidden; margin: 0 auto;">
+             Form has 8 fields + orange header + disclaimer; needs ~2400px desktop, ~3000px mobile.
+             If form is cut off (last field or submit button missing), bump both heights up by 200px.
+             If excess whitespace below the form, trim both heights by 200px. -->
+        <div class="ms-form-wrap" style="position: relative; width: 100%; max-width: 640px; height: 2400px; overflow: hidden; margin: 0 auto;">
           <iframe
             src="https://forms.office.com/Pages/ResponsePage.aspx?id=9P6lqyeVYU-F5C3e8t096IBJ1_v_8WhGrpNf-_858GBURDg3V1lPOTlYTFc5RlZVOUtFSzhaTUhKVS4u&embed=true"
-            style="width: 100%; height: 1300px; border: none;"
+            style="width: 100%; height: 2600px; border: none;"
             frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
             allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen>
           </iframe>
         </div>
         <style>
           @media (max-width: 640px) {
-            .ms-form-wrap { height: 1500px; }
-            .ms-form-wrap iframe { height: 1700px; }
+            .ms-form-wrap { height: 3000px; }
+            .ms-form-wrap iframe { height: 3200px; }
           }
         </style>
       </div>
