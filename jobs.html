@@ -136,7 +136,7 @@
       cursor: pointer;
       background: var(--cream, #FAF8F5);
       transition: border-color 0.2s, background 0.2s;
-      position: relative;
+      display: block;
     }
     .file-upload-area:hover,
     .file-upload-area.drag-over {
@@ -144,12 +144,7 @@
       background: rgba(45,74,62,0.04);
     }
     .file-upload-area input[type="file"] {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      cursor: pointer;
-      width: 100%;
-      height: 100%;
+      display: none;
     }
     .file-upload-icon {
       font-size: 28px;
@@ -433,12 +428,12 @@
 
             <div class="form-group">
               <label for="applicantCv">Upload CV / Resume</label>
-              <div class="file-upload-area" id="fileDropZone">
-                <input type="file" id="applicantCv" name="cv" accept=".pdf,.doc,.docx" aria-label="Upload your CV">
+              <label class="file-upload-area" id="fileDropZone" for="applicantCv">
+                <input type="file" id="applicantCv" name="cv" accept=".pdf,.doc,.docx">
                 <div class="file-upload-icon">📎</div>
                 <div class="file-upload-label">Click to upload or drag &amp; drop</div>
                 <div class="file-upload-hint">PDF, DOC or DOCX · Max 5 MB</div>
-              </div>
+              </label>
               <div class="file-chosen" id="fileChosen"></div>
             </div>
 
