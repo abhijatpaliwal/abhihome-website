@@ -173,7 +173,7 @@ module.exports = async function handler(req, res) {
     if (resumeBase64 && resumeName) {
       await odooCreate(ODOO_URL, ODOO_DB, uid, ODOO_API_KEY, 'ir.attachment', {
         name:      resumeName,
-        datas:     { __base64: resumeBase64 },
+        datas:     resumeBase64,
         res_model: 'hr.applicant',
         res_id:    applicantId,
         mimetype:  resumeMime || 'application/octet-stream',
