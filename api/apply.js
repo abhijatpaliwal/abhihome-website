@@ -142,22 +142,31 @@ module.exports = async function handler(req, res) {
     // 1. Authenticate with Odoo
     const uid = await odooAuthenticate(ODOO_URL, ODOO_DB, ODOO_USERNAME, ODOO_API_KEY);
 
-    // 2. Build the description
-    const description = [
-      `Position applied for: ${position}`,
-      phone ? `Phone / WhatsApp: ${phone}` : '',
-      coverLetter ? `\nCover Letter:\n${coverLetter}` : '',
-      `\nSubmitted via: www.abhihome.in/jobs.html`,
-    ].filter(Boolean).join('\n');
-
-    // 3. Create hr.applicant record
+    // 2. Create hr.applicant record (Odoo 19: no 'description' field)
     const applicantId = await odooCreate(ODOO_URL, ODOO_DB, uid, ODOO_API_KEY, 'hr.applicant', {
       partner_name:  name,
       email_from:    email,
       partner_phone: phone || '',
-      description:   description,
-      // Maps the position text to the applicant's "Applied Job" field (free text fallback)
-      // If you have specific job positions configured in Odoo HR, replace with job_id: <id>
+    });
+
+    // 3. Post department + cover letter as an internal note on the applicant
+    const noteHtml = [
+      '<strong>Department Applied For:</strong> ' + position,
+      phone ? '<strong>Phone / WhatsApp:</strong> ' + phone : '',
+      coverLetter ? '<strong>Cover Letter:</strong><br>' + coverLetter.replace(/\n/g, '<br>') : '',
+      '<em>Submitted via abhihome.in/jobs.html</em>',
+    ].filter(Boolean).join('<br><br>');
+
+    const noteXml = buildXmlRpc('execute_kw', [
+      ODOO_DB, uid, ODOO_API_KEY,
+      'hr.applicant', 'message_post',
+      [[applicantId]],
+      { body: noteHtml, message_type: 'comment', subtype_xmlid: 'mail.mt_note' },
+    ]);
+    await fetch(ODOO_URL + '/xmlrpc/2/object', {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/xml', 'Accept': 'text/xml' },
+      body: noteXml,
     });
 
     // 4. Attach CV / resume (if provided)
