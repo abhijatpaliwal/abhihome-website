@@ -9,7 +9,7 @@
  *   ODOO_API_KEY   API key from Odoo → My Profile → Account Security → New API Key
  */
 
-export const config = {
+module.exports.config = {
   api: {
     bodyParser: {
       sizeLimit: '6mb', // allow up to 6 MB for CV upload (base64 is ~33% larger than file)
@@ -105,7 +105,7 @@ async function odooCreate(url, db, uid, apiKey, model, fields) {
 
 // ─── Main handler ──────────────────────────────────────────────────────────
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Only accept POST
   if (req.method !== 'POST') {
     return res.status(405).json({ success: false, message: 'Method not allowed.' });
