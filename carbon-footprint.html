@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#2D4A3E">
+  <title>Our Carbon Footprint &amp; Tree Plantation Programme | Abhi Home®</title>
+  <meta name="description" content="See our live tree-plantation counter. Abhi Home® plants 900 trees every month at the Trees for Tribals® project in Shahbad, Rajasthan, in partnership with Grow-Trees.com. Target: 10,000+ trees in 2026.">
+  <meta property="og:title" content="Our Carbon Footprint — Abhi Home® Tree Plantation Programme">
+  <meta property="og:description" content="Live counter of trees planted by Abhi Home® at Trees for Tribals®, Shahbad, Rajasthan. 900 trees every month. Target 10,000+ in 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.abhihome.in/carbon-footprint.html">
+  <meta property="og:site_name" content="Abhi Home">
+  <meta property="og:image" content="https://www.abhihome.in/images/plantation/plantation-site-1.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Carbon Footprint — Abhi Home®">
+  <meta name="twitter:description" content="Live counter of trees planted by Abhi Home®. 900 trees every month.">
+  <meta name="twitter:image" content="https://www.abhihome.in/images/plantation/plantation-site-1.jpg">
+  <link rel="canonical" href="https://www.abhihome.in/carbon-footprint.html">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="Abhi Home">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green:      #2D4A3E;
+      --green-light:#3D5F52;
+      --cream:      #FAF8F5;
+      --sand:       #F0E8DC;
+      --terracotta: #C4A882;
+      --gold:       #B5904A;
+      --charcoal:   #2C2C2C;
+      --gray-mid:   #8A8480;
+      --stone:      #E8E2D9;
+      --white:      #FFFFFF;
+    }
+    body {
+      font-family: 'Raleway', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .announcement-bar {
+      background: var(--green);
+      color: var(--cream);
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      font-weight: 500;
+    }
+    header {
+      background: var(--cream);
+      border-bottom: 1px solid var(--stone);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 60px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--green);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .logo span {
+      font-size: 13px;
+      display: block;
+      letter-spacing: 4px;
+      color: var(--terracotta);
+      font-weight: 400;
+      margin-top: -4px;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 13px;
+      color: var(--gray-mid);
+      letter-spacing: 1px;
+    }
+    .header-actions a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .btn-catalogue {
+      background: var(--green);
+      color: var(--cream) !important;
+      padding: 10px 22px;
+      letter-spacing: 1.5px;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 2px;
+    }
+    nav {
+      background: var(--cream);
+      border-bottom: 1px solid var(--stone);
+    }
+    .nav-inner {
+      display: flex;
+      gap: 36px;
+      padding: 14px 60px;
+      max-width: 1400px;
+      margin: 0 auto;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .nav-inner a {
+      color: var(--charcoal);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-inner a:hover, .nav-inner a.active { color: var(--green); }
+
+    /* === PAGE-SPECIFIC === */
+    .cf-hero {
+      background: linear-gradient(135deg, #1f3a2f 0%, #2D4A3E 50%, #3D5F52 100%);
+      color: var(--cream);
+      padding: 90px 40px 100px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cf-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(196,168,130,0.08) 0%, transparent 60%),
+        radial-gradient(circle at 80% 70%, rgba(181,144,74,0.06) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .cf-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    .cf-eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .cf-headline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(34px, 5vw, 56px);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+    .cf-headline em {
+      color: var(--terracotta);
+      font-style: italic;
+    }
+    .cf-subhead {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: clamp(18px, 2.2vw, 24px);
+      color: rgba(250,248,245,0.78);
+      margin-bottom: 56px;
+    }
+    .ticker-card {
+      background: rgba(250,248,245,0.06);
+      border: 1px solid rgba(196,168,130,0.25);
+      border-radius: 6px;
+      padding: 50px 40px 44px;
+      max-width: 720px;
+      margin: 0 auto;
+      backdrop-filter: blur(4px);
+    }
+    .ticker-label {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+    .ticker-count {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(72px, 11vw, 132px);
+      font-weight: 500;
+      line-height: 1;
+      color: var(--cream);
+      letter-spacing: -2px;
+      margin-bottom: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+    .ticker-suffix {
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(250,248,245,0.6);
+      font-weight: 500;
+      margin-bottom: 32px;
+    }
+    .ticker-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 22px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(196,168,130,0.2);
+    }
+    .ticker-meta-item .num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      color: var(--terracotta);
+      font-weight: 500;
+      display: block;
+      line-height: 1.2;
+    }
+    .ticker-meta-item .lbl {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(250,248,245,0.55);
+      margin-top: 4px;
+    }
+    .cf-hero-note {
+      margin-top: 32px;
+      font-size: 12px;
+      color: rgba(250,248,245,0.55);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* === STORY SECTION === */
+    .cf-section {
+      padding: 90px 40px;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    .cf-section-eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .cf-section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 400;
+      color: var(--green);
+      text-align: center;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+    .cf-section-title em {
+      font-style: italic;
+      color: var(--terracotta);
+    }
+    .cf-section-sub {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 56px;
+      font-size: 16px;
+      color: var(--gray-mid);
+      line-height: 1.8;
+    }
+
+    .pledge-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 30px;
+    }
+    .pledge-card {
+      background: var(--white);
+      border: 1px solid var(--stone);
+      border-radius: 4px;
+      padding: 40px 30px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .pledge-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(45,74,62,0.08);
+    }
+    .pledge-icon {
+      font-size: 36px;
+      margin-bottom: 18px;
+      color: var(--terracotta);
+    }
+    .pledge-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 52px;
+      font-weight: 500;
+      color: var(--green);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .pledge-unit {
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .pledge-text {
+      font-size: 14px;
+      color: var(--gray-mid);
+      line-height: 1.6;
+    }
+
+    /* === PROJECT SECTION === */
+    .project-section {
+      background: var(--sand);
+      padding: 90px 40px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      max-width: 1180px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    .project-info h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      font-weight: 400;
+      color: var(--green);
+      letter-spacing: 0.5px;
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+    .project-info h3 em { color: var(--terracotta); font-style: italic; }
+    .project-info p {
+      font-size: 15px;
+      color: var(--charcoal);
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+    .project-spec {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 4px 20px;
+      margin-top: 32px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(45,74,62,0.18);
+    }
+    .project-spec dt {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 600;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(196,168,130,0.18);
+    }
+    .project-spec dd {
+      font-size: 14px;
+      color: var(--charcoal);
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(196,168,130,0.18);
+    }
+    .project-spec dd:last-of-type, .project-spec dt:nth-last-of-type(1) { border-bottom: none; }
+    .partner-credit {
+      margin-top: 32px;
+      padding: 22px 26px;
+      background: var(--white);
+      border-left: 3px solid var(--terracotta);
+      font-size: 13px;
+      color: var(--gray-mid);
+      line-height: 1.7;
+    }
+    .partner-credit strong { color: var(--green); }
+    .project-image-stack {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .project-image-stack img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 4px;
+      filter: saturate(0.95);
+    }
+    .project-image-stack img:first-child {
+      grid-column: 1 / span 2;
+      height: 280px;
+    }
+
+    /* === IMPACT SECTION === */
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 20px;
+    }
+    .impact-card {
+      text-align: center;
+      padding: 32px 18px;
+      border: 1px solid var(--stone);
+      border-radius: 4px;
+      background: var(--white);
+    }
+    .impact-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 38px;
+      color: var(--green);
+      font-weight: 500;
+      line-height: 1.1;
+      display: block;
+    }
+    .impact-num em { color: var(--terracotta); font-style: italic; font-size: 22px; }
+    .impact-lbl {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 600;
+      margin: 10px 0 6px;
+    }
+    .impact-desc {
+      font-size: 12px;
+      color: var(--gray-mid);
+      line-height: 1.5;
+    }
+    .impact-note {
+      text-align: center;
+      font-size: 11px;
+      color: var(--gray-mid);
+      margin-top: 24px;
+      font-style: italic;
+    }
+
+    /* === GALLERY === */
+    .gallery-section {
+      background: var(--cream);
+      padding: 90px 40px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    .gallery-grid figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 4px;
+      position: relative;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+    .gallery-grid figure:hover img { transform: scale(1.06); }
+    .gallery-grid figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px 14px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: var(--cream);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .gallery-grid figure:hover figcaption { opacity: 1; }
+    .gallery-credit {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+      color: var(--gray-mid);
+      letter-spacing: 1px;
+    }
+    .gallery-credit a { color: var(--green); text-decoration: none; border-bottom: 1px solid var(--terracotta); }
+
+    /* === CTA STRIP === */
+    .cta-strip {
+      background: var(--green);
+      color: var(--cream);
+      padding: 70px 40px;
+      text-align: center;
+    }
+    .cta-strip h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 400;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+    .cta-strip h3 em { color: var(--terracotta); font-style: italic; }
+    .cta-strip p {
+      max-width: 640px;
+      margin: 0 auto 28px;
+      color: rgba(250,248,245,0.75);
+      font-size: 15px;
+    }
+    .cta-strip-buttons { display: inline-flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .cta-btn-primary {
+      background: var(--terracotta);
+      color: var(--green) !important;
+      padding: 14px 32px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .cta-btn-primary:hover { background: var(--gold); }
+    .cta-btn-outline {
+      border: 1px solid rgba(196,168,130,0.6);
+      color: var(--cream) !important;
+      padding: 14px 32px;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 2px;
+    }
+    .cta-btn-outline:hover { background: rgba(196,168,130,0.15); }
+
+    @media (max-width: 900px) {
+      .header-top, .nav-inner { padding-left: 24px; padding-right: 24px; }
+      .nav-inner { flex-wrap: wrap; gap: 18px; font-size: 11px; }
+      .header-actions { gap: 12px; font-size: 11px; }
+      .header-actions span { display: none; }
+      .pledge-grid { grid-template-columns: 1fr; }
+      .project-grid { grid-template-columns: 1fr; gap: 40px; }
+      .impact-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .ticker-meta { grid-template-columns: 1fr; gap: 14px; }
+      .ticker-card { padding: 36px 22px; }
+      .cf-section { padding: 60px 22px; }
+      .project-section, .gallery-section { padding: 60px 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT -->
+<div class="announcement-bar">Three Generations of Indian Craftsmanship · Since 1965</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo">
+      Abhi Home®
+      <span>By Abhijat Paliwal</span>
+    </div>
+    <div class="header-actions">
+      <span>info@abhihome.in</span>
+      <a href="infrastructure.html">Infrastructure</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html" class="btn-catalogue" style="text-decoration:none;">Request Trade Catalogue</a>
+    </div>
+  </div>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="bedding.html">Bedding</a>
+      <a href="cushions.html">Cushions</a>
+      <a href="throws.html">Throws &amp; Blankets</a>
+      <a href="curtains.html">Curtains</a>
+      <a href="bath.html">Bath Textiles</a>
+      <a href="kitchen.html">Kitchen &amp; Dining</a>
+      <a href="pouffe.html">Pouffe &amp; Seating</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO + TICKER -->
+<section class="cf-hero">
+  <div class="cf-hero-inner">
+    <p class="cf-eyebrow">Our Carbon Footprint · Programme Live Counter</p>
+    <h1 class="cf-headline">Planting a forest, <em>tree by tree.</em></h1>
+    <p class="cf-subhead">Because beautiful homes shouldn't cost the planet.</p>
+
+    <div class="ticker-card">
+      <p class="ticker-label">Trees Planted by Abhi Home®</p>
+      <div class="ticker-count tree-ticker-count" data-animate="true" data-duration="2000">0</div>
+      <p class="ticker-suffix">… and counting</p>
+      <div class="ticker-meta">
+        <div class="ticker-meta-item">
+          <span class="num"><span class="tree-ticker-goal">10,000+</span></span>
+          <span class="lbl">2026 Target</span>
+        </div>
+        <div class="ticker-meta-item">
+          <span class="num">900</span>
+          <span class="lbl">Trees / Month</span>
+        </div>
+        <div class="ticker-meta-item">
+          <span class="num">Rajasthan</span>
+          <span class="lbl">Plantation Site</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="cf-hero-note">Live counter · Updates automatically every day</p>
+  </div>
+</section>
+
+<!-- THE PLEDGE -->
+<section class="cf-section">
+  <p class="cf-section-eyebrow">The Abhi Home Pledge</p>
+  <h2 class="cf-section-title">Beyond textiles &mdash; <em>regenerating land.</em></h2>
+  <p class="cf-section-sub">
+    Manufacturing leaves a footprint. We don't pretend otherwise. What we can do is take responsibility &mdash;
+    measure it, reduce it where possible, and offset what remains by planting native trees on degraded tribal land in India.
+    Our partnership with Grow-Trees.com adds new trees every single month, year after year.
+  </p>
+
+  <div class="pledge-grid">
+    <div class="pledge-card">
+      <div class="pledge-icon">🌱</div>
+      <div class="pledge-num">900</div>
+      <p class="pledge-unit">Every Month</p>
+      <p class="pledge-text">Native trees planted at the Trees for Tribals® project, every single month without fail.</p>
+    </div>
+    <div class="pledge-card">
+      <div class="pledge-icon">🌳</div>
+      <div class="pledge-num"><span class="tree-ticker-goal">10,000+</span></div>
+      <p class="pledge-unit">Target for 2026</p>
+      <p class="pledge-text">Our annual goal &mdash; a small forest's worth of trees added in a single calendar year.</p>
+    </div>
+    <div class="pledge-card">
+      <div class="pledge-icon">📜</div>
+      <div class="pledge-num">100%</div>
+      <p class="pledge-unit">Verified Plantings</p>
+      <p class="pledge-text">Every batch is certified by Grow-Trees.com with photos, geo-tags, and species data from the field.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROJECT -->
+<section class="project-section">
+  <div class="project-grid">
+    <div class="project-info">
+      <p class="cf-section-eyebrow" style="text-align:left;">Where Your Trees Grow</p>
+      <h3>Trees for Tribals<sup style="font-size:14px;">®</sup> &mdash; <em>Shahbad, Rajasthan</em></h3>
+      <p>
+        Our trees are planted in the Shahbad block of Baran District in southeastern Rajasthan &mdash; one of
+        India's most ecologically vulnerable regions. The land here belongs to Sahariya tribal communities,
+        whose livelihoods depend on the forest for fuel, fodder, fruit, and medicine.
+      </p>
+      <p>
+        Through Grow-Trees.com's "Trees for Tribals®" programme, indigenous species like <em>Tectona grandis</em>
+        (teak), <em>Emblica officinalis</em> (amla), <em>Acacia catechu</em>, <em>Dalbergia sissoo</em> (sheesham),
+        and <em>Psidium guajava</em> (guava) are raised in community-run nurseries and planted by local tribal
+        families &mdash; who are also paid wages for the work.
+      </p>
+
+      <dl class="project-spec">
+        <dt>Project</dt><dd>Trees for Tribals®</dd>
+        <dt>Location</dt><dd>Shahbad, Baran District, Rajasthan, India</dd>
+        <dt>Beneficiaries</dt><dd>Sahariya tribal community</dd>
+        <dt>Species</dt><dd>Native &mdash; teak, amla, sheesham, acacia, guava</dd>
+        <dt>Partner</dt><dd>Grow-Trees.com (Pangea EcoNet Assets Pvt Ltd.)</dd>
+        <dt>Frequency</dt><dd>900 trees · every month</dd>
+      </dl>
+
+      <div class="partner-credit">
+        <strong>About our partner:</strong> Grow-Trees.com is a UN-recognised social enterprise that has facilitated the
+        planting of over 22 million trees across India. They handle nursery, planting, geo-tagging, and 5-year maintenance.
+        Every batch we fund is certified and photographically documented &mdash; you can view the certificate for our
+        most recent batch <a href="https://www.grow-trees.com/certificate.php?cid=NTUzODQyMg" target="_blank" rel="noopener" style="color:var(--green);border-bottom:1px solid var(--terracotta);text-decoration:none;">here</a>.
+      </div>
+    </div>
+
+    <div class="project-image-stack">
+      <img src="images/plantation/plantation-site-1.jpg" alt="Trees for Tribals plantation site in Shahbad, Baran District, Rajasthan" loading="lazy">
+      <img src="images/plantation/plantation-team-1.jpg" alt="Local Sahariya community planting saplings" loading="lazy">
+      <img src="images/plantation/plantation-nursery.jpg" alt="Community-run tree nursery preparing saplings" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="cf-section">
+  <p class="cf-section-eyebrow">Why It Matters</p>
+  <h2 class="cf-section-title">The compounding impact of <em>one tree.</em></h2>
+  <p class="cf-section-sub">
+    A single mature tree absorbs roughly 22&nbsp;kg of CO<sub>2</sub> per year, releases enough oxygen for two people,
+    cools its surroundings, and prevents soil erosion. Multiply that by the trees on this page.
+  </p>
+
+  <div class="impact-grid">
+    <div class="impact-card">
+      <span class="impact-num"><span class="tree-ticker-co2">~27</span><em> t/yr</em></span>
+      <p class="impact-lbl">CO<sub>2</sub> Absorbed</p>
+      <p class="impact-desc">At maturity, our current trees will absorb tens of tonnes of CO<sub>2</sub> each year.</p>
+    </div>
+    <div class="impact-card">
+      <span class="impact-num"><span class="tree-ticker-oxygen">~2,400</span></span>
+      <p class="impact-lbl">People &middot; Oxygen</p>
+      <p class="impact-desc">Enough oxygen produced annually for thousands of people, once the trees mature.</p>
+    </div>
+    <div class="impact-card">
+      <span class="impact-num">5&nbsp;<em>yrs</em></span>
+      <p class="impact-lbl">Maintenance</p>
+      <p class="impact-desc">Every sapling we fund is cared for by the local community for at least 5 years.</p>
+    </div>
+    <div class="impact-card">
+      <span class="impact-num">100%&nbsp;<em>native</em></span>
+      <p class="impact-lbl">Indigenous Species</p>
+      <p class="impact-desc">Only species native to the region &mdash; no monocultures, no invasive plants.</p>
+    </div>
+  </div>
+  <p class="impact-note">Estimates based on Grow-Trees.com programme averages and FAO data for mixed-native plantings.</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <p class="cf-section-eyebrow">From the Field</p>
+  <h2 class="cf-section-title">Photos from <em>our plantation site.</em></h2>
+  <p class="cf-section-sub">
+    Images shared by Grow-Trees.com field teams from the Shahbad project &mdash; nursery preparation, sapling raising,
+    community planting drives, and progress checks.
+  </p>
+
+  <div class="gallery-grid">
+    <figure><img src="images/plantation/plantation-site-1.jpg" alt="Plantation site overview, Shahbad Rajasthan" loading="lazy"><figcaption>Site overview · Shahbad</figcaption></figure>
+    <figure><img src="images/plantation/plantation-site-2.jpg" alt="Newly planted saplings in tribal land" loading="lazy"><figcaption>Newly planted saplings</figcaption></figure>
+    <figure><img src="images/plantation/plantation-team-1.jpg" alt="Community planting drive" loading="lazy"><figcaption>Community planting drive</figcaption></figure>
+    <figure><img src="images/plantation/plantation-team-2.jpg" alt="Local team at work" loading="lazy"><figcaption>Local team at work</figcaption></figure>
+    <figure><img src="images/plantation/plantation-nursery.jpg" alt="Sapling nursery" loading="lazy"><figcaption>Sapling nursery</figcaption></figure>
+    <figure><img src="images/plantation/plantation-seedlings.jpg" alt="Seed germination" loading="lazy"><figcaption>Seed germination</figcaption></figure>
+    <figure><img src="images/plantation/plantation-saplings.jpg" alt="Polybag filling for saplings" loading="lazy"><figcaption>Polybag preparation</figcaption></figure>
+    <figure><img src="images/plantation/plantation-community.jpg" alt="Community involvement in nursery work" loading="lazy"><figcaption>Community involvement</figcaption></figure>
+  </div>
+
+  <p class="gallery-credit">
+    Photos courtesy <a href="https://www.grow-trees.com" target="_blank" rel="noopener">Grow-Trees.com</a> &middot;
+    <a href="https://www.grow-trees.com/certificate.php?cid=NTUzODQyMg" target="_blank" rel="noopener">View our latest certificate</a>
+  </p>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <h3>Partner with a manufacturer that <em>plants forward.</em></h3>
+  <p>
+    Working with Abhi Home® means every order you place contributes to a year-round plantation programme.
+    Ask us about co-branded sustainability reporting for your stores or annual reports.
+  </p>
+  <div class="cta-strip-buttons">
+    <a href="contact.html" class="cta-btn-primary">Request Trade Catalogue</a>
+    <a href="sustainability.html" class="cta-btn-outline">Our Sustainability Story</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-cert-strip">
+      <span class="footer-cert">Sedex Registered</span>
+      <span class="footer-cert">ISO 9001:2015</span>
+      <span class="footer-cert">ISO 14001</span>
+      <span class="footer-cert">OEKO-TEX® 100</span>
+      <span class="footer-cert">GRS Certified</span>
+      <span class="footer-cert">GOTS Approved</span>
+      <span class="footer-cert">OCS 100</span>
+      <span class="footer-cert">BCI Member</span>
+      <span class="footer-cert">Higg Index Verified</span>
+    </div>
+
+    <!-- FOOTER TREE TICKER (compact) -->
+    <div class="footer-tree-strip" style="text-align:center;padding:18px 20px;margin-bottom:34px;border:1px solid rgba(196,168,130,0.25);border-radius:4px;background:rgba(196,168,130,0.06);">
+      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#C4A882;font-weight:600;margin-bottom:6px;">🌳 Live Tree Counter</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;color:#FAF8F5;line-height:1;letter-spacing:0.5px;">
+        <span class="tree-ticker-count" data-animate="true" data-duration="1500">0</span>
+        <span style="font-size:14px;color:rgba(250,248,245,0.55);letter-spacing:2px;text-transform:uppercase;margin-left:8px;">trees planted</span>
+      </div>
+      <div style="font-size:11px;color:rgba(250,248,245,0.5);margin-top:6px;letter-spacing:1px;">Target <span class="tree-ticker-goal">10,000+</span> in 2026 · <a href="carbon-footprint.html" style="color:#C4A882;text-decoration:none;border-bottom:1px solid rgba(196,168,130,0.4);">See our plantation programme →</a></div>
+    </div>
+
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">Abhi Home® <span>By Abhijat Paliwal</span></div>
+        <p class="footer-tagline">"Bringing warmth to every corner, responsibly."</p>
+        <div class="footer-contact">
+          info@abhihome.in<br>
+          <a href="https://wa.me/919817031900" target="_blank" style="color: var(--terracotta);">WhatsApp Us</a><br>
+          www.abhihome.in
+        </div>
+        <p class="footer-notice" style="font-size: 10px; opacity: 0.7; margin-top: 14px; line-height: 1.55; letter-spacing: 0.3px;">
+          Official website: <strong>www.abhihome.in</strong> &mdash; Abhi Home<sup>&reg;</sup> is a registered trademark, trading since 1965. We are not affiliated with any other domain or business.
+        </p>
+      </div>
+      <div>
+        <p class="footer-col-title">Products</p>
+        <ul class="footer-links">
+          <li><a href="bedding.html">Bedding</a></li>
+          <li><a href="cushions.html">Cushions</a></li>
+          <li><a href="throws.html">Throws &amp; Blankets</a></li>
+          <li><a href="curtains.html">Curtains</a></li>
+          <li><a href="bath.html">Bath Textiles</a></li>
+          <li><a href="kitchen.html">Kitchen &amp; Dining</a></li>
+          <li><a href="pouffe.html">Pouffe &amp; Seating</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+          <li><a href="carbon-footprint.html">Carbon Footprint</a></li>
+          <li><a href="infrastructure.html">Infrastructure</a></li>
+          <li><a href="jobs.html">Job Inquiry</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-use.html">Terms of Use</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Trade</p>
+        <ul class="footer-links">
+          <li><a href="contact.html">Request a Catalogue</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Private Label</a></li>
+          <li><a href="contact.html">Custom Development</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Abhi Home® is a registered trademark of Abhijat Paliwal. All rights reserved.</span>
+      <span>India's Premier Certified Sustainable Home Textiles Manufacturer</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/tree-ticker.js"></script>
+<script>
+  // Update impact numbers based on live tree count
+  document.addEventListener('DOMContentLoaded', function() {
+    if (!window.AbhiTreeTicker) return;
+    var trees = window.AbhiTreeTicker.treesOnDate();
+    // CO2 ~22 kg/yr per mature tree => tonnes/yr
+    var co2 = Math.round(trees * 22 / 1000);
+    var oxygen = Math.round(trees * 2); // 2 people per mature tree
+    var co2El = document.querySelector('.tree-ticker-co2');
+    var oxyEl = document.querySelector('.tree-ticker-oxygen');
+    if (co2El) co2El.textContent = '~' + window.AbhiTreeTicker.fmt(co2);
+    if (oxyEl) oxyEl.textContent = '~' + window.AbhiTreeTicker.fmt(oxygen);
+  });
+</script>
+
+</body>
+</html>
