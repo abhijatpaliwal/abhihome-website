@@ -11,6 +11,7 @@ Disallow: /*?*gclid
 Disallow: /wp-admin/
 Disallow: /cgi-bin/
 Disallow: /search?
+Disallow: /downloads/
 
 # AI crawlers — explicitly allow so ChatGPT, Perplexity, Claude, Gemini can cite us
 User-agent: GPTBot
