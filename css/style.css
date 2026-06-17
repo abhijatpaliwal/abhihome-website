@@ -1020,7 +1020,7 @@ textarea {
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
-  background: #25D366;
+  background: var(--green);
   color: #fff !important;
   border-radius: 999px;
   font-size: 12px;
@@ -1032,9 +1032,9 @@ textarea {
   font-family: 'Raleway', sans-serif;
 }
 .wa-btn:hover {
-  background: #1ebe5b;
+  background: var(--green-light);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(37,211,102,0.35);
+  box-shadow: 0 4px 12px rgba(45,74,62,0.28);
 }
 .wa-btn svg {
   width: 16px;
@@ -1049,7 +1049,7 @@ textarea {
   justify-content: center;
   width: 30px;
   height: 30px;
-  background: #25D366;
+  background: var(--green);
   color: #fff !important;
   border-radius: 50%;
   text-decoration: none !important;
@@ -1058,10 +1058,15 @@ textarea {
 }
 .wa-icon:hover {
   transform: scale(1.08);
-  box-shadow: 0 3px 10px rgba(37,211,102,0.35);
+  box-shadow: 0 3px 10px rgba(45,74,62,0.28);
 }
 .wa-icon svg {
   width: 16px;
   height: 16px;
   fill: currentColor;
 }
+
+/* On-brand WhatsApp outline pill (overrides earlier WhatsApp-green .wa-btn/.wa-icon) */
+.wa-btn, .wa-icon{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:auto;height:auto;padding:8px 16px;background:transparent;border:1.5px solid var(--green);color:var(--green) !important;border-radius:999px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;text-decoration:none;transition:background .2s ease,color .2s ease;}
+.wa-btn:hover, .wa-icon:hover{background:var(--green);color:var(--cream) !important;transform:none;box-shadow:none;}
+.wa-btn svg, .wa-icon svg{width:15px;height:15px;fill:currentColor;flex-shrink:0;}
