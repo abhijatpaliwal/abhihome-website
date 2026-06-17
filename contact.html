@@ -332,24 +332,52 @@
       </div>
       <div>
         <p class="section-label">Trade Enquiry Form</p>
-        <!-- MS Forms iframe wrapped in overflow:hidden container to crop Microsoft branding footer.
-             Form has 8 fields + orange header + disclaimer; needs ~2400px desktop, ~3000px mobile.
-             If form is cut off (last field or submit button missing), bump both heights up by 200px.
-             If excess whitespace below the form, trim both heights by 200px. -->
-        <div class="ms-form-wrap" style="position: relative; width: 100%; max-width: 640px; height: 2400px; overflow: hidden; margin: 0 auto;">
-          <iframe
-            src="https://forms.office.com/Pages/ResponsePage.aspx?id=9P6lqyeVYU-F5C3e8t096IBJ1_v_8WhGrpNf-_858GBURDg3V1lPOTlYTFc5RlZVOUtFSzhaTUhKVS4u&embed=true"
-            style="width: 100%; height: 2600px; border: none;"
-            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
-            allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen>
-          </iframe>
-        </div>
+        <!-- Native trade enquiry form -> Odoo CRM (api/enquiry.js) -->
+        <form id="enquiry-form">
+          <input type="text" name="name" placeholder="Your name*" required autocomplete="name">
+          <input type="text" name="company" placeholder="Company" autocomplete="organization">
+          <input type="email" name="email" placeholder="Email*" required autocomplete="email">
+          <input type="tel" name="phone" placeholder="Phone / WhatsApp (optional)" autocomplete="tel">
+          <input type="text" name="country" placeholder="Country" autocomplete="country-name">
+          <select name="product" aria-label="Product interest">
+            <option value="">Product interest...</option>
+            <option>Bedding</option><option>Cushions</option><option>Throws &amp; Blankets</option><option>Curtains</option>
+            <option>Bath Textiles</option><option>Kitchen &amp; Dining</option><option>Pouffe &amp; Seating</option><option>Rugs</option>
+            <option>Private label / OEM</option><option>Other</option>
+          </select>
+          <textarea name="message" rows="5" placeholder="What are you sourcing? Quantities, timelines, designs..."></textarea>
+          <input type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+          <button type="submit">Send Enquiry</button>
+          <p id="enquiry-status" role="status" aria-live="polite"></p>
+        </form>
+        <p style="font-size:13px;color:var(--gray-mid);margin-top:14px;">Prefer to chat? <a href="https://wa.me/919817031900" target="_blank" rel="noopener" style="color:var(--green);font-weight:600;text-decoration:none;">WhatsApp us</a> &middot; or email <a href="mailto:info@abhihome.in" style="color:var(--green);font-weight:600;text-decoration:none;">info@abhihome.in</a></p>
         <style>
-          @media (max-width: 640px) {
-            .ms-form-wrap { height: 3000px; }
-            .ms-form-wrap iframe { height: 3200px; }
-          }
+          #enquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px;}
+          #enquiry-form input,#enquiry-form select,#enquiry-form textarea{width:100%;padding:13px 15px;border:1px solid var(--stone);background:#fff;color:var(--charcoal);font-family:'Raleway',sans-serif;font-size:14px;border-radius:2px;}
+          #enquiry-form textarea{grid-column:1/-1;}
+          #enquiry-form ::placeholder{color:#8A847E;}
+          #enquiry-form button{grid-column:1/-1;background:var(--green);color:var(--cream);border:none;padding:16px;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;}
+          #enquiry-form button:disabled{opacity:0.6;cursor:default;}
+          #enquiry-status{grid-column:1/-1;font-size:14px;color:var(--green);min-height:20px;margin:0;}
+          @media (max-width:600px){#enquiry-form{grid-template-columns:1fr;}}
         </style>
+        <script>
+        (function(){
+          var f=document.getElementById("enquiry-form"); if(!f) return;
+          var s=document.getElementById("enquiry-status"), btn=f.querySelector("button");
+          f.addEventListener("submit",function(e){
+            e.preventDefault();
+            var fd=new FormData(f), data={}; fd.forEach(function(v,k){data[k]=v;});
+            if(data.company_website){ s.style.color="var(--green)"; s.textContent="Thank you."; f.reset(); return; }
+            btn.disabled=true; s.style.color="var(--gray-mid)"; s.textContent="Sending...";
+            fetch("/api/enquiry",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
+              .then(function(r){return r.json().catch(function(){return {success:r.ok};});})
+              .then(function(j){ if(j&&j.success){ f.reset(); s.style.color="var(--green)"; s.textContent="Thank you - your enquiry has reached our team. We will reply within 48 hours."; } else { throw new Error((j&&j.message)||"error"); } })
+              .catch(function(){ s.style.color="#B5302A"; s.innerHTML="Sorry, something went wrong. Please email <a href='mailto:info@abhihome.in' style='color:var(--green);'>info@abhihome.in</a>."; })
+              .finally(function(){ btn.disabled=false; });
+          });
+        })();
+        </script>
       </div>
     </div>
   </div>
