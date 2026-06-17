@@ -1428,7 +1428,7 @@
   <div style="max-width:720px;margin:0 auto;text-align:center;">
     <p style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:16px;">Trade Enquiries</p>
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,48px);font-weight:400;color:var(--cream);line-height:1.15;margin-bottom:14px;">Let's Build Your Next <em style="font-style:italic;">Range</em></h2>
-    <p style="font-size:15px;color:rgba(250,248,245,0.82);line-height:1.7;margin-bottom:8px;">Private label, custom development or wholesale - tell us what you're sourcing and our team replies within 48 hours.</p>
+    <p style="font-size:15px;color:rgba(250,248,245,0.82);line-height:1.7;margin-bottom:8px;">Private label, custom development or wholesale - tell us what you're sourcing and our team replies within 12 working hours.</p>
     <p style="font-size:12px;letter-spacing:1px;color:rgba(250,248,245,0.55);margin-bottom:30px;">Private label &amp; OEM &middot; Low MOQs &middot; OEKO-TEX&reg; &amp; GOTS certified &middot; Shipped to 22 countries</p>
   </div>
   <form id="enquiry-form" style="max-width:720px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;">
@@ -1467,7 +1467,7 @@
       btn.disabled=true; s.style.color="rgba(250,248,245,0.85)"; s.textContent="Sending...";
       fetch("/api/enquiry",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
         .then(function(r){return r.json().catch(function(){return {success:r.ok};});})
-        .then(function(j){ if(j&&j.success){ f.reset(); s.style.color="#fff"; s.textContent="Thank you - your enquiry has reached our team. We will reply within 48 hours."; } else { throw new Error((j&&j.message)||"error"); } })
+        .then(function(j){ if(j&&j.success){ f.reset(); s.style.color="#fff"; s.textContent="Thank you - your enquiry has reached our team. We will reply within 12 working hours."; } else { throw new Error((j&&j.message)||"error"); } })
         .catch(function(){ s.style.color="#F3C9B5"; s.innerHTML="Sorry, something went wrong. Please email <a href='mailto:info@abhihome.in' style='color:#fff;'>info@abhihome.in</a>."; })
         .finally(function(){ btn.disabled=false; });
     });

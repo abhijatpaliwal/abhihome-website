@@ -311,7 +311,7 @@
 
   <div style="max-width:780px;margin-bottom:52px;">
         <p class="section-label">Response Time</p>
-        <h2 class="section-title">We'll Get Back<br>Within <em>48 Hours</em></h2>
+        <h2 class="section-title">We'll Get Back<br>Within <em>12 Working Hours</em></h2>
         <p class="section-body">
           Whether you're looking for bulk orders, custom development, private label solutions, or simply want to learn more about our certifications and capabilities, our team is here to help.
         </p>
@@ -339,7 +339,7 @@
         </div>
         <div style="border-top:1px solid var(--stone);margin-top:24px;padding-top:18px;">
           <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin:0 0 4px;">Response Time</p>
-          <p style="font-size:14px;color:var(--charcoal);margin:0;">Within 48 hours</p>
+          <p style="font-size:14px;color:var(--charcoal);margin:0;">Within 12 working hours</p>
         </div>
         <p style="font-size:12px;color:var(--gray-mid);margin-top:18px;line-height:1.55;"><strong>www.abhihome.in</strong> is the only official website of ABHI HOME&reg;. We are not associated with any similarly named website or company.</p>
       </div>
@@ -386,7 +386,7 @@
             btn.disabled=true; s.style.color="var(--gray-mid)"; s.textContent="Sending...";
             fetch("/api/enquiry",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
               .then(function(r){return r.json().catch(function(){return {success:r.ok};});})
-              .then(function(j){ if(j&&j.success){ f.reset(); s.style.color="var(--green)"; s.textContent="Thank you - your enquiry has reached our team. We will reply within 48 hours."; } else { throw new Error((j&&j.message)||"error"); } })
+              .then(function(j){ if(j&&j.success){ f.reset(); s.style.color="var(--green)"; s.textContent="Thank you - your enquiry has reached our team. We will reply within 12 working hours."; } else { throw new Error((j&&j.message)||"error"); } })
               .catch(function(){ s.style.color="#B5302A"; s.innerHTML="Sorry, something went wrong. Please email <a href='mailto:info@abhihome.in' style='color:var(--green);'>info@abhihome.in</a>."; })
               .finally(function(){ btn.disabled=false; });
           });
