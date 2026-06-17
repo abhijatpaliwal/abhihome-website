@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=optional" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" as="image" href="images/home/hero.webp" fetchpriority="high">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -463,7 +464,7 @@
     .tile-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(45,74,62,0.85) 0%, transparent 60%);
+      background: linear-gradient(to top, rgba(26,42,35,0.95) 0%, rgba(26,42,35,0.84) 18%, rgba(26,42,35,0.42) 45%, rgba(26,42,35,0) 70%);
     }
     .tile-content {
       position: absolute;
@@ -719,6 +720,65 @@
       font-size: 13px;
       color: #856404;
       letter-spacing: 1px;
+    }
+
+    /* ── REAL PHOTOGRAPHY ── */
+    .hero-bg {
+      background: linear-gradient(rgba(22,38,31,0.52), rgba(20,34,28,0.68)),
+                  url('images/home/hero.webp') center 42% / cover no-repeat;
+    }
+    .heritage-img, .tile-img, .teaser-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .heritage-image .image-caption-tag {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      z-index: 2;
+    }
+    /* Card-lift on hover (we intentionally do NOT zoom the photo) */
+    .collection-tile { transition: transform .3s ease, box-shadow .3s ease; }
+    .collection-tile:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(45,74,62,0.20); }
+    .collection-tile:hover .tile-image { transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      .collection-tile { transition: none; }
+      .collection-tile:hover { transform: none; }
+    }
+
+    /* ── RESPONSIVE (added last so it overrides the earlier inline rules) ── */
+    @media (max-width: 1024px) {
+      .pillars-grid { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 768px) {
+      .header-top { padding: 12px 20px; flex-wrap: wrap; gap: 10px; }
+      .header-actions { gap: 14px; font-size: 12px; }
+      .header-actions > span { display: none; }
+      nav { overflow: hidden; }
+      .nav-inner { gap: 18px; padding: 10px 20px; font-size: 10px; letter-spacing: 1.5px; justify-content: flex-start; overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+      .nav-inner a { white-space: nowrap; }
+      .hero { height: 78vh; min-height: 460px; }
+      .section { padding: 56px 20px; }
+      .section-inner { padding-left: 16px; padding-right: 16px; }
+      .cert-bar, .sustainability-banner { padding: 48px 20px; }
+      .heritage-grid, .two-col, .sust-inner { grid-template-columns: 1fr; gap: 34px; }
+      .heritage-text { padding-left: 0; }
+      .two-col-reverse { direction: ltr; }
+      .collections-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+      .collection-tile:first-child { grid-column: span 2; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 30px; }
+      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .collections-grid { grid-template-columns: 1fr; }
+      .collection-tile:first-child { grid-column: span 1; }
+      .pillars-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+      .hero-headline { font-size: clamp(34px, 9vw, 52px); }
     }
   </style>
   <!-- BEGIN SEO BLOCK (auto-generated) -->
@@ -1022,18 +1082,15 @@
   <div class="section-inner">
     <div class="heritage-grid">
       <div class="heritage-image">
-        <div class="heritage-image-pattern"></div>
-        <div class="heritage-image-inner">
-          <div class="loom-icon"></div>
-          <span class="image-caption-tag">The Craft Behind the Brand</span>
-        </div>
+        <img class="heritage-img" src="images/home/heritage.webp" alt="Folded stack of handcrafted Abhi Home cotton textiles with block-print and embroidery" loading="lazy" width="1000" height="1250">
+        <span class="image-caption-tag">Heritage Craft · Modern Manufacturing</span>
       </div>
       <div class="heritage-text">
         <p class="generation-number">3rd</p>
         <p class="section-label">Family Heritage</p>
         <h2 class="section-title">Three Generations<br>of <em>Indian Craft</em></h2>
         <p class="section-body">
-          What began as a family passion for textile craftsmanship has grown, generation by generation, into one of India's most certified sustainable home textiles manufacturers. Three generations of knowledge — passed from looms to ledgers — shape every product we make today.
+          What began as a family passion for textile craftsmanship has grown, generation by generation, into one of India's most certified sustainable home textiles manufacturers. Three generations of knowledge — passed from looms to ledgers — shape every product we make today. That inheritance of hand skills now runs alongside state-of-the-art looms and modern manufacturing technology — traditional craft, modern precision, built to global scale.
         </p>
         <p class="section-body" style="margin-top: 16px;">
           Today, Abhijat Paliwal leads the business with the same values instilled by his family: uncompromising quality, honest manufacturing, and a genuine belief that beautiful things should be made responsibly.
@@ -1055,7 +1112,7 @@
     <div class="collections-grid">
       <a class="collection-tile" href="bedding.html">
         <div class="tile-image">
-          <div class="tile-pattern tile-pattern-1"></div>
+          <img class="tile-img" src="images/home/tile-bedding.webp" alt="Patchwork cotton quilt and bedding styled on a bed" loading="lazy" width="1500" height="844">
           <div class="tile-overlay"></div>
           <div class="tile-content">
             <p class="tile-category">Signature Collection</p>
@@ -1067,7 +1124,7 @@
       </a>
       <a class="collection-tile" href="bath.html">
         <div class="tile-image">
-          <div class="tile-pattern tile-pattern-2"></div>
+          <img class="tile-img" src="images/home/tile-bath.webp" alt="Cotton bath mat with folded towels in a bright bathroom" loading="lazy" width="1000" height="750">
           <div class="tile-overlay"></div>
           <div class="tile-content">
             <p class="tile-category">Bath Collection</p>
@@ -1079,7 +1136,7 @@
       </a>
       <a class="collection-tile" href="cushions.html">
         <div class="tile-image">
-          <div class="tile-pattern tile-pattern-3"></div>
+          <img class="tile-img" src="images/home/tile-cushions.webp" alt="Green textured handwoven cotton cushion cover" loading="lazy" width="1000" height="750">
           <div class="tile-overlay"></div>
           <div class="tile-content">
             <p class="tile-category">Soft Furnishings</p>
@@ -1091,7 +1148,7 @@
       </a>
       <a class="collection-tile" href="throws.html">
         <div class="tile-image">
-          <div class="tile-pattern tile-pattern-3" style="background: linear-gradient(135deg, #4A6741, #2D4A3E, #6B5744);"></div>
+          <img class="tile-img" src="images/home/tile-throws.webp" alt="Caramel woven cotton throw draped over an armchair" loading="lazy" width="1000" height="750">
           <div class="tile-overlay"></div>
           <div class="tile-content">
             <p class="tile-category">Soft Furnishings</p>
@@ -1103,7 +1160,7 @@
       </a>
       <a class="collection-tile" href="kitchen.html">
         <div class="tile-image">
-          <div class="tile-pattern tile-pattern-1" style="background: linear-gradient(135deg, #8A6B4A, #2D4A3E, #4A3728);"></div>
+          <img class="tile-img" src="images/home/tile-kitchen.webp" alt="Dining table set with a cotton table runner, placemats and napkins" loading="lazy" width="1000" height="750">
           <div class="tile-overlay"></div>
           <div class="tile-content">
             <p class="tile-category">Kitchen & Dining</p>
@@ -1115,7 +1172,7 @@
       </a>
       <a class="collection-tile" href="curtains.html">
         <div class="tile-image">
-          <div class="tile-pattern tile-pattern-3" style="background: linear-gradient(135deg, #5A6B7A, #2D4A3E, #8A8478);"></div>
+          <img class="tile-img" src="images/home/tile-curtains.webp" alt="Sage green striped cotton curtains at a sunlit window" loading="lazy" width="1000" height="750">
           <div class="tile-overlay"></div>
           <div class="tile-content">
             <p class="tile-category">Window Textiles</p>
@@ -1127,7 +1184,7 @@
       </a>
       <a class="collection-tile" href="pouffe.html">
         <div class="tile-image">
-          <div class="tile-pattern tile-pattern-2" style="background: linear-gradient(135deg, #2D4A3E, #6B5744, #3D5F52);"></div>
+          <img class="tile-img" src="images/home/tile-pouffe.webp" alt="Handwoven colour-block cotton pouffe in a living room" loading="lazy" width="1000" height="750">
           <div class="tile-overlay"></div>
           <div class="tile-content">
             <p class="tile-category">Floor & Seating</p>
@@ -1139,7 +1196,7 @@
       </a>
       <a class="collection-tile" href="rugs.html">
         <div class="tile-image">
-          <div class="tile-pattern tile-pattern-2" style="background: linear-gradient(135deg, #6B5744, #2D4A3E, #8A6F52);"></div>
+          <img class="tile-img" src="images/home/tile-rugs.webp" alt="Contemporary handwoven flatweave rug in a modern living room" loading="lazy" width="1000" height="750">
           <div class="tile-overlay"></div>
           <div class="tile-content">
             <p class="tile-category">Floor Collection</p>
@@ -1215,7 +1272,7 @@
   <div class="section-inner">
     <div class="two-col two-col-reverse">
       <div class="teaser-image">
-        <div class="teaser-image-pattern"></div>
+        <img class="teaser-img" src="images/home/teaser-pouffe.webp" alt="Handwoven cotton pouffe styled in a living room" loading="lazy" width="1000" height="1333">
         <div class="teaser-image-label">Pouffe & Seating Collection</div>
       </div>
       <div>
@@ -1287,62 +1344,62 @@
       <p class="section-body" style="max-width:720px;margin:16px auto 0;">Dedicated sourcing pages for buyers in our priority export markets. Each page covers port logistics, lead times, certifications and MOQs for that country.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
-      <a href="bedding-manufacturer-us.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="bedding-manufacturer-us.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">USA</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for USA Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Los Angeles and New York/Newark</p>
       </a>
-      <a href="bedding-manufacturer-ca.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="bedding-manufacturer-ca.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Canada</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Canada Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Vancouver and Montreal</p>
       </a>
-      <a href="cushion-manufacturer-mx.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="cushion-manufacturer-mx.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Mexico</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushions for Mexico Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Manzanillo and Veracruz</p>
       </a>
-      <a href="bedding-manufacturer-br.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="bedding-manufacturer-br.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Brazil</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Brazil Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Santos and Itaja&iacute;</p>
       </a>
-      <a href="cushion-manufacturer-uk.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="cushion-manufacturer-uk.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">United Kingdom</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushions for UK Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Felixstowe and Southampton</p>
       </a>
-      <a href="bedding-manufacturer-de.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="bedding-manufacturer-de.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Germany</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Germany Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Hamburg and Bremerhaven</p>
       </a>
-      <a href="cushion-manufacturer-fr.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="cushion-manufacturer-fr.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">France</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushions for France Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Le Havre and Marseille-Fos</p>
       </a>
-      <a href="cushion-manufacturer-it.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="cushion-manufacturer-it.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Italy</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushions for Italy Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Genoa and La Spezia</p>
       </a>
-      <a href="bedding-manufacturer-es.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="bedding-manufacturer-es.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Spain</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Spain Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Valencia and Algeciras</p>
       </a>
-      <a href="bedding-manufacturer-au.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="bedding-manufacturer-au.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Australia</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Australia Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Sydney and Melbourne</p>
       </a>
-      <a href="bath-textile-manufacturer-jp.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="bath-textile-manufacturer-jp.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Japan</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bath Textiles for Japan Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Tokyo and Yokohama</p>
       </a>
-      <a href="bath-textile-manufacturer-ae.html" style="display:block;text-decoration:none;background:#fff;border-left:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
+      <a href="bath-textile-manufacturer-ae.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">UAE</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bath Textiles for UAE Retailers</h3>
         <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Jebel Ali (Dubai) and Khor Fakkan</p>
