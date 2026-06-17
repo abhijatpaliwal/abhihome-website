@@ -1424,18 +1424,55 @@
 <!-- /COUNTRY_PROGRAMMES -->
 
 <!-- TRADE ENQUIRY CTA -->
-<section style="background:var(--green);padding:84px 30px;text-align:center;">
-  <div style="max-width:760px;margin:0 auto;">
+<section id="enquiry" style="background:var(--green);padding:84px 30px;">
+  <div style="max-width:720px;margin:0 auto;text-align:center;">
     <p style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:16px;">Trade Enquiries</p>
-    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,48px);font-weight:400;color:var(--cream);line-height:1.15;margin-bottom:18px;">Let's Build Your Next <em style="font-style:italic;">Range</em></h2>
-    <p style="font-size:16px;color:rgba(250,248,245,0.82);line-height:1.7;margin-bottom:14px;">Private label, custom development or wholesale — tell us what you're sourcing and our team replies within 48 hours.</p>
-    <p style="font-size:12px;letter-spacing:1px;color:rgba(250,248,245,0.6);margin-bottom:32px;">Private label &amp; OEM &middot; Low MOQs &middot; OEKO-TEX&reg; &amp; GOTS certified &middot; Shipped to 22 countries</p>
-    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
-      <a href="contact.html" style="background:var(--cream);color:var(--green);padding:16px 36px;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;font-family:'Raleway',sans-serif;text-decoration:none;">Request a Trade Catalogue</a>
-      <a href="https://wa.me/919817031900" target="_blank" rel="noopener" style="background:transparent;color:var(--cream);padding:16px 36px;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:600;font-family:'Raleway',sans-serif;border:2px solid rgba(250,248,245,0.5);text-decoration:none;">WhatsApp Us</a>
-    </div>
-    <p style="font-size:13px;color:rgba(250,248,245,0.65);margin-top:22px;">Or email <a href="mailto:info@abhihome.in" style="color:var(--terracotta);text-decoration:none;">info@abhihome.in</a></p>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,48px);font-weight:400;color:var(--cream);line-height:1.15;margin-bottom:14px;">Let's Build Your Next <em style="font-style:italic;">Range</em></h2>
+    <p style="font-size:15px;color:rgba(250,248,245,0.82);line-height:1.7;margin-bottom:8px;">Private label, custom development or wholesale - tell us what you're sourcing and our team replies within 48 hours.</p>
+    <p style="font-size:12px;letter-spacing:1px;color:rgba(250,248,245,0.55);margin-bottom:30px;">Private label &amp; OEM &middot; Low MOQs &middot; OEKO-TEX&reg; &amp; GOTS certified &middot; Shipped to 22 countries</p>
   </div>
+  <form id="enquiry-form" style="max-width:720px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+    <input type="text" name="name" placeholder="Your name*" required autocomplete="name">
+    <input type="text" name="company" placeholder="Company" autocomplete="organization">
+    <input type="email" name="email" placeholder="Email*" required autocomplete="email">
+    <input type="tel" name="phone" placeholder="Phone / WhatsApp (optional)" autocomplete="tel">
+    <input type="text" name="country" placeholder="Country" autocomplete="country-name">
+    <select name="product" aria-label="Product interest">
+      <option value="">Product interest...</option>
+      <option>Bedding</option><option>Cushions</option><option>Throws &amp; Blankets</option><option>Curtains</option>
+      <option>Bath Textiles</option><option>Kitchen &amp; Dining</option><option>Pouffe &amp; Seating</option><option>Rugs</option>
+      <option>Private label / OEM</option><option>Other</option>
+    </select>
+    <textarea name="message" rows="4" placeholder="What are you sourcing? Quantities, timelines, designs..." style="grid-column:1/-1;"></textarea>
+    <input type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+    <button type="submit">Send Enquiry</button>
+    <p id="enquiry-status" role="status" aria-live="polite" style="grid-column:1/-1;text-align:center;font-size:14px;color:var(--cream);min-height:20px;margin-top:2px;"></p>
+  </form>
+  <p style="max-width:720px;margin:18px auto 0;text-align:center;font-size:13px;color:rgba(250,248,245,0.7);">Prefer to chat? <a href="https://wa.me/919817031900" target="_blank" rel="noopener" style="color:var(--terracotta);text-decoration:none;">WhatsApp us</a> &middot; or email <a href="mailto:info@abhihome.in" style="color:var(--terracotta);text-decoration:none;">info@abhihome.in</a></p>
+  <style>
+    #enquiry-form input,#enquiry-form select,#enquiry-form textarea{width:100%;padding:13px 15px;border:1px solid rgba(250,248,245,0.25);background:rgba(250,248,245,0.97);color:var(--charcoal);font-family:'Raleway',sans-serif;font-size:14px;border-radius:2px;}
+    #enquiry-form ::placeholder{color:#8A847E;}
+    #enquiry-form button{grid-column:1/-1;background:var(--cream);color:var(--green);border:none;padding:16px;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;}
+    #enquiry-form button:disabled{opacity:0.6;cursor:default;}
+    @media (max-width:600px){#enquiry-form{grid-template-columns:1fr;}}
+  </style>
+  <script>
+  (function(){
+    var f=document.getElementById("enquiry-form"); if(!f) return;
+    var s=document.getElementById("enquiry-status"), btn=f.querySelector("button");
+    f.addEventListener("submit",function(e){
+      e.preventDefault();
+      var fd=new FormData(f), data={}; fd.forEach(function(v,k){data[k]=v;});
+      if(data.company_website){ s.style.color="#fff"; s.textContent="Thank you."; f.reset(); return; }
+      btn.disabled=true; s.style.color="rgba(250,248,245,0.85)"; s.textContent="Sending...";
+      fetch("/api/enquiry",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
+        .then(function(r){return r.json().catch(function(){return {success:r.ok};});})
+        .then(function(j){ if(j&&j.success){ f.reset(); s.style.color="#fff"; s.textContent="Thank you - your enquiry has reached our team. We will reply within 48 hours."; } else { throw new Error((j&&j.message)||"error"); } })
+        .catch(function(){ s.style.color="#F3C9B5"; s.innerHTML="Sorry, something went wrong. Please email <a href='mailto:info@abhihome.in' style='color:#fff;'>info@abhihome.in</a>."; })
+        .finally(function(){ btn.disabled=false; });
+    });
+  })();
+  </script>
 </section>
 
 <!-- FOOTER -->
