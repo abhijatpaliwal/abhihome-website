@@ -524,8 +524,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: var(--green);
       font-size: 22px;
     }
+    .pillar-icon svg { width: 28px; height: 28px; }
+    .india-prog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    @media (max-width: 760px) { .india-prog-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .india-prog-grid { grid-template-columns: 1fr; } }
     .pillar-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: 20px;
@@ -1252,22 +1257,22 @@
     </div>
     <div class="pillars-grid">
       <div class="pillar">
-        <div class="pillar-icon">🌿</div>
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21c0-7 5-12 14-13 1 9-4 14-11 14"/><path d="M5 21c3-5 6-7 10-8"/></svg></div>
         <h3 class="pillar-title">Sustainable Manufacturing</h3>
         <p class="pillar-text">Every process from fibre to finish is certified, traceable and responsibly managed.</p>
       </div>
       <div class="pillar">
-        <div class="pillar-icon">✦</div>
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 2.5V11c0 4.3-3 7.6-7 9-4-1.4-7-4.7-7-9V5.5z"/><path d="M9 11.5l2.2 2.2L15 10"/></svg></div>
         <h3 class="pillar-title">Certified Quality</h3>
         <p class="pillar-text">Internationally certified — ISO, OEKO-TEX, GOTS, Higg Index and more.</p>
       </div>
       <div class="pillar">
-        <div class="pillar-icon">🧵</div>
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10M7 20h10"/><path d="M9 4v16M12 4v16M15 4v16"/></svg></div>
         <h3 class="pillar-title">Indian Craftsmanship</h3>
         <p class="pillar-text">Three generations of artisanship combined with contemporary design.</p>
       </div>
       <div class="pillar">
-        <div class="pillar-icon">⊙</div>
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/></svg></div>
         <h3 class="pillar-title">Custom Development</h3>
         <p class="pillar-text">Exclusive ranges, private labels and bespoke programmes — concept to finished product.</p>
       </div>
@@ -1330,7 +1335,7 @@
       <p class="section-body" style="max-width:720px;margin:16px auto 0;">Abhi Home has manufactured home textiles in India since 1965. Category-specific programme pages for international buyers sourcing from India &mdash; with MOQs, lead times, certifications and capability details.</p>
       <p style="margin-top:24px;"><a href="home-textile-manufacturers-india.html" style="display:inline-block;padding:14px 28px;background:var(--green);color:#fff;text-decoration:none;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;">View Master India Hub &rarr;</a></p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
+    <div class="india-prog-grid">
       <a href="cushion-manufacturers-india.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--green);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
         <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">India Programme</p>
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushion Manufacturers in India</h3>
@@ -1516,7 +1521,7 @@
     </div>
         <!-- FOOTER TREE TICKER (compact) -->
     <div class="footer-tree-strip" style="text-align:center;padding:18px 20px;margin-bottom:34px;border:1px solid rgba(196,168,130,0.25);border-radius:4px;background:rgba(196,168,130,0.06);">
-      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#C4A882;font-weight:600;margin-bottom:6px;">&#127795; Live Tree Counter</div>
+      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#C4A882;font-weight:600;margin-bottom:6px;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;margin-right:5px;"><path d="M12 22V10"/><path d="M12 12C8 12 5 9 5 5c4 0 7 3 7 7z"/><path d="M12 11c0-3 3-6 7-6 0 4-3 6-7 6z"/></svg>Live Tree Counter</div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;color:#FAF8F5;line-height:1;letter-spacing:0.5px;">
         <span class="tree-ticker-count" data-animate="true" data-duration="1500">0</span>
         <span style="font-size:14px;color:rgba(250,248,245,0.55);letter-spacing:2px;text-transform:uppercase;margin-left:8px;">trees planted</span>
