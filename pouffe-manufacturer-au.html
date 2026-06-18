@@ -191,6 +191,23 @@
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/_vercel/speed-insights/script.js"></script>
+<style id="ah-mobile-nav">
+/* Mobile hamburger navigation - added 2026-06 */
+.nav-toggle{display:none;}
+@media (max-width:1024px){
+  header nav{position:relative;z-index:1000;display:flex;align-items:center;justify-content:flex-end;padding:8px 20px;overflow:visible;}
+  .nav-toggle{display:inline-flex;align-items:center;gap:10px;background:none;border:0;cursor:pointer;padding:8px 4px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;color:var(--charcoal);}
+  .nav-toggle-bars{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:24px;}
+  .nav-toggle-bars span{display:block;height:2px;width:24px;background:var(--green);transition:transform .3s ease,opacity .2s ease;}
+  header nav .nav-inner{position:absolute;top:100%;left:0;right:0;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;max-width:none;margin:0;padding:0;background:var(--cream);border-top:1px solid var(--stone);box-shadow:0 14px 30px rgba(45,74,62,.16);max-height:0;opacity:0;visibility:hidden;overflow:hidden;transition:max-height .35s ease,opacity .25s ease;}
+  header.nav-open nav .nav-inner{max-height:85vh;opacity:1;visibility:visible;overflow-y:auto;}
+  header nav .nav-inner a{padding:15px 24px;border-bottom:1px solid rgba(45,74,62,.08);white-space:normal;font-size:12px;}
+  header.nav-open .nav-toggle-bars span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  header.nav-open .nav-toggle-bars span:nth-child(2){opacity:0;}
+  header.nav-open .nav-toggle-bars span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+}
+@media (prefers-reduced-motion:reduce){.nav-toggle-bars span,header nav .nav-inner{transition:none;}}
+</style>
 </head>
 <body>
 
@@ -214,7 +231,8 @@
     </div>
   </div>
   <nav>
-    <div class="nav-inner">
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle-text">Menu</span></button>
+    <div class="nav-inner" id="primary-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="bedding.html">Bedding</a>
@@ -574,5 +592,22 @@
 
 <script src="js/lightbox.js"></script>
 <script src="js/tree-ticker.js"></script>
+<script id="ah-mobile-nav-js">
+(function(){
+  var header=document.querySelector('header');
+  var toggle=header&&header.querySelector('.nav-toggle');
+  var navInner=header&&header.querySelector('.nav-inner');
+  if(!header||!toggle||!navInner)return;
+  function setOpen(open){
+    header.classList.toggle('nav-open',open);
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+    toggle.setAttribute('aria-label',open?'Close menu':'Open menu');
+  }
+  toggle.addEventListener('click',function(e){e.stopPropagation();setOpen(!header.classList.contains('nav-open'));});
+  Array.prototype.forEach.call(navInner.querySelectorAll('a'),function(a){a.addEventListener('click',function(){setOpen(false);});});
+  document.addEventListener('click',function(e){if(header.classList.contains('nav-open')&&!header.contains(e.target))setOpen(false);});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'||e.keyCode===27)setOpen(false);});
+})();
+</script>
 </body>
 </html>
