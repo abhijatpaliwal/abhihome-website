@@ -124,6 +124,15 @@
   /** Animate a number from `from` to `to` inside element `el`. */
   function animateCount(el, from, to, durationMs) {
     if (!el) return;
+    // Robustness: if animation can't run (no rAF, or user prefers reduced
+    // motion), show the final number immediately so it is never left at 0
+    // or stuck mid-count on a backgrounded/headless tab.
+    var reduceMotion = (typeof window !== 'undefined' && window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    if (typeof requestAnimationFrame === 'undefined' || reduceMotion) {
+      el.textContent = fmt(to);
+      return;
+    }
     var start = null;
     var ease = function (p) { return 1 - Math.pow(1 - p, 3); }; // ease-out cubic
     function step(ts) {
@@ -145,9 +154,10 @@
     var el = document.getElementById(elementId);
     if (!el) return;
     var total = treesOnDate();
-    if (options.animate === false) {
-      el.textContent = fmt(total);
-    } else {
+    // Always render the correct final number first (single source of truth),
+    // so every page shows the same value even if the count-up never runs.
+    el.textContent = fmt(total);
+    if (options.animate !== false) {
       // Start from a "running" lower number so the count-up feels real
       var start = Math.max(0, total - Math.min(total, 250));
       animateCount(el, start, total, options.durationMs || 1800);
@@ -190,11 +200,13 @@
       var animate = el.getAttribute('data-animate') !== 'false';
       var duration = parseInt(el.getAttribute('data-duration') || '1800', 10);
       var total = treesOnDate();
+      // Render the correct number immediately, then animate as enhancement.
+      // Guarantees every ticker on every page shows the same value, even if
+      // requestAnimationFrame is throttled (background tab) or unavailable.
+      el.textContent = fmt(total);
       if (animate) {
         var start = Math.max(0, total - Math.min(total, 250));
         animateCount(el, start, total, duration);
-      } else {
-        el.textContent = fmt(total);
       }
     }
     // Year goal labels
