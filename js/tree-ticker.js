@@ -22,8 +22,8 @@
   'use strict';
 
   // ---- CONFIG (edit these to re-baseline) --------------------
-  var ANCHOR_DATE     = '2026-05-25'; // YYYY-MM-DD — date of known count
-  var ANCHOR_COUNT    = 1236;          // trees planted on ANCHOR_DATE
+  var ANCHOR_DATE     = '2026-06-08'; // YYYY-MM-DD — date of known count (Grow-Trees cert 5555943)
+  var ANCHOR_COUNT    = 2136;          // trees planted on ANCHOR_DATE (1236 through May + 900 June batch)
   var MONTHLY_PLEDGE  = 900;           // trees added every calendar month
   var YEAR_GOAL       = 10000;         // marketing target for 2026
   var GOAL_YEAR       = 2026;
