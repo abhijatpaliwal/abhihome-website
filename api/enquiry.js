@@ -34,11 +34,11 @@ module.exports = async function handler(req,res){
   if(!U||!D||!N||!K){console.error('Missing Odoo env vars');return res.status(500).json({success:false,message:'Server configuration error.'});}
   var b=req.body||{};
   if(b.company_website) return res.status(200).json({success:true}); // honeypot
-  var name=(b.name||'').trim(),email=(b.email||'').trim(),company=(b.company||'').trim(),phone=(b.phone||'').trim(),country=(b.country||'').trim(),product=(b.product||'').trim(),message=(b.message||'').trim();
+  var name=(b.name||'').trim(),email=(b.email||'').trim(),company=(b.company||'').trim(),phone=(b.phone||'').trim(),country=(b.country||'').trim(),product=(b.product||'').trim(),message=(b.message||'').trim(),consent=(b.consent||'').toString().trim();
   if(!name||!email) return res.status(400).json({success:false,message:'Name and email are required.'});
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return res.status(400).json({success:false,message:'Please enter a valid email.'});
   var title='Website enquiry - '+(company||name)+(product?(' - '+product):'');
-  var desc=[company&&('Company: '+company),country&&('Country: '+country),product&&('Product interest: '+product),phone&&('Phone: '+phone),message&&('Message:\n'+message),'','Source: Website Trade Enquiry (abhihome.in)'].filter(Boolean).join('\n');
+  var desc=[company&&('Company: '+company),country&&('Country: '+country),product&&('Product interest: '+product),phone&&('Phone: '+phone),message&&('Message:\n'+message),'',('Consent: '+(consent?('GIVEN - Privacy Policy accepted at '+new Date().toISOString()):'NOT PROVIDED')),'Source: Website Trade Enquiry (abhihome.in)'].filter(Boolean).join('\n');
   try{
     var uid=parseId(await rpc(U,'/xmlrpc/2/common',buildXmlRpc('authenticate',[D,N,K,{}])));
     if(!uid) throw new Error('Auth failed');

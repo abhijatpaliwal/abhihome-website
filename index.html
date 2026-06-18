@@ -1463,6 +1463,10 @@
     </select>
     <textarea name="message" rows="4" placeholder="What are you sourcing? Quantities, timelines, designs..." style="grid-column:1/-1;"></textarea>
     <input type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+    <label class="consent-row">
+      <input type="checkbox" name="consent" value="yes" required>
+      <span>I agree to Abhi Home&reg; processing my details to respond to this enquiry, as set out in our <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>. We never share your data.</span>
+    </label>
     <button type="submit">Send Enquiry</button>
     <p id="enquiry-status" role="status" aria-live="polite" style="grid-column:1/-1;text-align:center;font-size:14px;color:var(--cream);min-height:20px;margin-top:2px;"></p>
   </form>
@@ -1472,6 +1476,9 @@
     #enquiry-form ::placeholder{color:#8A847E;}
     #enquiry-form button{grid-column:1/-1;background:var(--cream);color:var(--green);border:none;padding:16px;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;}
     #enquiry-form button:disabled{opacity:0.6;cursor:default;}
+    #enquiry-form input[type="checkbox"]{appearance:auto;-webkit-appearance:auto;width:18px;height:18px;min-width:18px;flex:0 0 auto;margin:2px 0 0;padding:0;border:0;background:none;border-radius:0;accent-color:#C4A882;cursor:pointer;}
+    #enquiry-form .consent-row{grid-column:1/-1;display:flex;align-items:flex-start;gap:10px;text-align:left;text-transform:none;letter-spacing:normal;font-weight:400;font-size:12.5px;line-height:1.55;color:rgba(250,248,245,0.82);cursor:pointer;}
+    #enquiry-form .consent-row a{color:#fff;text-decoration:underline;}
     @media (max-width:600px){#enquiry-form{grid-template-columns:1fr;}}
   </style>
   <script>
