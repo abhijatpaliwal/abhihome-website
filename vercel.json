@@ -167,7 +167,16 @@
     { "source": "/kitchen-oven-gloves",           "destination": "/kitchen.html",       "permanent": true },
     { "source": "/christmas-table-linen",         "destination": "/kitchen.html",       "permanent": true },
     { "source": "/christmas-kitchen",             "destination": "/kitchen.html",       "permanent": true },
-    { "source": "/christmas-categories",          "destination": "/",                   "permanent": true }
+    { "source": "/christmas-categories",          "destination": "/",                   "permanent": true },
+
+    { "source": "/kids-rugs",                     "destination": "/rugs.html",          "permanent": true },
+    { "source": "/jacquard-throw",                "destination": "/throws.html",        "permanent": true },
+    { "source": "/embelished-comforters",         "destination": "/bedding.html",       "permanent": true },
+    { "source": "/embellished-comforters",        "destination": "/bedding.html",       "permanent": true },
+    { "source": "/harvest-categories",            "destination": "/",                   "permanent": true },
+    { "source": "/privacy-policy",                "destination": "/privacy-policy.html","permanent": true },
+    { "source": "/web/reset_password",            "destination": "/",                   "permanent": true },
+    { "source": "/web/:path*",                    "destination": "/",                   "permanent": true }
   ],
   "headers": [
     {
