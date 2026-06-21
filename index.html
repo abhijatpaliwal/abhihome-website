@@ -4,793 +4,278 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#2D4A3E">
   <title>Home Textile Manufacturer & Exporter from India | Abhi Home®</title>
-  <meta name="description" content="Third-generation home textile manufacturer in India. Cushions, bedding, kitchen & bath linen, throws, rugs, pouffes. OEKO-TEX, GOTS, GRS, BCI certified.">
+  <meta name="description" content="Certified Indian home textile manufacturer for global retail — fine quality, dependable volumes, competitive pricing. Bedding, cushions, bath, kitchen, throws, rugs. OEKO-TEX, GOTS, GRS, ISO certified. Private label & OEM.">
   <meta property="og:title" content="Home Textile Manufacturer & Exporter | Abhi Home®">
-  <meta property="og:description" content="60 years of Indian craftsmanship. Cushions, bedding, kitchen, bath, throws, rugs. Private label for global retailers.">
+  <meta property="og:description" content="Premium home textiles, built for global retail. Certified, scalable, competitively priced. Private label for retailers worldwide.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=optional" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@300;400;500;600;700&display=optional" rel="stylesheet">
   <link rel="preload" as="image" href="images/home/hero.webp" fetchpriority="high">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* Hallmark · macrostructure: Editorial Lookbook · tone: capable / premium-value B2B · anchor hue: forest-green
+ * pre-emit critique: P4 H4 E4 S4 R4 V4 · roman headers only · brand palette retained · real photography led
+ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{overflow-x:clip;}
 
-    :root {
-      --green:      #2D4A3E;
-      --green-light:#3D5F52;
-      --cream:      #FAF8F5;
-      --sand:       #F0E8DC;
-      --terracotta: #C4A882;
-      --gold:       #B5904A;
-      --charcoal:   #2C2C2C;
-      --gray-mid:   #645E58;
-      --stone:      #E8E2D9;
-      --white:      #FFFFFF;
-    }
+:root{
+  /* ── colour (brand palette, retained) ── */
+  --green:#2D4A3E;
+  --green-deep:#1E3329;
+  --green-light:#3D5F52;
+  --cream:#FAF8F5;
+  --sand:#F0E8DC;
+  --stone:#E8E2D9;
+  --terracotta:#C4A882;
+  --gold:#B5904A;
+  --charcoal:#23231F;
+  --gray-mid:#5C574F;
+  --white:#FFFFFF;
+  /* ── type ── */
+  --font-display:'Fraunces',Georgia,serif;
+  --font-body:'Hanken Grotesk',system-ui,sans-serif;
+  /* ── scale (4pt) ── */
+  --space-xs:8px; --space-sm:16px; --space-md:24px; --space-lg:48px;
+  --space-xl:80px; --space-2xl:120px;
+  --measure:62ch;
+  --ease-out:cubic-bezier(0.16,1,0.3,1);
+  --maxw:1240px;
+}
 
-    body {
-      font-family: 'Raleway', sans-serif;
-      background: var(--cream);
-      color: var(--charcoal);
-      font-size: 16px;
-      line-height: 1.7;
-    }
+body{
+  font-family:var(--font-body);
+  background:var(--cream);
+  color:var(--charcoal);
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
 
-    /* ── ANNOUNCEMENT BAR ── */
-    .announcement-bar {
-      background: var(--green);
-      color: var(--cream);
-      text-align: center;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 10px 20px;
-      font-weight: 500;
-    }
+h1,h2,h3,h4{font-family:var(--font-display);font-style:normal;font-weight:500;line-height:1.08;color:var(--green);}
+.accent{color:var(--gold);}
+img{display:block;max-width:100%;}
+a{color:inherit;}
 
-    /* ── HEADER ── */
-    header {
-      background: var(--cream);
-      border-bottom: 1px solid var(--stone);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 60px;
-      max-width: 1400px;
-      margin: 0 auto;
-    }
-    .logo {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 26px;
-      font-weight: 600;
-      color: var(--green);
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-    .logo span {
-      font-size: 13px;
-      display: block;
-      letter-spacing: 4px;
-      color: var(--terracotta);
-      font-weight: 400;
-      margin-top: -4px;
-    }
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      font-size: 13px;
-      color: var(--gray-mid);
-      letter-spacing: 1px;
-    }
-    .header-actions a {
-      color: var(--green);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .btn-catalogue {
-      background: var(--green);
-      color: var(--cream) !important;
-      padding: 10px 22px;
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      border: none;
-      cursor: pointer;
-      font-weight: 600;
-      font-family: 'Raleway', sans-serif;
-    }
-    nav {
-      border-top: 1px solid var(--stone);
-      background: var(--cream);
-    }
-    .nav-inner {
-      display: flex;
-      justify-content: center;
-      gap: 36px;
-      padding: 14px 60px;
-      max-width: 1400px;
-      margin: 0 auto;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    .nav-inner a {
-      color: var(--charcoal);
-      text-decoration: none;
-    }
-    .nav-inner a:hover { color: var(--green); }
+/* ── utility bar ── */
+.util-bar{
+  background:var(--green-deep);color:var(--cream);
+  font-size:12.5px;letter-spacing:0.3px;text-align:center;
+  padding:9px 20px;font-weight:400;
+}
+.util-bar strong{font-weight:600;color:var(--terracotta);}
 
-    /* ── HERO ── */
-    .hero {
-      position: relative;
-      height: 90vh;
-      min-height: 600px;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, #3D5F52 0%, #2D4A3E 30%, #1E3329 60%, #4A6B5A 100%);
-    }
-    .hero-texture {
-      position: absolute;
-      inset: 0;
-      opacity: 0.08;
-      background-image: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 10px,
-        rgba(255,255,255,0.3) 10px,
-        rgba(255,255,255,0.3) 11px
-      );
-    }
-    /* Decorative textile pattern overlay */
-    .hero-pattern {
-      position: absolute;
-      inset: 0;
-      opacity: 0.05;
-      background-image:
-        radial-gradient(circle at 25% 50%, rgba(196,168,130,0.8) 0%, transparent 50%),
-        radial-gradient(circle at 75% 30%, rgba(250,248,245,0.4) 0%, transparent 40%);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      color: var(--cream);
-      max-width: 800px;
-      padding: 0 40px;
-    }
-    .hero-eyebrow {
-      font-size: 11px;
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-    .hero-headline {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(52px, 7vw, 88px);
-      font-weight: 300;
-      line-height: 1.1;
-      color: var(--cream);
-      margin-bottom: 24px;
-      letter-spacing: -1px;
-    }
-    .hero-headline em {
-      font-style: italic;
-      color: var(--terracotta);
-    }
-    .hero-sub {
-      font-size: 16px;
-      letter-spacing: 1px;
-      color: rgba(250,248,245,0.8);
-      margin-bottom: 32px;
-      font-weight: 300;
-    }
-    .cert-strip {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin-bottom: 40px;
-      flex-wrap: wrap;
-    }
-    .cert-badge {
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(250,248,245,0.7);
-      border: 1px solid rgba(196,168,130,0.4);
-      padding: 6px 14px;
-      font-weight: 600;
-    }
-    .hero-ctas {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    .btn-primary {
-      background: var(--cream);
-      color: var(--green);
-      padding: 16px 36px;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-family: 'Raleway', sans-serif;
-      border: 2px solid var(--cream);
-      cursor: pointer;
-    }
-    .btn-outline {
-      background: transparent;
-      color: var(--cream);
-      padding: 16px 36px;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-family: 'Raleway', sans-serif;
-      border: 2px solid rgba(250,248,245,0.5);
-      cursor: pointer;
-    }
-    .scroll-hint {
-      position: absolute;
-      bottom: 32px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: rgba(250,248,245,0.5);
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-    .scroll-hint::after {
-      content: '';
-      width: 1px;
-      height: 40px;
-      background: rgba(196,168,130,0.6);
-      display: block;
-    }
+/* ── header / masthead ── */
+header{position:sticky;top:0;z-index:100;background:rgba(250,248,245,0.92);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--stone);}
+.masthead{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:var(--space-lg);padding:18px 40px;position:relative;}
+.nav-toggle{display:none;}
+.mainnav-cta{display:none;}
+.wordmark{font-family:var(--font-display);font-size:24px;font-weight:600;color:var(--green);letter-spacing:0.5px;text-decoration:none;line-height:1;}
+.wordmark small{display:block;font-family:var(--font-body);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gray-mid);font-weight:500;margin-top:3px;}
+.mainnav{display:flex;gap:30px;font-size:14.5px;font-weight:500;}
+.mainnav a{text-decoration:none;color:var(--charcoal);padding-bottom:2px;border-bottom:1.5px solid transparent;transition:border-color .2s var(--ease-out),color .2s;}
+.mainnav a:hover{color:var(--green);border-color:var(--terracotta);}
+.btn{font-family:var(--font-body);font-weight:600;font-size:14.5px;cursor:pointer;text-decoration:none;display:inline-block;transition:transform .2s var(--ease-out),background .2s,color .2s;}
+.btn-solid{background:var(--green);color:var(--cream);padding:11px 22px;border:1.5px solid var(--green);border-radius:2px;}
+.btn-solid:hover{background:var(--green-deep);border-color:var(--green-deep);}
+.btn-line{background:transparent;color:var(--green);padding:11px 22px;border:1.5px solid var(--green);border-radius:2px;}
+.btn-line:hover{background:var(--green);color:var(--cream);}
 
-    /* ── CERTIFICATION BAR ── */
-    .cert-bar {
-      background: var(--green);
-      padding: 28px 60px;
-    }
-    .cert-bar-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .cert-bar-caption {
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(250,248,245,0.6);
-      margin-bottom: 18px;
-      font-weight: 400;
-    }
-    .cert-logos {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .cert-logo-item {
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 700;
-      border: 1px solid rgba(196,168,130,0.3);
-      padding: 8px 16px;
-      background: rgba(196,168,130,0.08);
-    }
+/* ── hero (real photo, left-bias) ── */
+.hero{position:relative;min-height:84vh;display:flex;align-items:flex-end;overflow:hidden;}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.hero-scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,33,27,0.82) 0%,rgba(20,33,27,0.55) 38%,rgba(20,33,27,0.15) 70%,rgba(20,33,27,0) 100%);}
+.hero-inner{position:relative;z-index:2;max-width:var(--maxw);width:100%;margin:0 auto;padding:0 40px var(--space-2xl);}
+.hero-eyebrow{font-size:12.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--terracotta);font-weight:600;margin-bottom:var(--space-md);}
+.hero h1{color:var(--cream);font-size:clamp(40px,6vw,76px);font-weight:500;max-width:16ch;letter-spacing:-0.5px;overflow-wrap:anywhere;}
+.hero-sub{color:rgba(250,248,245,0.88);font-size:clamp(16px,1.5vw,19px);max-width:54ch;margin-top:var(--space-md);font-weight:400;}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:var(--space-lg);}
+.btn-cream{background:var(--cream);color:var(--green);padding:14px 28px;border:1.5px solid var(--cream);border-radius:2px;}
+.btn-cream:hover{background:transparent;color:var(--cream);}
+.btn-ghost{background:transparent;color:var(--cream);padding:14px 28px;border:1.5px solid rgba(250,248,245,0.55);border-radius:2px;}
+.btn-ghost:hover{border-color:var(--cream);}
 
-    /* ── SECTION WRAPPER ── */
-    .section { padding: 100px 60px; }
-    .section-inner { max-width: 1200px; margin: 0 auto; }
-    .section-alt { background: var(--sand); }
-    .section-white { background: var(--white); }
+/* ── capability strip ── */
+.cap-strip{background:var(--green-deep);padding:26px 40px;}
+.cap-inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:center;gap:14px 30px;flex-wrap:wrap;}
+.cap-label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(250,248,245,0.5);font-weight:500;width:100%;text-align:center;margin-bottom:4px;}
+.cap-item{font-size:13px;letter-spacing:0.5px;color:var(--terracotta);font-weight:600;}
+.cap-dot{color:rgba(196,168,130,0.35);}
 
-    /* ── SECTION LABEL ── */
-    .section-label {
-      font-size: 10px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-    .section-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(36px, 4vw, 54px);
-      font-weight: 400;
-      color: var(--green);
-      line-height: 1.15;
-      margin-bottom: 20px;
-    }
-    .section-title em { font-style: italic; }
-    .section-body {
-      font-size: 16px;
-      color: var(--gray-mid);
-      line-height: 1.8;
-      max-width: 560px;
-    }
+/* ── generic section ── */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px;}
+.sec{padding:var(--space-2xl) 0;}
+.sec-cream{background:var(--cream);}
+.sec-sand{background:var(--sand);}
+.sec-white{background:var(--white);}
+.eyebrow{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--terracotta);font-weight:600;margin-bottom:var(--space-sm);}
+.lead-body{font-size:18px;color:var(--gray-mid);line-height:1.75;max-width:var(--measure);}
 
-    /* ── HERITAGE SECTION ── */
-    .heritage-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-    .heritage-image {
-      aspect-ratio: 4/5;
-      background: linear-gradient(160deg, #3D5F52, #2D4A3E, #4A3728);
-      position: relative;
-      overflow: hidden;
-    }
-    .heritage-image-inner {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .heritage-image-pattern {
-      position: absolute;
-      inset: 0;
-      opacity: 0.06;
-      background-image: repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255,255,255,0.5) 20px, rgba(255,255,255,0.5) 21px),
-        repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(255,255,255,0.5) 20px, rgba(255,255,255,0.5) 21px);
-    }
-    .loom-icon {
-      width: 80px;
-      height: 80px;
-      border: 2px solid rgba(196,168,130,0.5);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      z-index: 1;
-    }
-    .loom-icon::before {
-      content: '⊛';
-      font-size: 32px;
-      color: var(--terracotta);
-    }
-    .image-caption-tag {
-      background: var(--terracotta);
-      color: var(--cream);
-      font-size: 10px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 8px 20px;
-      font-weight: 700;
-      position: relative;
-      z-index: 1;
-    }
-    .heritage-text { padding-left: 20px; }
-    .generation-number {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 120px;
-      font-weight: 300;
-      color: var(--stone);
-      line-height: 1;
-      margin-bottom: -20px;
-    }
-    .heritage-cta {
-      display: inline-block;
-      margin-top: 32px;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--green);
-      font-weight: 700;
-      text-decoration: none;
-      border-bottom: 2px solid var(--terracotta);
-      padding-bottom: 4px;
-    }
+/* ── positioning statement ── */
+.pos-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:var(--space-xl);align-items:start;}
+.pos-grid h2{font-size:clamp(30px,3.6vw,50px);max-width:18ch;}
+.pos-points{display:grid;gap:var(--space-md);}
+.pos-point{border-top:1px solid var(--stone);padding-top:var(--space-sm);}
+.pos-point h3{font-family:var(--font-body);font-size:16px;font-weight:700;color:var(--green);letter-spacing:0.2px;margin-bottom:4px;}
+.pos-point p{font-size:15px;color:var(--gray-mid);line-height:1.6;}
 
-    /* ── COLLECTIONS GRID ── */
-    .collections-header { text-align: center; margin-bottom: 60px; }
-    .collections-header .section-body { margin: 0 auto; text-align: center; }
-    .collections-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-    .collection-tile {
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-    }
-    .collection-tile:first-child {
-      grid-column: span 2;
-    }
-    .tile-image {
-      aspect-ratio: 4/3;
-      background: linear-gradient(135deg, #2D4A3E, #4A3728, #6B5744);
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.4s ease;
-    }
-    .collection-tile:first-child .tile-image {
-      aspect-ratio: 16/9;
-    }
-    .collection-tile:hover .tile-image { transform: scale(1.03); }
-    .tile-pattern {
-      position: absolute;
-      inset: 0;
-    }
-    .tile-pattern-1 {
-      background: linear-gradient(135deg, #2D4A3E 0%, #C4A882 50%, #FAF8F5 100%);
-      opacity: 0.7;
-    }
-    .tile-pattern-2 {
-      background: linear-gradient(135deg, #4A3728 0%, #2D4A3E 60%, #8A6B4A 100%);
-      opacity: 0.7;
-    }
-    .tile-pattern-3 {
-      background: linear-gradient(135deg, #6B5744 0%, #3D5F52 60%, #C4A882 100%);
-      opacity: 0.7;
-    }
-    .tile-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(26,42,35,0.95) 0%, rgba(26,42,35,0.84) 18%, rgba(26,42,35,0.42) 45%, rgba(26,42,35,0) 70%);
-    }
-    .tile-content {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 32px;
-      color: var(--cream);
-    }
-    .tile-category {
-      font-size: 10px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .tile-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 32px;
-      font-weight: 400;
-      line-height: 1.2;
-      margin-bottom: 8px;
-    }
-    .tile-sub { font-size: 13px; color: rgba(250,248,245,0.75); line-height: 1.5; }
-    .tile-link {
-      display: inline-block;
-      margin-top: 16px;
-      font-size: 10px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 700;
-      text-decoration: none;
-      border-bottom: 1px solid var(--terracotta);
-    }
+/* ── stats row ── */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-lg);border-top:1px solid var(--stone);margin-top:var(--space-2xl);padding-top:var(--space-xl);}
+.stat .num{font-family:var(--font-display);font-size:clamp(42px,5vw,60px);font-weight:500;color:var(--green);line-height:1;}
+.stat .lbl{font-size:13px;color:var(--gray-mid);margin-top:var(--space-sm);letter-spacing:0.3px;}
 
-    /* ── WHY ABHI HOME ── */
-    .pillars-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 48px;
-      margin-top: 60px;
-    }
-    .pillar {
-      text-align: center;
-      padding: 40px 24px;
-      background: var(--white);
-      border-top: 3px solid var(--terracotta);
-    }
-    .pillar-icon {
-      width: 56px;
-      height: 56px;
-      border: 2px solid var(--green);
-      border-radius: 50%;
-      margin: 0 auto 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--green);
-      font-size: 22px;
-    }
-    .pillar-icon svg { width: 28px; height: 28px; }
-    .india-prog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    @media (max-width: 760px) { .india-prog-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 480px) { .india-prog-grid { grid-template-columns: 1fr; } }
-    .pillar-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 20px;
-      color: var(--green);
-      margin-bottom: 12px;
-      font-weight: 600;
-    }
-    .pillar-text { font-size: 14px; color: var(--gray-mid); line-height: 1.7; }
+/* ── experience / two-col ── */
+.split{display:grid;grid-template-columns:0.95fr 1.05fr;gap:var(--space-xl);align-items:center;}
+.split.rev{grid-template-columns:1.05fr 0.95fr;}
+.split-media{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:3px;background:var(--green-light);}
+.split-media img{width:100%;height:100%;object-fit:cover;}
+.media-tag{position:absolute;left:0;bottom:24px;background:var(--green);color:var(--cream);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;padding:8px 18px;}
+.split-text h2{font-size:clamp(30px,3.4vw,46px);max-width:16ch;margin-bottom:var(--space-md);}
+.split-text p+p{margin-top:var(--space-sm);}
+.text-link{display:inline-block;margin-top:var(--space-md);font-weight:600;font-size:15px;color:var(--green);text-decoration:none;border-bottom:2px solid var(--terracotta);padding-bottom:3px;}
+.text-link:hover{border-color:var(--green);}
 
-    /* ── SUSTAINABILITY BANNER ── */
-    .sustainability-banner {
-      background: var(--green);
-      padding: 120px 60px;
-      position: relative;
-      overflow: hidden;
-    }
-    .sust-bg-pattern {
-      position: absolute;
-      inset: 0;
-      opacity: 0.04;
-      background-image: repeating-linear-gradient(
-        45deg, transparent, transparent 30px,
-        rgba(255,255,255,0.5) 30px, rgba(255,255,255,0.5) 31px
-      );
-    }
-    .sust-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-      position: relative;
-      z-index: 1;
-    }
-    .sust-text .section-label { color: var(--terracotta); }
-    .sust-text .section-title { color: var(--cream); }
-    .sust-text .section-body { color: rgba(250,248,245,0.75); }
-    .sust-certs {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-    .sust-cert-item {
-      aspect-ratio: 1;
-      border: 1px solid rgba(196,168,130,0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 6px;
-      padding: 12px;
-      text-align: center;
-      background: rgba(196,168,130,0.05);
-    }
-    .sust-cert-icon { font-size: 20px; }
-    .sust-cert-name {
-      font-size: 8px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 700;
-      line-height: 1.3;
-    }
-    .btn-outline-cream {
-      display: inline-block;
-      margin-top: 32px;
-      background: transparent;
-      color: var(--cream);
-      padding: 16px 36px;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-family: 'Raleway', sans-serif;
-      border: 2px solid rgba(250,248,245,0.4);
-      cursor: pointer;
-      text-decoration: none;
-    }
+/* ── collections lookbook ── */
+.collections-head{display:flex;justify-content:space-between;align-items:flex-end;gap:var(--space-lg);margin-bottom:var(--space-xl);flex-wrap:wrap;}
+.collections-head h2{font-size:clamp(32px,4vw,52px);max-width:14ch;}
+.collections-head .lead-body{max-width:40ch;}
+.lookbook{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;}
+.tile{position:relative;overflow:hidden;text-decoration:none;border-radius:3px;background:var(--green-light);grid-column:span 2;}
+.tile.feature{grid-column:span 4;}
+.tile.wide{grid-column:span 3;}
+.tile-media{position:relative;aspect-ratio:4/3;overflow:hidden;}
+.tile.feature .tile-media,.tile.wide .tile-media{aspect-ratio:16/10;}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease-out);}
+.tile:hover img{transform:scale(1.04);}
+.tile-scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,33,27,0.92) 0%,rgba(20,33,27,0.45) 40%,rgba(20,33,27,0) 72%);}
+.tile-body{position:absolute;left:0;right:0;bottom:0;padding:26px;color:var(--cream);}
+.tile-kicker{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:600;margin-bottom:6px;}
+.tile-body h3{font-family:var(--font-display);font-size:clamp(20px,2vw,28px);font-weight:500;color:var(--cream);line-height:1.15;margin-bottom:6px;}
+.tile-sub{font-size:13.5px;color:rgba(250,248,245,0.82);line-height:1.5;max-width:42ch;}
+.tile-more{display:inline-block;margin-top:12px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--terracotta);font-weight:600;}
 
-    /* ── PRODUCT TEASER ── */
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .two-col-reverse { direction: rtl; }
-    .two-col-reverse > * { direction: ltr; }
-    .teaser-image {
-      aspect-ratio: 3/4;
-      background: linear-gradient(160deg, #6B5744, #4A3728, #3D5F52);
-      position: relative;
-      overflow: hidden;
-    }
-    .teaser-image-pattern {
-      position: absolute;
-      inset: 0;
-      opacity: 0.08;
-      background-image: repeating-linear-gradient(
-        90deg, transparent, transparent 30px,
-        rgba(255,255,255,0.4) 30px, rgba(255,255,255,0.4) 31px
-      );
-    }
-    .teaser-image-label {
-      position: absolute;
-      bottom: 24px;
-      left: 24px;
-      background: var(--cream);
-      color: var(--green);
-      font-size: 10px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 700;
-      padding: 8px 16px;
-    }
+/* ── why / numbered pillars ── */
+.why-head{max-width:30ch;margin-bottom:var(--space-xl);}
+.why-head h2{font-size:clamp(30px,3.6vw,48px);}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-lg);}
+.pillar{border-top:2px solid var(--green);padding-top:var(--space-md);}
+.pillar .pn{font-family:var(--font-display);font-size:20px;font-weight:600;color:var(--terracotta);margin-bottom:var(--space-sm);}
+.pillar h3{font-family:var(--font-body);font-size:18px;font-weight:700;color:var(--green);margin-bottom:var(--space-xs);}
+.pillar p{font-size:14.5px;color:var(--gray-mid);line-height:1.6;}
 
-    /* ── FOOTER ── */
-    footer {
-      background: var(--charcoal);
-      color: var(--cream);
-      padding: 80px 60px 40px;
-    }
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .footer-top {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 60px;
-      padding-bottom: 60px;
-      border-bottom: 1px solid rgba(250,248,245,0.1);
-      margin-bottom: 40px;
-    }
-    .footer-brand .logo { color: var(--cream); margin-bottom: 16px; }
-    .footer-brand .logo span { color: var(--terracotta); }
-    .footer-tagline {
-      font-size: 14px;
-      color: rgba(250,248,245,0.6);
-      line-height: 1.7;
-      margin-bottom: 24px;
-      font-style: italic;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 18px;
-    }
-    .footer-contact {
-      font-size: 13px;
-      color: rgba(250,248,245,0.6);
-      line-height: 1.8;
-    }
-    .footer-col-title {
-      font-size: 10px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    .footer-links { list-style: none; }
-    .footer-links li { margin-bottom: 10px; }
-    .footer-links a {
-      color: rgba(250,248,245,0.6);
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .footer-links a:hover { color: var(--cream); }
-    .footer-cert-strip {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 40px;
-    }
-    .footer-cert {
-      font-size: 9px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--terracotta);
-      border: 1px solid rgba(196,168,130,0.25);
-      padding: 5px 10px;
-      font-weight: 600;
-    }
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 12px;
-      color: rgba(250,248,245,0.4);
-    }
+/* ── compliance band ── */
+.compliance{background:var(--green);color:var(--cream);}
+.compliance-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);align-items:center;}
+.compliance h2{color:var(--cream);font-size:clamp(30px,3.6vw,48px);max-width:16ch;margin-bottom:var(--space-md);}
+.compliance p{color:rgba(250,248,245,0.82);font-size:17px;line-height:1.7;max-width:46ch;}
+.cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.cert-cell{border:1px solid rgba(196,168,130,0.35);background:rgba(196,168,130,0.06);aspect-ratio:1.6/1;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;}
+.cert-cell span{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--terracotta);font-weight:700;line-height:1.3;}
 
-    /* ── MOCKUP NOTE ── */
-    .mockup-note {
-      background: #FFF3CD;
-      border: 2px dashed #F0AD00;
-      text-align: center;
-      padding: 16px;
-      font-size: 13px;
-      color: #856404;
-      letter-spacing: 1px;
-    }
+/* ── link card grids (india / country) ── */
+.grid-head{max-width:44ch;margin-bottom:var(--space-lg);}
+.grid-head h2{font-size:clamp(28px,3.4vw,44px);margin-bottom:var(--space-sm);}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;}
+.lcard{display:block;text-decoration:none;background:var(--white);border-top:2px solid var(--green);padding:24px 22px;transition:transform .2s var(--ease-out),box-shadow .2s;}
+.lcard.alt{border-top-color:var(--terracotta);}
+.lcard:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(45,74,62,0.12);}
+.lcard .lk{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;}
+.lcard h3{font-family:var(--font-display);font-size:20px;font-weight:500;color:var(--green);line-height:1.25;margin-bottom:6px;}
+.lcard p{font-size:13.5px;color:var(--gray-mid);}
+.grid-foot{margin-top:var(--space-lg);font-size:14px;color:var(--gray-mid);}
+.hub-cta{display:inline-block;margin-top:var(--space-md);background:var(--green);color:var(--cream);text-decoration:none;font-weight:600;font-size:14px;padding:12px 24px;border-radius:2px;}
 
-    /* ── REAL PHOTOGRAPHY ── */
-    .hero-bg {
-      background: linear-gradient(rgba(22,38,31,0.52), rgba(20,34,28,0.68)),
-                  url('images/home/hero.webp') center 42% / cover no-repeat;
-    }
-    .heritage-img, .tile-img, .teaser-img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .heritage-image .image-caption-tag {
-      position: absolute;
-      bottom: 16px;
-      left: 16px;
-      z-index: 2;
-    }
-    /* Card-lift on hover (we intentionally do NOT zoom the photo) */
-    .collection-tile { transition: transform .3s ease, box-shadow .3s ease; }
-    .collection-tile:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(45,74,62,0.20); }
-    .collection-tile:hover .tile-image { transform: none; }
-    @media (prefers-reduced-motion: reduce) {
-      .collection-tile { transition: none; }
-      .collection-tile:hover { transform: none; }
-    }
+/* ── enquiry ── */
+.enquiry{background:var(--green-deep);color:var(--cream);padding:var(--space-xl) 40px var(--space-lg);}
+.enquiry-inner{max-width:760px;margin:0 auto;}
+.enquiry h2{color:var(--cream);font-size:clamp(30px,4vw,48px);margin-bottom:var(--space-sm);}
+.enquiry .sub1{font-size:17px;color:rgba(250,248,245,0.85);line-height:1.7;margin-bottom:6px;}
+.enquiry .sub2{font-size:13px;letter-spacing:0.5px;color:rgba(250,248,245,0.55);margin-bottom:var(--space-lg);}
+#enquiry-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+#enquiry-form input,#enquiry-form select,#enquiry-form textarea{width:100%;padding:14px 15px;border:1px solid rgba(250,248,245,0.22);background:rgba(250,248,245,0.97);color:var(--charcoal);font-family:var(--font-body);font-size:15px;border-radius:2px;}
+#enquiry-form ::placeholder{color:#8A847E;}
+#enquiry-form textarea{grid-column:1/-1;resize:vertical;}
+#enquiry-form button{grid-column:1/-1;background:var(--cream);color:var(--green);border:none;padding:16px;font-size:14px;letter-spacing:1px;font-weight:700;font-family:var(--font-body);cursor:pointer;border-radius:2px;transition:background .2s,color .2s;}
+#enquiry-form button:hover{background:var(--terracotta);}
+#enquiry-form button:disabled{opacity:0.6;cursor:default;}
+.enquiry-alt{margin-top:18px;text-align:center;font-size:14px;color:rgba(250,248,245,0.72);}
+.enquiry-alt a{color:var(--terracotta);text-decoration:none;}
 
-    /* ── RESPONSIVE (added last so it overrides the earlier inline rules) ── */
-    @media (max-width: 1024px) {
-      .pillars-grid { grid-template-columns: repeat(2,1fr); }
-    }
-    @media (max-width: 768px) {
-      .header-top { padding: 12px 20px; flex-wrap: wrap; gap: 10px; }
-      .header-actions { gap: 14px; font-size: 12px; }
-      .header-actions > span { display: none; }
-      nav { overflow: hidden; }
-      .nav-inner { gap: 18px; padding: 10px 20px; font-size: 10px; letter-spacing: 1.5px; justify-content: flex-start; overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
-      .nav-inner a { white-space: nowrap; }
-      .hero { height: 78vh; min-height: 460px; }
-      .section { padding: 56px 20px; }
-      .section-inner { padding-left: 16px; padding-right: 16px; }
-      .cert-bar, .sustainability-banner { padding: 48px 20px; }
-      .heritage-grid, .two-col, .sust-inner { grid-template-columns: 1fr; gap: 34px; }
-      .heritage-text { padding-left: 0; }
-      .two-col-reverse { direction: ltr; }
-      .collections-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
-      .collection-tile:first-child { grid-column: span 2; }
-      .footer-top { grid-template-columns: 1fr 1fr; gap: 30px; }
-      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
-    }
-    @media (max-width: 480px) {
-      .collections-grid { grid-template-columns: 1fr; }
-      .collection-tile:first-child { grid-column: span 1; }
-      .pillars-grid { grid-template-columns: 1fr; }
-      .footer-top { grid-template-columns: 1fr; }
-      .hero-headline { font-size: clamp(34px, 9vw, 52px); }
-    }
+/* ── footer ── */
+footer{background:var(--charcoal);color:var(--cream);padding:var(--space-lg) 40px var(--space-lg);}
+.footer-inner{max-width:var(--maxw);margin:0 auto;}
+.footer-certs{display:flex;flex-wrap:wrap;gap:8px;padding-bottom:var(--space-lg);border-bottom:1px solid rgba(250,248,245,0.12);}
+.footer-cert{font-size:11px;letter-spacing:0.8px;text-transform:uppercase;color:rgba(250,248,245,0.62);border:1px solid rgba(250,248,245,0.16);padding:6px 12px;border-radius:2px;}
+.tree-strip{text-align:center;padding:18px 20px;margin:var(--space-lg) 0;border:1px solid rgba(196,168,130,0.25);border-radius:4px;background:rgba(196,168,130,0.06);}
+.tree-strip .tl{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:600;margin-bottom:6px;}
+.tree-strip .tn{font-family:var(--font-display);font-size:30px;font-weight:500;color:var(--cream);line-height:1;}
+.tree-strip .tn small{font-family:var(--font-body);font-size:14px;color:rgba(250,248,245,0.55);letter-spacing:2px;text-transform:uppercase;margin-left:8px;}
+.tree-strip .tg{font-size:11px;color:rgba(250,248,245,0.5);margin-top:6px;letter-spacing:0.5px;}
+.tree-strip .tg a{color:var(--terracotta);text-decoration:none;border-bottom:1px solid rgba(196,168,130,0.4);}
+.footer-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:var(--space-lg);padding:var(--space-lg) 0;}
+.footer-brand .wordmark{color:var(--cream);}
+.footer-brand .wordmark small{color:var(--terracotta);}
+.footer-wordmark{display:inline-block;margin-bottom:14px;}
+.footer-tagline{font-family:var(--font-display);font-size:18px;color:rgba(250,248,245,0.72);line-height:1.5;margin:0 0 22px;}
+.footer-contact{font-size:14px;color:rgba(250,248,245,0.62);line-height:1.8;}
+.footer-contact a{color:var(--terracotta);text-decoration:none;}
+.footer-social{margin-top:18px;display:flex;align-items:center;gap:10px;}
+.footer-social a{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(196,168,130,0.4);border-radius:50%;color:var(--terracotta);text-decoration:none;transition:background .2s,color .2s;}
+.footer-social a:hover{background:var(--terracotta);color:var(--charcoal);}
+.footer-social span{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(196,168,130,0.9);font-weight:600;}
+.footer-notice{font-size:11px;opacity:0.65;margin-top:var(--space-md);line-height:1.55;max-width:50ch;}
+.footer-col h4{font-family:var(--font-body);font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:var(--space-md);}
+.footer-col ul{list-style:none;}
+.footer-col li{margin-bottom:10px;}
+.footer-col a{color:rgba(250,248,245,0.62);text-decoration:none;font-size:14.5px;}
+.footer-col a:hover{color:var(--cream);}
+.footer-bottom{display:flex;justify-content:space-between;gap:var(--space-md);flex-wrap:wrap;padding-top:var(--space-lg);border-top:1px solid rgba(250,248,245,0.12);font-size:12.5px;color:rgba(250,248,245,0.5);}
+
+/* ── motion safety ── */
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;}
+}
+
+/* ── responsive ── */
+@media (max-width:1000px){
+  .pos-grid,.split,.split.rev,.compliance-grid{grid-template-columns:1fr;gap:var(--space-lg);}
+  .split-media{aspect-ratio:16/10;}
+  .stats{grid-template-columns:repeat(2,1fr);gap:var(--space-md);}
+  .pillars{grid-template-columns:repeat(2,1fr);}
+  .lookbook{grid-template-columns:repeat(2,1fr);}
+  .tile,.tile.feature,.tile.wide{grid-column:span 2;}
+  .masthead-cta{display:none;}
+  .nav-toggle{display:inline-flex;align-items:center;gap:9px;background:none;border:0;cursor:pointer;padding:8px 4px;font-family:var(--font-body);font-size:12px;letter-spacing:1px;text-transform:uppercase;font-weight:600;color:var(--charcoal);}
+  .nav-toggle-bars{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:24px;}
+  .nav-toggle-bars span{display:block;height:2px;width:24px;background:var(--green);transition:transform .3s var(--ease-out),opacity .2s;}
+  .mainnav{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--cream);border-top:1px solid var(--stone);box-shadow:0 14px 30px rgba(45,74,62,.16);max-height:0;opacity:0;visibility:hidden;overflow:hidden;transition:max-height .35s var(--ease-out),opacity .25s;z-index:1000;}
+  header.nav-open .mainnav{max-height:85vh;opacity:1;visibility:visible;overflow-y:auto;}
+  .mainnav a{padding:15px 24px;border-bottom:1px solid rgba(45,74,62,.08);font-size:15px;border-bottom-color:rgba(45,74,62,.08);}
+  .mainnav-cta{display:block;color:var(--green);font-weight:700;}
+  header.nav-open .nav-toggle-bars span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  header.nav-open .nav-toggle-bars span:nth-child(2){opacity:0;}
+  header.nav-open .nav-toggle-bars span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+}
+@media (max-width:640px){
+  body{font-size:16px;}
+  .masthead,.wrap,.hero-inner{padding-left:22px;padding-right:22px;}
+  .sec{padding:var(--space-xl) 0;}
+  .hero-inner{padding-bottom:var(--space-xl);}
+  .cert-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  #enquiry-form{grid-template-columns:1fr;}
+  .stats{grid-template-columns:1fr 1fr;}
+  .pillars{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;}
+}
   </style>
-  <!-- BEGIN SEO BLOCK (auto-generated) -->
+
+  <!-- BEGIN SEO BLOCK -->
   <link rel="canonical" href="https://www.abhihome.in/" />
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="author" content="Abhi Home">
-  <meta name="theme-color" content="#2D4A3E">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.abhihome.in/">
   <meta property="og:site_name" content="Abhi Home">
@@ -798,7 +283,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Home Textile Manufacturer & Exporter | Abhi Home®">
-  <meta name="twitter:description" content="60 years of Indian craftsmanship. Cushions, bedding, kitchen, bath, throws, rugs. Private label for global retailers.">
+  <meta name="twitter:description" content="Premium home textiles, built for global retail. Certified, scalable, competitively priced. Private label for retailers worldwide.">
   <meta name="twitter:image" content="https://www.abhihome.in/images/og-default.jpg">
   <script type="application/ld+json">
 {
@@ -850,7 +335,6 @@
           "@type": "ContactPoint",
           "contactType": "sales",
           "email": "info@abhihome.in",
-          "telephone": "+91-98170-31900",
           "availableLanguage": [
             "English",
             "Hindi"
@@ -871,7 +355,6 @@
           "@type": "ContactPoint",
           "contactType": "customer service",
           "email": "info@abhihome.in",
-          "telephone": "+91-98170-31900",
           "availableLanguage": [
             "English",
             "Hindi"
@@ -894,38 +377,14 @@
         "Private label manufacturing"
       ],
       "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "OEKO-TEX Standard 100"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "GOTS - Global Organic Textile Standard"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "GRS - Global Recycled Standard"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "BCI - Better Cotton Initiative"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "SA 8000"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "BSCI"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "CTPAT"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "ISO 9001:2015"
-        }
+        { "@type": "EducationalOccupationalCredential", "name": "OEKO-TEX Standard 100" },
+        { "@type": "EducationalOccupationalCredential", "name": "GOTS - Global Organic Textile Standard" },
+        { "@type": "EducationalOccupationalCredential", "name": "GRS - Global Recycled Standard" },
+        { "@type": "EducationalOccupationalCredential", "name": "BCI - Better Cotton Initiative" },
+        { "@type": "EducationalOccupationalCredential", "name": "SA 8000" },
+        { "@type": "EducationalOccupationalCredential", "name": "BSCI" },
+        { "@type": "EducationalOccupationalCredential", "name": "CTPAT" },
+        { "@type": "EducationalOccupationalCredential", "name": "ISO 9001:2015" }
       ]
     },
     {
@@ -933,9 +392,7 @@
       "@id": "https://www.abhihome.in/#website",
       "url": "https://www.abhihome.in/",
       "name": "Abhi Home",
-      "publisher": {
-        "@id": "https://www.abhihome.in/#organization"
-      },
+      "publisher": { "@id": "https://www.abhihome.in/#organization" },
       "inLanguage": "en"
     }
   ]
@@ -990,525 +447,374 @@
 }
 </script>
   <!-- END SEO BLOCK -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7V07R35FW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-C7V07R35FW');
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
-<script defer src="/_vercel/speed-insights/script.js"></script>
-<style id="ah-mobile-nav">
-/* Mobile hamburger navigation - added 2026-06 */
-.nav-toggle{display:none;}
-@media (max-width:1024px){
-  header nav{position:relative;z-index:1000;display:flex;align-items:center;justify-content:flex-end;padding:8px 20px;overflow:visible;}
-  .nav-toggle{display:inline-flex;align-items:center;gap:10px;background:none;border:0;cursor:pointer;padding:8px 4px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;color:var(--charcoal);}
-  .nav-toggle-bars{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:24px;}
-  .nav-toggle-bars span{display:block;height:2px;width:24px;background:var(--green);transition:transform .3s ease,opacity .2s ease;}
-  header nav .nav-inner{position:absolute;top:100%;left:0;right:0;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;max-width:none;margin:0;padding:0;background:var(--cream);border-top:1px solid var(--stone);box-shadow:0 14px 30px rgba(45,74,62,.16);max-height:0;opacity:0;visibility:hidden;overflow:hidden;transition:max-height .35s ease,opacity .25s ease;}
-  header.nav-open nav .nav-inner{max-height:85vh;opacity:1;visibility:visible;overflow-y:auto;}
-  header nav .nav-inner a{padding:15px 24px;border-bottom:1px solid rgba(45,74,62,.08);white-space:normal;font-size:12px;}
-  header.nav-open .nav-toggle-bars span:nth-child(1){transform:translateY(7px) rotate(45deg);}
-  header.nav-open .nav-toggle-bars span:nth-child(2){opacity:0;}
-  header.nav-open .nav-toggle-bars span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-}
-@media (prefers-reduced-motion:reduce){.nav-toggle-bars span,header nav .nav-inner{transition:none;}}
-</style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7V07R35FW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C7V07R35FW');
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
 
-
-<!-- ANNOUNCEMENT BAR -->
-<div class="announcement-bar">
-  Third-Generation Certified Home Textiles Manufacturer · India · info@abhihome.in · <a href="https://wa.me/919817031900" target="_blank" style="color:inherit;text-decoration:underline;" title="Chat on WhatsApp"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>WhatsApp Us</a>
-</div>
+<!-- UTILITY BAR -->
+<div class="util-bar">Certified manufacturer since <strong>1965</strong> · Private label &amp; OEM · Shipping to 22 countries</div>
 
 <!-- HEADER -->
 <header>
-  <div class="header-top">
-    <div class="logo">
-      Abhi Home®
-      <span>By Abhijat Paliwal</span>
-    </div>
-    <div class="header-actions">
-      <span>info@abhihome.in</span>
-      <a href="infrastructure.html">Infrastructure</a>
-      <a href="sustainability.html">Sustainability</a>
-      <a href="contact.html" class="btn-catalogue" style="text-decoration:none;">Request a Trade Catalogue</a>
-    </div>
-  </div>
-  <nav>
+  <div class="masthead">
+    <a class="wordmark" href="index.html">Abhi Home®<small>Manufacturer &amp; Exporter · India</small></a>
+    <nav class="mainnav" id="primary-nav">
+      <a href="#collections">Range</a>
+      <a href="#capability">Capability</a>
+      <a href="sustainability.html">Certifications</a>
+      <a href="about.html">Company</a>
+      <a href="#enquiry" class="mainnav-cta">Request a catalogue</a>
+    </nav>
+    <a href="#enquiry" class="btn btn-solid masthead-cta">Request a catalogue</a>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle-text">Menu</span></button>
-    <div class="nav-inner" id="primary-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="bedding.html">Bedding</a>
-      <a href="cushions.html">Cushions ▾</a>
-      <a href="throws.html">Throws & Blankets</a>
-      <a href="curtains.html">Curtains</a>
-      <a href="bath.html">Bath Textiles ▾</a>
-      <a href="kitchen.html">Kitchen & Dining ▾</a>
-      <a href="pouffe.html">Pouffe & Seating</a>
-      <a href="rugs.html">Rugs</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+  </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-texture"></div>
-  <div class="hero-pattern"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">Third Generation · Est. India · Internationally Certified</p>
-    <h1 class="hero-headline">Home Textile Manufacturer <br>&amp; <em>Exporter</em> from India</h1>
-    <p class="hero-tagline" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(20px,3vw,28px);color:rgba(255,255,255,0.72);margin-top:12px;letter-spacing:0.5px;">Where craft meets conscience.</p>
-    <p class="hero-sub">Premium Certified Home Textiles — Manufactured in India for the World</p>
+  <img class="hero-img" src="images/home/hero.webp" alt="Stack of premium folded Abhi Home cotton home textiles in muted tones" width="1600" height="1000" fetchpriority="high">
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Home textile manufacturer &amp; exporter · India</p>
+    <h1>Premium home textiles, built for global retail.</h1>
+    <p class="hero-sub">A certified Indian manufacturer delivering fine quality, dependable volumes and competitive pricing — private-label and bespoke programmes, from first sample to shipped container.</p>
     <div class="hero-ctas">
-      <a href="#collections" class="btn-primary" style="text-decoration:none;">Explore Our Collections</a>
-      <a href="contact.html" class="btn-outline" style="text-decoration:none;">Request a Trade Catalogue</a>
+      <a href="#collections" class="btn btn-cream">Explore the range</a>
+      <a href="contact.html" class="btn btn-ghost">Request a trade catalogue</a>
     </div>
   </div>
-  <div class="scroll-hint">Scroll</div>
 </section>
 
-<!-- CERTIFICATION TRUST BAR -->
-<div class="cert-bar">
-  <div class="cert-bar-inner">
-    <p class="cert-bar-caption">Every product independently certified against the world's most rigorous standards</p>
-    <div class="cert-logos">
-      <span class="cert-logo-item">Sedex</span>
-      <span class="cert-logo-item">ISO 9001:2015</span>
-      <span class="cert-logo-item">ISO 14001</span>
-      <span class="cert-logo-item">OEKO-TEX® 100</span>
-      <span class="cert-logo-item">GRS</span>
-      <span class="cert-logo-item">GOTS</span>
-      <span class="cert-logo-item">OCS 100</span>
-      <span class="cert-logo-item">Higg Index</span>
-      <span class="cert-logo-item">BCI</span>
-    </div>
+<!-- CAPABILITY / CERT STRIP -->
+<div class="cap-strip" id="capability">
+  <div class="cap-inner">
+    <span class="cap-label">Independently certified to the standards global retail requires</span>
+    <span class="cap-item">ISO 9001</span><span class="cap-dot">·</span>
+    <span class="cap-item">ISO 14001</span><span class="cap-dot">·</span>
+    <span class="cap-item">OEKO-TEX® 100</span><span class="cap-dot">·</span>
+    <span class="cap-item">GOTS</span><span class="cap-dot">·</span>
+    <span class="cap-item">GRS</span><span class="cap-dot">·</span>
+    <span class="cap-item">OCS 100</span><span class="cap-dot">·</span>
+    <span class="cap-item">Higg Index</span><span class="cap-dot">·</span>
+    <span class="cap-item">Sedex</span><span class="cap-dot">·</span>
+    <span class="cap-item">BCI</span>
   </div>
 </div>
 
-<!-- PROOF / SCALE STRIP -->
-<section style="background:var(--sand);padding:46px 30px;">
-  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:24px;text-align:center;">
-    <div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:500;color:var(--green);line-height:1;">1965</div>
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-top:8px;">Manufacturing Since</div>
-    </div>
-    <div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:500;color:var(--green);line-height:1;">3</div>
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-top:8px;">Generations of Craft</div>
-    </div>
-    <div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:500;color:var(--green);line-height:1;">22</div>
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-top:8px;">Export Markets</div>
-    </div>
-    <div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:46px;font-weight:500;color:var(--green);line-height:1;">9</div>
-      <div style="font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-top:8px;">Global Certifications</div>
-    </div>
-  </div>
-</section>
-
-<!-- HERITAGE SECTION -->
-<section class="section">
-  <div class="section-inner">
-    <div class="heritage-grid">
-      <div class="heritage-image">
-        <img class="heritage-img" src="images/home/heritage.webp" alt="Folded stack of handcrafted Abhi Home cotton textiles with block-print and embroidery" loading="lazy" width="1000" height="1250">
-        <span class="image-caption-tag">Heritage Craft · Modern Manufacturing</span>
-      </div>
-      <div class="heritage-text">
-        <p class="generation-number">3rd</p>
-        <p class="section-label">Family Heritage</p>
-        <h2 class="section-title">Three Generations<br>of <em>Indian Craft</em></h2>
-        <p class="section-body">
-          What began as a family passion for textile craftsmanship has grown, generation by generation, into one of India's most certified sustainable home textiles manufacturers. Three generations of knowledge — passed from looms to ledgers — shape every product we make today. That inheritance of hand skills now runs alongside state-of-the-art looms and modern manufacturing technology — traditional craft, modern precision, built to global scale.
-        </p>
-        <p class="section-body" style="margin-top: 16px;">
-          Today, Abhijat Paliwal leads the business with the same values instilled by his family: uncompromising quality, honest manufacturing, and a genuine belief that beautiful things should be made responsibly.
-        </p>
-        <a class="heritage-cta" href="about.html">Read Our Story →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURED COLLECTIONS -->
-<section class="section section-alt" id="collections">
-  <div class="section-inner">
-    <div class="collections-header">
-      <h2 class="section-title">Crafted for Every Space</h2>
-      <p class="section-body">From certified bedding to handcrafted pouffes — every product designed for global retail and trade buyers.</p>
-    </div>
-    <div class="collections-grid">
-      <a class="collection-tile" href="bedding.html">
-        <div class="tile-image">
-          <img class="tile-img" src="images/home/tile-bedding.webp" alt="Patchwork cotton quilt and bedding styled on a bed" loading="lazy" width="1500" height="844">
-          <div class="tile-overlay"></div>
-          <div class="tile-content">
-            <p class="tile-category">Signature Collection</p>
-            <h3 class="tile-title">Bedding & Sleep<br>Textiles</h3>
-            <p class="tile-sub">Handcrafted comforters, duvets and bed linen — Handcrafted organic cotton and recycled fibres — GOTS certification available on request.</p>
-            <span class="tile-link">Explore Bedding →</span>
-          </div>
-        </div>
-      </a>
-      <a class="collection-tile" href="bath.html">
-        <div class="tile-image">
-          <img class="tile-img" src="images/home/tile-bath.webp" alt="Cotton bath mat with folded towels in a bright bathroom" loading="lazy" width="1000" height="750">
-          <div class="tile-overlay"></div>
-          <div class="tile-content">
-            <p class="tile-category">Bath Collection</p>
-            <h3 class="tile-title">Bath Textiles</h3>
-            <p class="tile-sub">OEKO-TEX certified bathmats and shower curtains.</p>
-            <span class="tile-link">Explore →</span>
-          </div>
-        </div>
-      </a>
-      <a class="collection-tile" href="cushions.html">
-        <div class="tile-image">
-          <img class="tile-img" src="images/home/tile-cushions.webp" alt="Green textured handwoven cotton cushion cover" loading="lazy" width="1000" height="750">
-          <div class="tile-overlay"></div>
-          <div class="tile-content">
-            <p class="tile-category">Soft Furnishings</p>
-            <h3 class="tile-title">Cushions &<br>Pillows</h3>
-            <p class="tile-sub">Embroidered, tufted and woven cushions. Seasonal collections.</p>
-            <span class="tile-link">Explore →</span>
-          </div>
-        </div>
-      </a>
-      <a class="collection-tile" href="throws.html">
-        <div class="tile-image">
-          <img class="tile-img" src="images/home/tile-throws.webp" alt="Caramel woven cotton throw draped over an armchair" loading="lazy" width="1000" height="750">
-          <div class="tile-overlay"></div>
-          <div class="tile-content">
-            <p class="tile-category">Soft Furnishings</p>
-            <h3 class="tile-title">Throws &<br>Blankets</h3>
-            <p class="tile-sub">Woven cotton and linen throws. Block print, boucle, stripe and pom-pom.</p>
-            <span class="tile-link">Explore →</span>
-          </div>
-        </div>
-      </a>
-      <a class="collection-tile" href="kitchen.html">
-        <div class="tile-image">
-          <img class="tile-img" src="images/home/tile-kitchen.webp" alt="Dining table set with a cotton table runner, placemats and napkins" loading="lazy" width="1000" height="750">
-          <div class="tile-overlay"></div>
-          <div class="tile-content">
-            <p class="tile-category">Kitchen & Dining</p>
-            <h3 class="tile-title">Kitchen &<br>Dining</h3>
-            <p class="tile-sub">Aprons, runners, placemats — certified and custom.</p>
-            <span class="tile-link">Explore →</span>
-          </div>
-        </div>
-      </a>
-      <a class="collection-tile" href="curtains.html">
-        <div class="tile-image">
-          <img class="tile-img" src="images/home/tile-curtains.webp" alt="Sage green striped cotton curtains at a sunlit window" loading="lazy" width="1000" height="750">
-          <div class="tile-overlay"></div>
-          <div class="tile-content">
-            <p class="tile-category">Window Textiles</p>
-            <h3 class="tile-title">Curtains &<br>Window Panels</h3>
-            <p class="tile-sub">Yarn-dyed stripes, plaids, hand block prints and washed linens — pencil-pleat, eyelet and tab-top headers.</p>
-            <span class="tile-link">Explore →</span>
-          </div>
-        </div>
-      </a>
-      <a class="collection-tile" href="pouffe.html">
-        <div class="tile-image">
-          <img class="tile-img" src="images/home/tile-pouffe.webp" alt="Handwoven colour-block cotton pouffe in a living room" loading="lazy" width="1000" height="750">
-          <div class="tile-overlay"></div>
-          <div class="tile-content">
-            <p class="tile-category">Floor & Seating</p>
-            <h3 class="tile-title">Pouffe &<br>Seating</h3>
-            <p class="tile-sub">Handcrafted pouffes and floor seating in cotton and mixed textiles.</p>
-            <span class="tile-link">Explore →</span>
-          </div>
-        </div>
-      </a>
-      <a class="collection-tile" href="rugs.html">
-        <div class="tile-image">
-          <img class="tile-img" src="images/home/tile-rugs.webp" alt="Contemporary handwoven flatweave rug in a modern living room" loading="lazy" width="1000" height="750">
-          <div class="tile-overlay"></div>
-          <div class="tile-content">
-            <p class="tile-category">Floor Collection</p>
-            <h3 class="tile-title">Rugs &<br>Mats</h3>
-            <p class="tile-sub">Flatweave, tufted and handloom rugs in cotton, jute and recycled yarns.</p>
-            <span class="tile-link">Explore →</span>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- WHY ABHI HOME -->
-<section class="section section-white">
-  <div class="section-inner">
-    <div style="text-align:center;">
-      <p class="section-label">Why Abhi Home®</p>
-      <h2 class="section-title">Built on Four Foundations</h2>
-    </div>
-    <div class="pillars-grid">
-      <div class="pillar">
-        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21c0-7 5-12 14-13 1 9-4 14-11 14"/><path d="M5 21c3-5 6-7 10-8"/></svg></div>
-        <h3 class="pillar-title">Sustainable Manufacturing</h3>
-        <p class="pillar-text">Every process from fibre to finish is certified, traceable and responsibly managed.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 2.5V11c0 4.3-3 7.6-7 9-4-1.4-7-4.7-7-9V5.5z"/><path d="M9 11.5l2.2 2.2L15 10"/></svg></div>
-        <h3 class="pillar-title">Certified Quality</h3>
-        <p class="pillar-text">Internationally certified — ISO, OEKO-TEX, GOTS, Higg Index and more.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4h10M7 20h10"/><path d="M9 4v16M12 4v16M15 4v16"/></svg></div>
-        <h3 class="pillar-title">Indian Craftsmanship</h3>
-        <p class="pillar-text">Three generations of artisanship combined with contemporary design.</p>
-      </div>
-      <div class="pillar">
-        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/></svg></div>
-        <h3 class="pillar-title">Custom Development</h3>
-        <p class="pillar-text">Exclusive ranges, private labels and bespoke programmes — concept to finished product.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SUSTAINABILITY BANNER -->
-<section class="sustainability-banner">
-  <div class="sust-bg-pattern"></div>
-  <div class="sust-inner">
-    <div class="sust-text">
-      <h2 class="section-title">Crafted Responsibly.<br><em>Designed Beautifully.</em></h2>
-      <p class="section-body">
-        Abhi Home® holds certifications that cover the full supply chain — from organic raw material sourcing to ethical factory conditions. Every metre of fabric we produce is a commitment to people and planet.
-      </p>
-      <a class="btn-outline-cream" href="sustainability.html">Read Our Sustainability Story</a>
-    </div>
-    <div class="sust-certs">
-      <div class="sust-cert-item"><span class="sust-cert-icon">☘</span><span class="sust-cert-name">GOTS</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">✓</span><span class="sust-cert-name">OEKO-TEX</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">♻</span><span class="sust-cert-name">GRS</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">◎</span><span class="sust-cert-name">Higg Index</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">⊛</span><span class="sust-cert-name">ISO 9001</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">◈</span><span class="sust-cert-name">ISO 14001</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">⊕</span><span class="sust-cert-name">Sedex</span></div>
-      <div class="sust-cert-item"><span class="sust-cert-icon">❋</span><span class="sust-cert-name">OCS 100</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- POUFFE TEASER -->
-<section class="section">
-  <div class="section-inner">
-    <div class="two-col two-col-reverse">
-      <div class="teaser-image">
-        <img class="teaser-img" src="images/home/teaser-pouffe.webp" alt="Handwoven cotton pouffe styled in a living room" loading="lazy" width="1000" height="1333">
-        <div class="teaser-image-label">Pouffe & Seating Collection</div>
-      </div>
+<!-- POSITIONING STATEMENT -->
+<section class="sec sec-cream">
+  <div class="wrap">
+    <div class="pos-grid">
       <div>
-        <p class="section-label">Floor & Seating</p>
-        <h2 class="section-title">Ground Every Space</h2>
-        <p class="section-body">
-          Handcrafted pouffes in cotton, velvet, ikat and patchwork — each one a statement piece that brings warmth, texture and character to every interior. Available for bulk and custom programmes.
-        </p>
-        <p class="section-body" style="margin-top: 16px;">
-          Tufted, hand-woven and appliquéd styles — made to order for global retailers and interior design programmes.
-        </p>
-        <a class="heritage-cta" href="pouffe.html">Explore Pouffe & Seating →</a>
+        <p class="eyebrow">Why buyers choose Abhi Home</p>
+        <h2>Quality that meets the brief — pricing that makes the programme work.</h2>
+      </div>
+      <div class="pos-points">
+        <div class="pos-point">
+          <h3>Fine product</h3>
+          <p>Considered design and consistent finish across every category, made to retail-quality standards.</p>
+        </div>
+        <div class="pos-point">
+          <h3>The right price</h3>
+          <p>Efficient, large-scale manufacturing and direct sourcing keep your range sharp on cost.</p>
+        </div>
+        <div class="pos-point">
+          <h3>Built to supply</h3>
+          <p>Dependable capacity, lead times and quality systems retail programmes can plan around.</p>
+        </div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num">1965</div><div class="lbl">Manufacturing since</div></div>
+      <div class="stat"><div class="num">60+</div><div class="lbl">Years of experience</div></div>
+      <div class="stat"><div class="num">22</div><div class="lbl">Export markets</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / SCALE -->
+<section class="sec sec-white">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-media">
+        <img src="images/home/heritage.webp" alt="Abhi Home cotton home textiles produced at scale" width="1000" height="1250" loading="lazy">
+        <span class="media-tag">Established 1965 · Manufacturing at scale</span>
+      </div>
+      <div class="split-text">
+        <p class="eyebrow">Since 1965</p>
+        <h2>Six decades of experience, engineered for scale today.</h2>
+        <p class="lead-body">Abhi Home has manufactured home textiles in India since 1965. That long track record now runs on modern, high-capacity production — combining deep manufacturing know-how with the reliability, throughput and quality control that global retail programmes depend on.</p>
+        <p class="lead-body">Led by Abhijat Paliwal, the business runs on the three things large buyers care about most: consistent quality, dependable supply, and competitive cost.</p>
+        <a class="text-link" href="about.html">About the company →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- INDIA_HUBS -->
-<section class="section section-white" style="padding:80px 0;background:#fff;">
-  <div class="section-inner">
-    <div style="text-align:center;margin-bottom:56px;">
-      <h2 class="section-title">Home Textile Manufacturers<br>in <em>India</em></h2>
-      <p class="section-body" style="max-width:720px;margin:16px auto 0;">Abhi Home has manufactured home textiles in India since 1965. Category-specific programme pages for international buyers sourcing from India &mdash; with MOQs, lead times, certifications and capability details.</p>
-      <p style="margin-top:24px;"><a href="home-textile-manufacturers-india.html" style="display:inline-block;padding:14px 28px;background:var(--green);color:#fff;text-decoration:none;font-family:'Raleway',sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;">View Master India Hub &rarr;</a></p>
+<!-- COLLECTIONS LOOKBOOK -->
+<section class="sec sec-cream" id="collections">
+  <div class="wrap">
+    <div class="collections-head">
+      <h2>One supplier, the full home-textile range.</h2>
+      <p class="lead-body">Certified product across every category — engineered for retail and trade programmes, in the designs, volumes and price points your range needs.</p>
     </div>
-    <div class="india-prog-grid">
-      <a href="cushion-manufacturers-india.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--green);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">India Programme</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushion Manufacturers in India</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;">Covers &amp; filled cushions &middot; MOQ 300</p>
+    <div class="lookbook">
+      <a class="tile feature" href="bedding.html">
+        <div class="tile-media">
+          <img src="images/home/tile-bedding.webp" alt="Patchwork cotton quilt and bedding styled on a bed" width="1500" height="844" loading="lazy">
+          <div class="tile-scrim"></div>
+        </div>
+        <div class="tile-body">
+          <p class="tile-kicker">Signature category</p>
+          <h3>Bedding &amp; sleep textiles</h3>
+          <p class="tile-sub">Comforters, duvet sets and bed linen in organic cotton and recycled fibres — GOTS certification available.</p>
+          <span class="tile-more">Explore bedding →</span>
+        </div>
       </a>
-      <a href="bedding-manufacturers-india.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--green);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">India Programme</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding Manufacturers in India</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;">Duvet sets &middot; sheets &middot; quilts</p>
+      <a class="tile" href="bath.html">
+        <div class="tile-media">
+          <img src="images/home/tile-bath.webp" alt="Cotton bath mat with folded towels in a bright bathroom" width="1000" height="750" loading="lazy">
+          <div class="tile-scrim"></div>
+        </div>
+        <div class="tile-body">
+          <p class="tile-kicker">Bath</p>
+          <h3>Bath textiles</h3>
+          <p class="tile-sub">OEKO-TEX certified bath mats and shower curtains.</p>
+        </div>
       </a>
-      <a href="bath-textile-manufacturers-india.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--green);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">India Programme</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bath Textile Manufacturers in India</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;">Bath mats &middot; shower curtains</p>
+      <a class="tile" href="cushions.html">
+        <div class="tile-media">
+          <img src="images/home/tile-cushions.webp" alt="Green textured handwoven cotton cushion cover" width="1000" height="750" loading="lazy">
+          <div class="tile-scrim"></div>
+        </div>
+        <div class="tile-body">
+          <p class="tile-kicker">Soft furnishings</p>
+          <h3>Cushions &amp; pillows</h3>
+          <p class="tile-sub">Embroidered, tufted and woven cushions; seasonal ranges.</p>
+        </div>
       </a>
-      <a href="kitchen-linen-manufacturers-india.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--green);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">India Programme</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Kitchen Linen Manufacturers in India</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;">Tea towels &middot; aprons &middot; table linen</p>
+      <a class="tile" href="throws.html">
+        <div class="tile-media">
+          <img src="images/home/tile-throws.webp" alt="Caramel woven cotton throw draped over an armchair" width="1000" height="750" loading="lazy">
+          <div class="tile-scrim"></div>
+        </div>
+        <div class="tile-body">
+          <p class="tile-kicker">Soft furnishings</p>
+          <h3>Throws &amp; blankets</h3>
+          <p class="tile-sub">Woven cotton and linen — block print, bouclé, stripe, pom-pom.</p>
+        </div>
       </a>
-      <a href="throws-manufacturers-india.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--green);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">India Programme</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Throws &amp; Blanket Manufacturers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;">Woven &middot; knitted &middot; printed throws</p>
+      <a class="tile wide" href="curtains.html">
+        <div class="tile-media">
+          <img src="images/home/tile-curtains.webp" alt="Sage green striped cotton curtains at a sunlit window" width="1000" height="750" loading="lazy">
+          <div class="tile-scrim"></div>
+        </div>
+        <div class="tile-body">
+          <p class="tile-kicker">Window textiles</p>
+          <h3>Curtains &amp; window panels</h3>
+          <p class="tile-sub">Yarn-dyed stripes, plaids, block prints and washed linens — pencil-pleat, eyelet and tab-top headers.</p>
+          <span class="tile-more">Explore curtains →</span>
+        </div>
       </a>
-      <a href="pouffe-manufacturers-india.html" style="display:block;text-decoration:none;background:var(--cream);border-top:3px solid var(--green);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">India Programme</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Pouffe Manufacturers in India</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;">Pouffes &middot; floor cushions &middot; ottomans</p>
+      <a class="tile wide" href="kitchen.html">
+        <div class="tile-media">
+          <img src="images/home/tile-kitchen.webp" alt="Dining table set with a cotton table runner, placemats and napkins" width="1000" height="750" loading="lazy">
+          <div class="tile-scrim"></div>
+        </div>
+        <div class="tile-body">
+          <p class="tile-kicker">Kitchen &amp; dining</p>
+          <h3>Kitchen &amp; dining</h3>
+          <p class="tile-sub">Aprons, runners, placemats and table linen — certified and custom.</p>
+          <span class="tile-more">Explore kitchen →</span>
+        </div>
+      </a>
+      <a class="tile" href="pouffe.html">
+        <div class="tile-media">
+          <img src="images/home/tile-pouffe.webp" alt="Handwoven colour-block cotton pouffe in a living room" width="1000" height="750" loading="lazy">
+          <div class="tile-scrim"></div>
+        </div>
+        <div class="tile-body">
+          <p class="tile-kicker">Floor &amp; seating</p>
+          <h3>Pouffe &amp; seating</h3>
+          <p class="tile-sub">Pouffes and floor seating in cotton and mixed textiles.</p>
+        </div>
+      </a>
+      <a class="tile" href="rugs.html">
+        <div class="tile-media">
+          <img src="images/home/tile-rugs.webp" alt="Contemporary handwoven flatweave rug in a modern living room" width="1000" height="750" loading="lazy">
+          <div class="tile-scrim"></div>
+        </div>
+        <div class="tile-body">
+          <p class="tile-kicker">Floor</p>
+          <h3>Rugs &amp; mats</h3>
+          <p class="tile-sub">Flatweave, tufted and handloom rugs in cotton, jute and recycled yarns.</p>
+        </div>
       </a>
     </div>
   </div>
 </section>
-<!-- /INDIA_HUBS -->
 
-<!-- COUNTRY_PROGRAMMES -->
-<section class="section section-alt" style="padding:80px 0;">
-  <div class="section-inner">
-    <div style="text-align:center;margin-bottom:56px;">
-      <p class="section-label">Global Markets</p>
-      <h2 class="section-title">Country Programmes for <em>Retail Buyers</em></h2>
-      <p class="section-body" style="max-width:720px;margin:16px auto 0;">Dedicated sourcing pages for buyers in our priority export markets. Each page covers port logistics, lead times, certifications and MOQs for that country.</p>
+<!-- WHY WORK WITH US -->
+<section class="sec sec-white">
+  <div class="wrap">
+    <div class="why-head">
+      <p class="eyebrow">Working with Abhi Home</p>
+      <h2>A manufacturing partner built around your programme.</h2>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;">
-      <a href="bedding-manufacturer-us.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">USA</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for USA Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Los Angeles and New York/Newark</p>
-      </a>
-      <a href="bedding-manufacturer-ca.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Canada</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Canada Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Vancouver and Montreal</p>
-      </a>
-      <a href="cushion-manufacturer-mx.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Mexico</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushions for Mexico Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Manzanillo and Veracruz</p>
-      </a>
-      <a href="bedding-manufacturer-br.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Brazil</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Brazil Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Santos and Itaja&iacute;</p>
-      </a>
-      <a href="cushion-manufacturer-uk.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">United Kingdom</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushions for UK Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Felixstowe and Southampton</p>
-      </a>
-      <a href="bedding-manufacturer-de.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Germany</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Germany Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Hamburg and Bremerhaven</p>
-      </a>
-      <a href="cushion-manufacturer-fr.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">France</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushions for France Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Le Havre and Marseille-Fos</p>
-      </a>
-      <a href="cushion-manufacturer-it.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Italy</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Cushions for Italy Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Genoa and La Spezia</p>
-      </a>
-      <a href="bedding-manufacturer-es.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Spain</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Spain Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Valencia and Algeciras</p>
-      </a>
-      <a href="bedding-manufacturer-au.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Australia</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bedding for Australia Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Sydney and Melbourne</p>
-      </a>
-      <a href="bath-textile-manufacturer-jp.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">Japan</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bath Textiles for Japan Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Tokyo and Yokohama</p>
-      </a>
-      <a href="bath-textile-manufacturer-ae.html" style="display:block;text-decoration:none;background:#fff;border-top:3px solid var(--terracotta);padding:24px 22px;transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 10px 24px rgba(45,74,62,0.12)';" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none';">
-        <p style="font-family:'Raleway',sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:8px;">UAE</p>
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);margin-bottom:6px;line-height:1.3;">Bath Textiles for UAE Retailers</h3>
-        <p style="font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;line-height:1.5;">Shipped to Jebel Ali (Dubai) and Khor Fakkan</p>
-      </a>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pn">01</div>
+        <h3>Certified quality</h3>
+        <p>ISO, OEKO-TEX, GOTS, GRS and Higg-verified — quality and compliance your buyers can rely on.</p>
+      </div>
+      <div class="pillar">
+        <div class="pn">02</div>
+        <h3>Scale &amp; reliability</h3>
+        <p>High-capacity lines and dependable lead times across 22 export markets — built for retail volumes.</p>
+      </div>
+      <div class="pillar">
+        <div class="pn">03</div>
+        <h3>Competitive pricing</h3>
+        <p>Efficient manufacturing and direct sourcing keep your range sharp on cost, without compromising the product.</p>
+      </div>
+      <div class="pillar">
+        <div class="pn">04</div>
+        <h3>Private label &amp; development</h3>
+        <p>Full programme support — concept, sampling, production and delivery — under your label or ours.</p>
+      </div>
     </div>
-    <p style="text-align:center;margin-top:40px;font-family:'Raleway',sans-serif;font-size:13px;color:#4a4a4a;">Exporting to 22 countries across the Americas, Europe, APAC and the Gulf &mdash; across all 6 product categories.</p>
   </div>
 </section>
-<!-- /COUNTRY_PROGRAMMES -->
 
-<!-- TRADE ENQUIRY CTA -->
-<section id="enquiry" style="background:var(--green);padding:84px 30px;">
-  <div style="max-width:720px;margin:0 auto;text-align:center;">
-    <p style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--terracotta);font-weight:700;margin-bottom:16px;">Trade Enquiries</p>
-    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,48px);font-weight:400;color:var(--cream);line-height:1.15;margin-bottom:14px;">Let's Build Your Next <em style="font-style:italic;">Range</em></h2>
-    <p style="font-size:15px;color:rgba(250,248,245,0.82);line-height:1.7;margin-bottom:8px;">Private label, custom development or wholesale - tell us what you're sourcing and our team replies within 12 working hours.</p>
-    <p style="font-size:12px;letter-spacing:1px;color:rgba(250,248,245,0.55);margin-bottom:30px;">Private label &amp; OEM &middot; Low MOQs &middot; OEKO-TEX&reg; &amp; GOTS certified &middot; Shipped to 22 countries</p>
+<!-- COMPLIANCE BAND -->
+<section class="sec compliance">
+  <div class="wrap">
+    <div class="compliance-grid">
+      <div>
+        <p class="eyebrow">Certifications &amp; compliance</p>
+        <h2>Certified across the supply chain.</h2>
+        <p>From raw-material sourcing to factory conditions, Abhi Home holds the certifications large retailers now require — so compliance is one less thing on your sourcing checklist.</p>
+        <a class="text-link" href="sustainability.html" style="color:var(--cream);border-color:var(--terracotta);">Our certifications &amp; standards →</a>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-cell"><span>GOTS</span></div>
+        <div class="cert-cell"><span>OEKO-TEX®</span></div>
+        <div class="cert-cell"><span>GRS</span></div>
+        <div class="cert-cell"><span>Higg Index</span></div>
+        <div class="cert-cell"><span>ISO 9001</span></div>
+        <div class="cert-cell"><span>ISO 14001</span></div>
+        <div class="cert-cell"><span>Sedex</span></div>
+        <div class="cert-cell"><span>OCS 100</span></div>
+      </div>
+    </div>
   </div>
-  <form id="enquiry-form" style="max-width:720px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-    <input type="text" name="name" placeholder="Your name*" required autocomplete="name">
-    <input type="text" name="company" placeholder="Company" autocomplete="organization">
-    <input type="email" name="email" placeholder="Email*" required autocomplete="email">
-    <input type="tel" name="phone" placeholder="Phone / WhatsApp (optional)" autocomplete="tel">
-    <input type="text" name="country" placeholder="Country" autocomplete="country-name">
-    <select name="product" aria-label="Product interest">
-      <option value="">Product interest...</option>
-      <option>Bedding</option><option>Cushions</option><option>Throws &amp; Blankets</option><option>Curtains</option>
-      <option>Bath Textiles</option><option>Kitchen &amp; Dining</option><option>Pouffe &amp; Seating</option><option>Rugs</option>
-      <option>Private label / OEM</option><option>Other</option>
-    </select>
-    <textarea name="message" rows="4" placeholder="What are you sourcing? Quantities, timelines, designs..." style="grid-column:1/-1;"></textarea>
-    <input type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
-    <label class="consent-row">
-      <input type="checkbox" name="consent" value="yes" required>
-      <span>I agree to Abhi Home&reg; processing my details to respond to this enquiry, as set out in our <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>. We never share your data.</span>
-    </label>
-    <button type="submit">Send Enquiry</button>
-    <p id="enquiry-status" role="status" aria-live="polite" style="grid-column:1/-1;text-align:center;font-size:14px;color:var(--cream);min-height:20px;margin-top:2px;"></p>
-  </form>
-  <p style="max-width:720px;margin:18px auto 0;text-align:center;font-size:13px;color:rgba(250,248,245,0.7);">Prefer to chat? <a href="https://wa.me/919817031900" target="_blank" rel="noopener" style="color:var(--terracotta);text-decoration:none;">WhatsApp us</a> &middot; or email <a href="mailto:info@abhihome.in" style="color:var(--terracotta);text-decoration:none;">info@abhihome.in</a></p>
-  <style>
-    #enquiry-form input,#enquiry-form select,#enquiry-form textarea{width:100%;padding:13px 15px;border:1px solid rgba(250,248,245,0.25);background:rgba(250,248,245,0.97);color:var(--charcoal);font-family:'Raleway',sans-serif;font-size:14px;border-radius:2px;}
-    #enquiry-form ::placeholder{color:#8A847E;}
-    #enquiry-form button{grid-column:1/-1;background:var(--cream);color:var(--green);border:none;padding:16px;font-size:11px;letter-spacing:3px;text-transform:uppercase;font-weight:700;font-family:'Raleway',sans-serif;cursor:pointer;}
-    #enquiry-form button:disabled{opacity:0.6;cursor:default;}
-    #enquiry-form input[type="checkbox"]{appearance:auto;-webkit-appearance:auto;width:18px;height:18px;min-width:18px;flex:0 0 auto;margin:2px 0 0;padding:0;border:0;background:none;border-radius:0;accent-color:#C4A882;cursor:pointer;}
-    #enquiry-form .consent-row{grid-column:1/-1;display:flex;align-items:flex-start;gap:10px;text-align:left;text-transform:none;letter-spacing:normal;font-weight:400;font-size:12.5px;line-height:1.55;color:rgba(250,248,245,0.82);cursor:pointer;}
-    #enquiry-form .consent-row a{color:#fff;text-decoration:underline;}
-    @media (max-width:600px){#enquiry-form{grid-template-columns:1fr;}}
-  </style>
-  <script>
-  (function(){
-    var f=document.getElementById("enquiry-form"); if(!f) return;
-    var s=document.getElementById("enquiry-status"), btn=f.querySelector("button");
-    f.addEventListener("submit",function(e){
-      e.preventDefault();
-      var fd=new FormData(f), data={}; fd.forEach(function(v,k){data[k]=v;});
-      if(data.company_website){ s.style.color="#fff"; s.textContent="Thank you."; f.reset(); return; }
-      btn.disabled=true; s.style.color="rgba(250,248,245,0.85)"; s.textContent="Sending...";
-      fetch("/api/enquiry",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
-        .then(function(r){return r.json().catch(function(){return {success:r.ok};});})
-        .then(function(j){ if(j&&j.success){ f.reset(); s.style.color="#fff"; s.textContent="Thank you - your enquiry has reached our team. We will reply within 12 working hours."; } else { throw new Error((j&&j.message)||"error"); } })
-        .catch(function(){ s.style.color="#F3C9B5"; s.innerHTML="Sorry, something went wrong. Please email <a href='mailto:info@abhihome.in' style='color:#fff;'>info@abhihome.in</a>."; })
-        .finally(function(){ btn.disabled=false; });
-    });
-  })();
-  </script>
+</section>
+
+<!-- CATEGORY DEPTH / TEASER -->
+<section class="sec sec-cream">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="split-text">
+        <p class="eyebrow">Custom &amp; made-to-order</p>
+        <h2>Depth in every category, built to your spec.</h2>
+        <p class="lead-body">Take pouffes and floor seating: cotton, velvet, ikat and patchwork, produced to order in the materials, colours and volumes your programme calls for. The same applies across the range — tell us the spec and we build to it.</p>
+        <p class="lead-body">Tufted, hand-woven and appliquéd styles for retail and interior-design programmes, at programme scale.</p>
+        <a class="text-link" href="pouffe.html">Explore pouffe &amp; seating →</a>
+      </div>
+      <div class="split-media">
+        <img src="images/home/teaser-pouffe.webp" alt="Handwoven cotton pouffe styled in a living room" width="1000" height="1333" loading="lazy">
+        <span class="media-tag">Pouffe &amp; seating · made to order</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDIA HUBS -->
+<section class="sec sec-white">
+  <div class="wrap">
+    <div class="grid-head">
+      <p class="eyebrow">Sourcing from India</p>
+      <h2>Home textile manufacturers in India.</h2>
+      <p class="lead-body">Category programme pages for international buyers sourcing from India — with MOQs, lead times, certifications and capability detail.</p>
+      <a href="home-textile-manufacturers-india.html" class="hub-cta">View master India hub →</a>
+    </div>
+    <div class="card-grid">
+      <a href="cushion-manufacturers-india.html" class="lcard"><p class="lk">India programme</p><h3>Cushion Manufacturers in India</h3><p>Covers &amp; filled cushions · MOQ 300</p></a>
+      <a href="bedding-manufacturers-india.html" class="lcard"><p class="lk">India programme</p><h3>Bedding Manufacturers in India</h3><p>Duvet sets · sheets · quilts</p></a>
+      <a href="bath-textile-manufacturers-india.html" class="lcard"><p class="lk">India programme</p><h3>Bath Textile Manufacturers in India</h3><p>Bath mats · shower curtains</p></a>
+      <a href="kitchen-linen-manufacturers-india.html" class="lcard"><p class="lk">India programme</p><h3>Kitchen Linen Manufacturers in India</h3><p>Tea towels · aprons · table linen</p></a>
+      <a href="throws-manufacturers-india.html" class="lcard"><p class="lk">India programme</p><h3>Throws &amp; Blanket Manufacturers</h3><p>Woven · knitted · printed throws</p></a>
+      <a href="pouffe-manufacturers-india.html" class="lcard"><p class="lk">India programme</p><h3>Pouffe Manufacturers in India</h3><p>Pouffes · floor cushions · ottomans</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTRY PROGRAMMES -->
+<section class="sec sec-sand">
+  <div class="wrap">
+    <div class="grid-head">
+      <p class="eyebrow">Global markets</p>
+      <h2>Country programmes for retail buyers.</h2>
+      <p class="lead-body">Dedicated sourcing pages for our priority export markets — port logistics, lead times, certifications and MOQs for each country.</p>
+    </div>
+    <div class="card-grid">
+      <a href="bedding-manufacturer-us.html" class="lcard alt"><p class="lk">USA</p><h3>Bedding for USA Retailers</h3><p>Shipped to Los Angeles and New York/Newark</p></a>
+      <a href="bedding-manufacturer-ca.html" class="lcard alt"><p class="lk">Canada</p><h3>Bedding for Canada Retailers</h3><p>Shipped to Vancouver and Montreal</p></a>
+      <a href="cushion-manufacturer-mx.html" class="lcard alt"><p class="lk">Mexico</p><h3>Cushions for Mexico Retailers</h3><p>Shipped to Manzanillo and Veracruz</p></a>
+      <a href="bedding-manufacturer-br.html" class="lcard alt"><p class="lk">Brazil</p><h3>Bedding for Brazil Retailers</h3><p>Shipped to Santos and Itajaí</p></a>
+      <a href="cushion-manufacturer-uk.html" class="lcard alt"><p class="lk">United Kingdom</p><h3>Cushions for UK Retailers</h3><p>Shipped to Felixstowe and Southampton</p></a>
+      <a href="bedding-manufacturer-de.html" class="lcard alt"><p class="lk">Germany</p><h3>Bedding for Germany Retailers</h3><p>Shipped to Hamburg and Bremerhaven</p></a>
+      <a href="cushion-manufacturer-fr.html" class="lcard alt"><p class="lk">France</p><h3>Cushions for France Retailers</h3><p>Shipped to Le Havre and Marseille-Fos</p></a>
+      <a href="cushion-manufacturer-it.html" class="lcard alt"><p class="lk">Italy</p><h3>Cushions for Italy Retailers</h3><p>Shipped to Genoa and La Spezia</p></a>
+      <a href="bedding-manufacturer-es.html" class="lcard alt"><p class="lk">Spain</p><h3>Bedding for Spain Retailers</h3><p>Shipped to Valencia and Algeciras</p></a>
+      <a href="bedding-manufacturer-au.html" class="lcard alt"><p class="lk">Australia</p><h3>Bedding for Australia Retailers</h3><p>Shipped to Sydney and Melbourne</p></a>
+      <a href="bath-textile-manufacturer-jp.html" class="lcard alt"><p class="lk">Japan</p><h3>Bath Textiles for Japan Retailers</h3><p>Shipped to Tokyo and Yokohama</p></a>
+      <a href="bath-textile-manufacturer-ae.html" class="lcard alt"><p class="lk">UAE</p><h3>Bath Textiles for UAE Retailers</h3><p>Shipped to Jebel Ali (Dubai) and Khor Fakkan</p></a>
+    </div>
+    <p class="grid-foot">Exporting to 22 countries across the Americas, Europe, APAC and the Gulf — across all product categories.</p>
+  </div>
+</section>
+
+<!-- ENQUIRY -->
+<section class="enquiry" id="enquiry">
+  <div class="enquiry-inner">
+    <p class="eyebrow">Trade enquiries</p>
+    <h2>Let's build your next range.</h2>
+    <p class="sub1">Private label, custom development or wholesale — tell us what you're sourcing and our team replies within 12 working hours.</p>
+    <p class="sub2">Private label &amp; OEM · Low MOQs · OEKO-TEX® &amp; GOTS certified · Shipped to 22 countries</p>
+    <form id="enquiry-form">
+      <input type="text" name="name" placeholder="Your name*" required autocomplete="name">
+      <input type="text" name="company" placeholder="Company" autocomplete="organization">
+      <input type="email" name="email" placeholder="Email*" required autocomplete="email">
+      <input type="text" name="country" placeholder="Country" autocomplete="country-name">
+      <select name="product" aria-label="Product interest">
+        <option value="">Product interest...</option>
+        <option>Bedding</option><option>Cushions</option><option>Throws &amp; Blankets</option><option>Curtains</option>
+        <option>Bath Textiles</option><option>Kitchen &amp; Dining</option><option>Pouffe &amp; Seating</option><option>Rugs</option>
+        <option>Private label / OEM</option><option>Other</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="What are you sourcing? Quantities, timelines, designs..."></textarea>
+      <input type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+      <button type="submit">Send enquiry</button>
+      <p id="enquiry-status" role="status" aria-live="polite" style="grid-column:1/-1;text-align:center;font-size:14px;color:var(--cream);min-height:20px;"></p>
+    </form>
+    <p class="enquiry-alt">Prefer to chat? <a href="https://wa.me/919817031900" target="_blank" rel="noopener">WhatsApp us</a> · or email <a href="mailto:info@abhihome.in">info@abhihome.in</a></p>
+  </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-cert-strip">
+    <div class="footer-certs">
       <span class="footer-cert">Sedex Registered</span>
       <span class="footer-cert">ISO 9001:2015</span>
       <span class="footer-cert">ISO 14001</span>
@@ -1519,53 +825,44 @@
       <span class="footer-cert">BCI Member</span>
       <span class="footer-cert">Higg Index Verified</span>
     </div>
-        <!-- FOOTER TREE TICKER (compact) -->
-    <div class="footer-tree-strip" style="text-align:center;padding:18px 20px;margin-bottom:34px;border:1px solid rgba(196,168,130,0.25);border-radius:4px;background:rgba(196,168,130,0.06);">
-      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#C4A882;font-weight:600;margin-bottom:6px;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;margin-right:5px;"><path d="M12 22V10"/><path d="M12 12C8 12 5 9 5 5c4 0 7 3 7 7z"/><path d="M12 11c0-3 3-6 7-6 0 4-3 6-7 6z"/></svg>Live Tree Counter</div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:500;color:#FAF8F5;line-height:1;letter-spacing:0.5px;">
-        <span class="tree-ticker-count" data-animate="true" data-duration="1500">0</span>
-        <span style="font-size:14px;color:rgba(250,248,245,0.55);letter-spacing:2px;text-transform:uppercase;margin-left:8px;">trees planted</span>
-      </div>
-      <div style="font-size:11px;color:rgba(250,248,245,0.5);margin-top:6px;letter-spacing:1px;">Target <span class="tree-ticker-goal">10,000+</span> in 2026 &middot; <a href="carbon-footprint.html" style="color:#C4A882;text-decoration:none;border-bottom:1px solid rgba(196,168,130,0.4);">See our plantation programme &rarr;</a></div>
+
+    <div class="tree-strip">
+      <div class="tl">Live tree counter</div>
+      <div class="tn"><span class="tree-ticker-count" data-animate="true" data-duration="1500">0</span><small>trees planted</small></div>
+      <div class="tg">Target <span class="tree-ticker-goal">10,000+</span> in 2026 · <a href="carbon-footprint.html">See our plantation programme →</a></div>
     </div>
 
-    <div class="footer-top">
+    <div class="footer-grid">
       <div class="footer-brand">
-        <div class="logo">Abhi Home® <span>By Abhijat Paliwal</span></div>
-        <p class="footer-tagline">"Bringing warmth to every corner, responsibly."</p>
+        <a class="wordmark footer-wordmark" href="index.html">Abhi Home®</a>
+        <p class="footer-tagline">Made in India for the world's retailers.</p>
         <div class="footer-contact">
           info@abhihome.in<br>
-          <a href="https://wa.me/919817031900" target="_blank" style="color: var(--terracotta);"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>WhatsApp Us</a><br>
+          <a href="https://wa.me/919817031900" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>WhatsApp us</a><br>
           www.abhihome.in
         </div>
-        <!-- LINKEDIN_LINK:BEGIN -->
-        <div class="footer-social" style="margin-top:20px;display:flex;align-items:center;gap:10px;">
-          <a href="https://www.linkedin.com/company/13447691/" target="_blank" rel="noopener noreferrer" aria-label="Follow Abhi Home on LinkedIn" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid rgba(196,168,130,0.4);border-radius:50%;color:#C4A882;text-decoration:none;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='#C4A882';this.style.color='#2C2C2C';" onmouseout="this.style.background='transparent';this.style.color='#C4A882';"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.452 20.452h-3.554V14.84c0-1.34-.026-3.06-1.867-3.06-1.867 0-2.153 1.458-2.153 2.963v5.71H9.324V9h3.414v1.561h.048c.476-.9 1.637-1.852 3.369-1.852 3.6 0 4.268 2.37 4.268 5.451v6.292zM5.337 7.433a2.064 2.064 0 01-2.064-2.065 2.064 2.064 0 112.064 2.065zm1.777 13.019H3.56V9h3.554v11.452zM22.227 0H1.77C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.454C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0h.002z"/></svg></a>
-          <span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(196,168,130,0.9);font-weight:600;">Follow on LinkedIn</span>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/13447691/" target="_blank" rel="noopener noreferrer" aria-label="Follow Abhi Home on LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.452 20.452h-3.554V14.84c0-1.34-.026-3.06-1.867-3.06-1.867 0-2.153 1.458-2.153 2.963v5.71H9.324V9h3.414v1.561h.048c.476-.9 1.637-1.852 3.369-1.852 3.6 0 4.268 2.37 4.268 5.451v6.292zM5.337 7.433a2.064 2.064 0 01-2.064-2.065 2.064 2.064 0 112.064 2.065zm1.777 13.019H3.56V9h3.554v11.452zM22.227 0H1.77C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.454C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0h.002z"/></svg></a>
+          <span>Follow on LinkedIn</span>
         </div>
-        <!-- LINKEDIN_LINK:END -->
-        <!-- BRAND_NOTICE -->
-        <p class="footer-notice" style="font-size: 10px; opacity: 0.7; margin-top: 14px; line-height: 1.55; letter-spacing: 0.3px;">
-          Official website: <strong>www.abhihome.in</strong> &mdash; A third-generation family home-textile business in India since 1965, today trading as Abhi Home<sup>&reg;</sup> (a registered trademark). We are not affiliated with any other domain or business.
-        </p>
-        <!-- /BRAND_NOTICE -->
+        <p class="footer-notice">Official website: <strong>www.abhihome.in</strong> — A third-generation family home-textile business in India since 1965, today trading as Abhi Home® (a registered trademark). We are not affiliated with any other domain or business.</p>
       </div>
-      <div>
-        <p class="footer-col-title">Products</p>
-        <ul class="footer-links">
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
           <li><a href="bedding.html">Bedding</a></li>
           <li><a href="cushions.html">Cushions</a></li>
-          <li><a href="throws.html">Throws & Blankets</a></li>
+          <li><a href="throws.html">Throws &amp; Blankets</a></li>
           <li><a href="curtains.html">Curtains</a></li>
           <li><a href="bath.html">Bath Textiles</a></li>
-          <li><a href="kitchen.html">Kitchen & Dining</a></li>
-          <li><a href="pouffe.html">Pouffe & Seating</a></li>
+          <li><a href="kitchen.html">Kitchen &amp; Dining</a></li>
+          <li><a href="pouffe.html">Pouffe &amp; Seating</a></li>
           <li><a href="rugs.html">Rugs</a></li>
         </ul>
       </div>
-      <div>
-        <p class="footer-col-title">Company</p>
-        <ul class="footer-links">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
           <li><a href="about.html">About Us</a></li>
           <li><a href="sustainability.html">Sustainability</a></li>
           <li><a href="carbon-footprint.html">Carbon Footprint</a></li>
@@ -1576,9 +873,9 @@
           <li><a href="terms-of-use.html">Terms of Use</a></li>
         </ul>
       </div>
-      <div>
-        <p class="footer-col-title">Trade</p>
-        <ul class="footer-links">
+      <div class="footer-col">
+        <h4>Trade</h4>
+        <ul>
           <li><a href="contact.html">Request a Catalogue</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="contact.html">Private Label</a></li>
@@ -1588,28 +885,41 @@
     </div>
     <div class="footer-bottom">
       <span>Abhi Home® is a registered trademark of Abhijat Paliwal. All rights reserved.</span>
-      <span>India's Premier Certified Sustainable Home Textiles Manufacturer</span>
+      <span>Certified home textile manufacturer &amp; exporter · India</span>
     </div>
   </div>
 </footer>
 
-<script src="js/tree-ticker.js"></script>
+<script>
+(function(){
+  var f=document.getElementById("enquiry-form"); if(!f) return;
+  var s=document.getElementById("enquiry-status"), btn=f.querySelector("button");
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var fd=new FormData(f), data={}; fd.forEach(function(v,k){data[k]=v;});
+    if(data.company_website){ s.style.color="#fff"; s.textContent="Thank you."; f.reset(); return; }
+    btn.disabled=true; s.style.color="rgba(250,248,245,0.85)"; s.textContent="Sending...";
+    fetch("/api/enquiry",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
+      .then(function(r){return r.json().catch(function(){return {success:r.ok};});})
+      .then(function(j){ if(j&&j.success){ f.reset(); s.style.color="#fff"; s.textContent="Thank you - your enquiry has reached our team. We will reply within 12 working hours."; } else { throw new Error((j&&j.message)||"error"); } })
+      .catch(function(){ s.style.color="#F3C9B5"; s.innerHTML="Sorry, something went wrong. Please email <a href='mailto:info@abhihome.in' style='color:#fff;'>info@abhihome.in</a>."; })
+      .finally(function(){ btn.disabled=false; });
+  });
+})();
+</script>
 <script id="ah-mobile-nav-js">
 (function(){
   var header=document.querySelector('header');
   var toggle=header&&header.querySelector('.nav-toggle');
-  var navInner=header&&header.querySelector('.nav-inner');
-  if(!header||!toggle||!navInner)return;
-  function setOpen(open){
-    header.classList.toggle('nav-open',open);
-    toggle.setAttribute('aria-expanded',open?'true':'false');
-    toggle.setAttribute('aria-label',open?'Close menu':'Open menu');
-  }
+  var nav=header&&header.querySelector('.mainnav');
+  if(!header||!toggle||!nav)return;
+  function setOpen(open){header.classList.toggle('nav-open',open);toggle.setAttribute('aria-expanded',open?'true':'false');toggle.setAttribute('aria-label',open?'Close menu':'Open menu');}
   toggle.addEventListener('click',function(e){e.stopPropagation();setOpen(!header.classList.contains('nav-open'));});
-  Array.prototype.forEach.call(navInner.querySelectorAll('a'),function(a){a.addEventListener('click',function(){setOpen(false);});});
+  Array.prototype.forEach.call(nav.querySelectorAll('a'),function(a){a.addEventListener('click',function(){setOpen(false);});});
   document.addEventListener('click',function(e){if(header.classList.contains('nav-open')&&!header.contains(e.target))setOpen(false);});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'||e.keyCode===27)setOpen(false);});
 })();
 </script>
+<script src="js/tree-ticker.js"></script>
 </body>
 </html>
