@@ -300,3 +300,6 @@ textarea { resize: vertical; min-height: 120px; }
 .cat-tile:focus-visible{outline:3px solid var(--terracotta);outline-offset:2px;}
 @media(max-width:880px){.cat-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:560px){.cat-grid{grid-template-columns:1fr;}}
+
+.cat-tile.noimg{background:var(--green);}
+.cat-tile.noimg .body{position:static;height:100%;display:flex;flex-direction:column;justify-content:center;}
