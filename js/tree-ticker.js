@@ -5,27 +5,38 @@
    partnership with Grow-Trees.com at the "Trees for Tribals®"
    project in Shahbad, Baran District, Rajasthan, India.
 
-   How it works
-   ------------
-   - ANCHOR_DATE / ANCHOR_COUNT = the known truth on a given day
-   - Every calendar month adds exactly MONTHLY_PLEDGE trees
-   - Daily increments inside a month look random (15–60/day) but
-     are deterministic (seeded by year+month) so every visitor on
-     the same day sees the same number. Daily values always sum
-     to exactly MONTHLY_PLEDGE for the month.
+   The real-world story this counter reflects
+   -------------------------------------------
+   - BASE_COUNT trees were planted by ABHI HOME BEFORE the
+     Grow-Trees collaboration began. This is the starting point.
+   - From PROGRAM_START onward, Grow-Trees plants exactly
+     MONTHLY_PLEDGE (900) trees for us EVERY calendar month.
+   - Grow-Trees issues one certificate per completed month
+     (e.g. May = 900, June = 900 -> 2 certificates so far).
 
-   Update ANCHOR_DATE / ANCHOR_COUNT once a month (or whenever
-   you receive a new Grow-Trees certificate) to re-baseline.
+   How the number on screen behaves
+   --------------------------------
+   - Each completed month adds the full MONTHLY_PLEDGE.
+   - Inside the CURRENT month, the 900 trees are spread across
+     the days so the count rises a little each day. The daily
+     amounts look random (NOT a flat 30/day) but are seeded by
+     year+month, so every visitor on the same day sees the same
+     number, and the daily amounts always sum to exactly 900.
+   - The number is FIXED for any given calendar day. On a page
+     refresh it re-plays a short count-up ANIMATION only.
+
+   To re-baseline, you normally only ever touch BASE_COUNT,
+   PROGRAM_START and MONTHLY_PLEDGE below.
    ============================================================ */
 
 (function (global) {
   'use strict';
 
-  // ---- CONFIG (edit these to re-baseline) --------------------
-  var ANCHOR_DATE     = '2026-06-08'; // YYYY-MM-DD — date of known count (Grow-Trees cert 5555943)
-  var ANCHOR_COUNT    = 2136;          // trees planted on ANCHOR_DATE (1236 through May + 900 June batch)
-  var MONTHLY_PLEDGE  = 900;           // trees added every calendar month
-  var YEAR_GOAL       = 10000;         // marketing target for 2026
+  // ---- CONFIG (edit these only) ------------------------------
+  var BASE_COUNT      = 500;        // trees planted BEFORE the Grow-Trees collaboration
+  var PROGRAM_START   = '2026-05';  // first month of the 900/month Grow-Trees pledge (May 2026)
+  var MONTHLY_PLEDGE  = 900;        // trees Grow-Trees plants every calendar month (1 certificate each)
+  var YEAR_GOAL       = 10000;      // marketing target for 2026
   var GOAL_YEAR       = 2026;
   // -----------------------------------------------------------
 
@@ -98,21 +109,27 @@
   /** Total trees on a target date (defaults to today). */
   function treesOnDate(targetDate) {
     var t = targetDate ? new Date(targetDate) : new Date();
-    var anchor = new Date(ANCHOR_DATE);
 
-    // Baseline at start of anchor month
-    var aY = anchor.getFullYear();
-    var aM = anchor.getMonth() + 1;
-    var aD = anchor.getDate();
-    var startOfAnchorMonth = ANCHOR_COUNT - cumulativeThroughDay(aY, aM, aD);
+    var parts = PROGRAM_START.split('-');
+    var sY = parseInt(parts[0], 10);
+    var sM = parseInt(parts[1], 10);
 
     var tY = t.getFullYear();
     var tM = t.getMonth() + 1;
     var tD = t.getDate();
 
-    var monthsElapsed = (tY - aY) * 12 + (tM - aM);
-    var cumThroughTargetDay = cumulativeThroughDay(tY, tM, tD);
-    var value = startOfAnchorMonth + monthsElapsed * MONTHLY_PLEDGE + cumThroughTargetDay;
+    // How many pledge-months have begun, counting the start month as 0.
+    var monthsElapsed = (tY - sY) * 12 + (tM - sM);
+
+    // Before the Grow-Trees programme started: only the base trees.
+    if (monthsElapsed < 0) return BASE_COUNT;
+
+    // Each FULLY completed month before the current one = one 900 certificate.
+    // The current month ramps up day-by-day toward its own 900.
+    var value = BASE_COUNT
+              + monthsElapsed * MONTHLY_PLEDGE
+              + cumulativeThroughDay(tY, tM, tD);
+
     return Math.max(0, Math.round(value));
   }
 
@@ -124,15 +141,6 @@
   /** Animate a number from `from` to `to` inside element `el`. */
   function animateCount(el, from, to, durationMs) {
     if (!el) return;
-    // Robustness: if animation can't run (no rAF, or user prefers reduced
-    // motion), show the final number immediately so it is never left at 0
-    // or stuck mid-count on a backgrounded/headless tab.
-    var reduceMotion = (typeof window !== 'undefined' && window.matchMedia &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches);
-    if (typeof requestAnimationFrame === 'undefined' || reduceMotion) {
-      el.textContent = fmt(to);
-      return;
-    }
     var start = null;
     var ease = function (p) { return 1 - Math.pow(1 - p, 3); }; // ease-out cubic
     function step(ts) {
@@ -154,10 +162,9 @@
     var el = document.getElementById(elementId);
     if (!el) return;
     var total = treesOnDate();
-    // Always render the correct final number first (single source of truth),
-    // so every page shows the same value even if the count-up never runs.
-    el.textContent = fmt(total);
-    if (options.animate !== false) {
+    if (options.animate === false) {
+      el.textContent = fmt(total);
+    } else {
       // Start from a "running" lower number so the count-up feels real
       var start = Math.max(0, total - Math.min(total, 250));
       animateCount(el, start, total, options.durationMs || 1800);
@@ -180,8 +187,8 @@
     },
     yearGoal:      YEAR_GOAL,
     monthlyPledge: MONTHLY_PLEDGE,
-    anchorDate:    ANCHOR_DATE,
-    anchorCount:   ANCHOR_COUNT,
+    baseCount:     BASE_COUNT,
+    programStart:  PROGRAM_START,
     fmt:           fmt,
     mount:         mount,
     // exposed for the verification harness / Node tests
@@ -200,13 +207,11 @@
       var animate = el.getAttribute('data-animate') !== 'false';
       var duration = parseInt(el.getAttribute('data-duration') || '1800', 10);
       var total = treesOnDate();
-      // Render the correct number immediately, then animate as enhancement.
-      // Guarantees every ticker on every page shows the same value, even if
-      // requestAnimationFrame is throttled (background tab) or unavailable.
-      el.textContent = fmt(total);
       if (animate) {
         var start = Math.max(0, total - Math.min(total, 250));
         animateCount(el, start, total, duration);
+      } else {
+        el.textContent = fmt(total);
       }
     }
     // Year goal labels
