@@ -4,6 +4,9 @@
 User-agent: *
 Allow: /
 
+# Block form/API endpoints (not web pages — enquiry & careers form backends)
+Disallow: /api/
+
 # Block crawl traps (adjust to your CMS)
 Disallow: /*?*utm_
 Disallow: /*?*fbclid
