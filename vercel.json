@@ -176,7 +176,21 @@
     { "source": "/harvest-categories",            "destination": "/",                   "permanent": true },
     { "source": "/privacy-policy",                "destination": "/privacy-policy.html","permanent": true },
     { "source": "/web/reset_password",            "destination": "/",                   "permanent": true },
-    { "source": "/web/:path*",                    "destination": "/",                   "permanent": true }
+    { "source": "/web/:path*",                    "destination": "/",                   "permanent": true },
+
+    { "source": "/blog/what-to-look-for-in-an-indian-home-textile-manufacturer",   "destination": "/blog/what-to-look-for-in-an-indian-home-textile-manufacturer.html",   "permanent": true },
+    { "source": "/blog/oeko-tex-vs-gots-vs-grs-explained",                         "destination": "/blog/oeko-tex-vs-gots-vs-grs-explained.html",                         "permanent": true },
+    { "source": "/blog/sourcing-home-textiles-from-india-buyers-guide",             "destination": "/blog/sourcing-home-textiles-from-india-buyers-guide.html",             "permanent": true },
+    { "source": "/blog/private-label-home-textile-development-explained",           "destination": "/blog/private-label-home-textile-development-explained.html",           "permanent": true },
+    { "source": "/blog/fob-vs-cif-vs-ddp-textile-imports",                         "destination": "/blog/fob-vs-cif-vs-ddp-textile-imports.html",                         "permanent": true },
+    { "source": "/blog/home-textile-lead-times-explained",                          "destination": "/blog/home-textile-lead-times-explained.html",                          "permanent": true },
+    { "source": "/blog/how-moqs-work-sourcing-home-textiles-india",                 "destination": "/blog/how-moqs-work-sourcing-home-textiles-india.html",                 "permanent": true },
+    { "source": "/blog/gots-organic-cotton-what-buyers-should-verify",              "destination": "/blog/gots-organic-cotton-what-buyers-should-verify.html",              "permanent": true },
+    { "source": "/blog/cushion-filling-guide-for-retailers",                        "destination": "/blog/cushion-filling-guide-for-retailers.html",                        "permanent": true },
+    { "source": "/blog/cushion-cover-buying-guide-for-retailers",                   "destination": "/blog/cushion-cover-buying-guide-for-retailers.html",                   "permanent": true },
+    { "source": "/blog/home-textile-quality-control-explained",                     "destination": "/blog/home-textile-quality-control-explained.html",                     "permanent": true },
+    { "source": "/blog/bed-linen-fabric-guide-thread-count-gsm-weaves",             "destination": "/blog/bed-linen-fabric-guide-thread-count-gsm-weaves.html",             "permanent": true },
+    { "source": "/blog/bath-mat-constructions-tufted-woven-quick-dry",              "destination": "/blog/bath-mat-constructions-tufted-woven-quick-dry.html",              "permanent": true }
   ],
   "headers": [
     {
