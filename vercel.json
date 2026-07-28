@@ -176,7 +176,12 @@
     { "source": "/harvest-categories",            "destination": "/",                   "permanent": true },
     { "source": "/privacy-policy",                "destination": "/privacy-policy.html","permanent": true },
     { "source": "/web/reset_password",            "destination": "/",                   "permanent": true },
-    { "source": "/web/:path*",                    "destination": "/",                   "permanent": true }
+    { "source": "/web/:path*",                    "destination": "/",                   "permanent": true },
+
+    { "source": "/copy-of-scatter-rugs",          "destination": "/rugs.html",          "permanent": true },
+    { "source": "/luxury-spa",                    "destination": "/bath.html",          "permanent": true },
+    { "source": "/dining-round-placemats",        "destination": "/kitchen.html",       "permanent": true },
+    { "source": "/shop/:path*",                   "destination": "/",                   "permanent": true }
   ],
   "headers": [
     {
