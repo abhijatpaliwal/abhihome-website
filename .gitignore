@@ -1,2 +1,8 @@
 .DS_Store
 **/.DS_Store
+
+# Photo drop folders — originals only, never deployed.
+# Processed, web-optimised versions live at images/Bathmats/AH-BT-*.webp|jpg
+images/Bathmats/kids/
+images/Bathmats/crochet/
+images/Bathmats/organic/
