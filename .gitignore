@@ -6,3 +6,7 @@
 images/Bathmats/kids/
 images/Bathmats/crochet/
 images/Bathmats/organic/
+
+# Brainstorm/preview tool scratch files — never part of the site
+.superpowers/
+_to_delete/
