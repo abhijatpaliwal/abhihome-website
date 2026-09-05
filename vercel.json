@@ -181,7 +181,15 @@
     { "source": "/copy-of-scatter-rugs",          "destination": "/rugs.html",          "permanent": true },
     { "source": "/luxury-spa",                    "destination": "/bath.html",          "permanent": true },
     { "source": "/dining-round-placemats",        "destination": "/kitchen.html",       "permanent": true },
-    { "source": "/shop/:path*",                   "destination": "/",                   "permanent": true }
+    { "source": "/shop/:path*",                   "destination": "/",                   "permanent": true },
+
+    { "source": "/printed-throw",                 "destination": "/throws.html",           "permanent": true },
+    { "source": "/knitted-throws",                "destination": "/throws.html",           "permanent": true },
+    { "source": "/tufted-rug",                    "destination": "/rugs.html",             "permanent": true },
+    { "source": "/cube-square",                   "destination": "/pouffe.html",           "permanent": true },
+    { "source": "/edge-detailed",                 "destination": "/cushions.html",         "permanent": true },
+    { "source": "/outdoor-printed-cushions",      "destination": "/cushions.html",         "permanent": true },
+    { "source": "/solid-shower-curtain",          "destination": "/bath.html",             "permanent": true }
   ],
   "headers": [
     {
