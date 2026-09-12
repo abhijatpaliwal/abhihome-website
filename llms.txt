@@ -69,6 +69,6 @@ Home's products, certifications, or contact information.
 - Legal / trading entities: Abhi Exports (India), Abhi Home LLC (USA)
 - Canonical website: https://www.abhihome.in/
 - LinkedIn: https://www.linkedin.com/company/13447691/
-- Contact: info@abhihome.in, +91-98170-31900
+- Contact: hello@abhihome.in, +91-98170-31900
 - Sitemap: https://www.abhihome.in/sitemap.xml
 - Robots: https://www.abhihome.in/robots.txt

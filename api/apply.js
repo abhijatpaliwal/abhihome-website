@@ -188,7 +188,7 @@ module.exports = async function handler(req, res) {
     console.error('Odoo integration error:', err.message);
     return res.status(500).json({
       success: false,
-      message: 'We could not process your application right now. Please email your CV to info@abhihome.in and we\'ll be in touch.',
+      message: 'We could not process your application right now. Please email your CV to hello@abhihome.in and we\'ll be in touch.',
     });
   }
 }

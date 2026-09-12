@@ -47,6 +47,6 @@ module.exports = async function handler(req,res){
     return res.status(200).json({success:true,leadId:lead});
   }catch(err){
     console.error('Odoo enquiry error:',err.message);
-    return res.status(500).json({success:false,message:'We could not submit your enquiry right now. Please email info@abhihome.in and we will respond within 48 hours.'});
+    return res.status(500).json({success:false,message:'We could not submit your enquiry right now. Please email hello@abhihome.in and we will respond within 48 hours.'});
   }
 }
