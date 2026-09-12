@@ -57,7 +57,7 @@
     { "source": "/bathlinen",              "destination": "/bath.html",           "permanent": true },
     { "source": "/towels",                 "destination": "/bath.html",           "permanent": true },
     { "source": "/bathmats",               "destination": "/bath.html",           "permanent": true },
-    { "source": "/shower-curtains",        "destination": "/bath.html",           "permanent": true },
+    { "source": "/shower-curtains",        "destination": "/shower-curtains.html", "permanent": true },
 
     { "source": "/throws",                 "destination": "/throws.html",         "permanent": true },
     { "source": "/throw",                  "destination": "/throws.html",         "permanent": true },
@@ -189,7 +189,9 @@
     { "source": "/cube-square",                   "destination": "/pouffe.html",           "permanent": true },
     { "source": "/edge-detailed",                 "destination": "/cushions.html",         "permanent": true },
     { "source": "/outdoor-printed-cushions",      "destination": "/cushions.html",         "permanent": true },
-    { "source": "/solid-shower-curtain",          "destination": "/bath.html",             "permanent": true }
+    { "source": "/solid-shower-curtain",          "destination": "/shower-curtains.html",  "permanent": true },
+    { "source": "/dining-table-runner",           "destination": "/kitchen.html",          "permanent": true },
+    { "source": "/tufted-throws",                 "destination": "/throws.html",           "permanent": true }
   ],
   "headers": [
     {
