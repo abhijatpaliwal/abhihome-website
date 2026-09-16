@@ -44,6 +44,20 @@ module.exports = async function handler(req,res){
     if(!uid) throw new Error('Auth failed');
     var lead=parseId(await rpc(U,'/xmlrpc/2/object',buildXmlRpc('execute_kw',[D,uid,K,'crm.lead','create',[{name:title,contact_name:name,partner_name:(company||''),email_from:email,phone:phone,description:desc}],{}])));
     console.log('CRM lead '+lead+' - '+name+' ('+email+')');
+    // Also email the enquiry to the team inbox via Odoo's outgoing mail server (never blocks the lead)
+    try{
+      var NOTIFY=process.env.ENQUIRY_NOTIFY_EMAIL||'hello@abhihome.in';
+      var esc=function(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
+      var html='<p>New website enquiry (abhihome.in)</p><table cellpadding="4">'+
+        [['Name',name],['Company',company],['Email',email],['Phone',phone],['Country',country],['Product interest',product]]
+        .filter(function(r){return r[1];}).map(function(r){return '<tr><td><b>'+r[0]+'</b></td><td>'+esc(r[1])+'</td></tr>';}).join('')+
+        '</table>'+(message?'<p><b>Message</b><br>'+esc(message).replace(/\n/g,'<br>')+'</p>':'')+
+        '<p>Consent: '+(consent?'given':'not provided')+'<br>Odoo lead ID: '+lead+'</p>';
+      var mailId=parseId(await rpc(U,'/xmlrpc/2/object',buildXmlRpc('execute_kw',[D,uid,K,'mail.mail','create',[{subject:title,body_html:html,email_to:NOTIFY,reply_to:email,model:'crm.lead',res_id:lead,auto_delete:true}],{}])));
+      var sent=await rpc(U,'/xmlrpc/2/object',buildXmlRpc('execute_kw',[D,uid,K,'mail.mail','send',[[mailId]],{}]));
+      if(/<fault>/.test(sent)) throw new Error('mail.mail send fault');
+      console.log('Notification email '+mailId+' sent to '+NOTIFY);
+    }catch(mailErr){ console.error('Notification email failed (lead '+lead+' still created):',mailErr.message); }
     return res.status(200).json({success:true,leadId:lead});
   }catch(err){
     console.error('Odoo enquiry error:',err.message);

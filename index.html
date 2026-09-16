@@ -200,6 +200,9 @@ header{position:sticky;top:0;z-index:100;background:rgba(250,248,245,0.92);backd
 #enquiry-form button{grid-column:1/-1;background:var(--cream);color:var(--green);border:none;padding:16px;font-size:14px;letter-spacing:1px;font-weight:700;font-family:var(--font-body);cursor:pointer;border-radius:2px;transition:background .2s,color .2s;}
 #enquiry-form button:hover{background:var(--terracotta);}
 #enquiry-form button:disabled{opacity:0.6;cursor:default;}
+#enquiry-form .consent-row{grid-column:1/-1;display:flex;align-items:flex-start;gap:10px;text-align:left;font-size:12.5px;line-height:1.55;color:rgba(250,248,245,0.8);cursor:pointer;}
+#enquiry-form .consent-row input{width:auto;margin-top:3px;}
+#enquiry-form .consent-row a{color:var(--cream);font-weight:600;text-decoration:underline;}
 .enquiry-alt{margin-top:18px;text-align:center;font-size:14px;color:rgba(250,248,245,0.72);}
 .enquiry-alt a{color:var(--terracotta);text-decoration:none;}
 
@@ -799,6 +802,7 @@ footer{background:var(--charcoal);color:var(--cream);padding:var(--space-lg) 40p
       <input type="text" name="name" placeholder="Your name*" required autocomplete="name">
       <input type="text" name="company" placeholder="Company" autocomplete="organization">
       <input type="email" name="email" placeholder="Email*" required autocomplete="email">
+      <input type="tel" name="phone" placeholder="Phone / WhatsApp (optional)" autocomplete="tel">
       <input type="text" name="country" placeholder="Country" autocomplete="country-name">
       <select name="product" aria-label="Product interest">
         <option value="">Product interest...</option>
@@ -808,6 +812,10 @@ footer{background:var(--charcoal);color:var(--cream);padding:var(--space-lg) 40p
       </select>
       <textarea name="message" rows="4" placeholder="What are you sourcing? Quantities, timelines, designs..."></textarea>
       <input type="text" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
+      <label class="consent-row">
+        <input type="checkbox" name="consent" value="yes" required>
+        <span>I agree to Abhi Home&reg; processing my details to respond to this enquiry, as set out in our <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>. We never share your data.</span>
+      </label>
       <button type="submit">Send enquiry</button>
       <p id="enquiry-status" role="status" aria-live="polite" style="grid-column:1/-1;text-align:center;font-size:14px;color:var(--cream);min-height:20px;"></p>
     </form>
