@@ -152,7 +152,7 @@ module.exports = async function handler(req, res) {
     // 3. Post department + cover letter as an internal note on the applicant
     const noteHtml = [
       '<strong>Department Applied For:</strong> ' + position,
-      phone ? '<strong>Phone / WhatsApp:</strong> ' + phone : '',
+      phone ? '<strong>Phone:</strong> ' + phone : '',
       coverLetter ? '<strong>Cover Letter:</strong><br>' + coverLetter.replace(/\n/g, '<br>') : '',
       '<em>Submitted via abhihome.in/jobs.html</em>',
     ].filter(Boolean).join('<br><br>');
