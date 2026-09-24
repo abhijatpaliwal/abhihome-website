@@ -1,66 +1,158 @@
 /**
  * api/enquiry.js - Vercel Serverless Function
- * Website trade enquiry -> Odoo CRM lead (crm.lead). Same Odoo env as api/apply.js:
- *   ODOO_URL, ODOO_DB, ODOO_USERNAME, ODOO_API_KEY
+ * Website trade enquiry -> Sutra Customer Desk case. NO Odoo lead.
+ *
+ * SUTRA-FIRST (founder direction, 24-Sep-2026). The enquiry is recorded in
+ * Sutra, where the team answers it from hello@ in the Customer Desk. Odoo is
+ * not called at all: no crm.lead, no alert email through Odoo. Odoo hears about
+ * a customer only when an order is confirmed, through Sutra's own boundary.
+ *
+ * Env:
+ *   SUTRA_INTAKE_URL     https://api.sutra.abhihome.in/webhooks/website-enquiry
+ *   SUTRA_INTAKE_SECRET  the dedicated website secret (Sutra's WEBSITE_INTAKE_SECRET);
+ *                        never the browser app key, never printed.
+ * Set for PRODUCTION only. A Preview deployment without them answers
+ * "configuration error" and records nothing — a preview can never write to
+ * the live Desk by accident.
+ *
+ * ONE SUBMISSION, ONE ENQUIRY. The page sends a submission_id it keeps until
+ * the enquiry is confirmed, so a second click, a retry after a slow answer or
+ * a lost response all carry the SAME id. Sutra records each id once, in one
+ * database transaction (its ledger's unique submission_id): a repeat with the
+ * same details answers with the same case and creates nothing.
+ *
+ * NO ID, NO RECORD (independent review, 24-Sep-2026, finding 3). A request
+ * without a valid id — a page served from a cache before this release — is
+ * refused BEFORE anything is written, and the visitor is asked to refresh. An
+ * identity guessed from a clock bucket changed across the bucket boundary, so
+ * a one-second retry after a lost answer could have become a second enquiry.
+ *
+ * CHANGED DETAILS UNDER A USED ID (finding 4). If the first send was recorded
+ * but its answer was lost, and the visitor edits the form and sends again,
+ * Sutra refuses the changed details (409 submission_changed) and records
+ * nothing. This handler says so (conflict:true); the page keeps the edited
+ * form on screen and offers an explicit "Send these details as a new enquiry".
+ *
+ * WHEN SUTRA CANNOT ANSWER, nothing is recorded anywhere else: the visitor is
+ * told to try again (their page keeps the same id) or to email hello@. There
+ * is no fallback to Odoo — a second writer is exactly what this change removes.
  */
-module.exports.config = { api: { bodyParser: { sizeLimit: '1mb' } } };
-function escXml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;');}
-function buildXmlRpc(method, params){
-  function toXml(v){
-    if(v===null||v===undefined) return '<value><boolean>0</boolean></value>';
-    if(typeof v==='boolean') return '<value><boolean>'+(v?1:0)+'</boolean></value>';
-    if(typeof v==='number'&&Number.isInteger(v)) return '<value><int>'+v+'</int></value>';
-    if(typeof v==='string') return '<value><string>'+escXml(v)+'</string></value>';
-    if(Array.isArray(v)) return '<value><array><data>'+v.map(toXml).join('')+'</data></array></value>';
-    if(typeof v==='object'){return '<value><struct>'+Object.entries(v).map(function(e){return '<member><name>'+escXml(e[0])+'</name>'+toXml(e[1])+'</member>';}).join('')+'</struct></value>';}
-    return '<value><string>'+escXml(String(v))+'</string></value>';
-  }
-  return '<?xml version="1.0"?><methodCall><methodName>'+method+'</methodName><params>'+params.map(function(p){return '<param>'+toXml(p)+'</param>';}).join('')+'</params></methodCall>';
+module.exports.config = { api: { bodyParser: { sizeLimit: '64kb' } } };
+
+// Sutra refuses an over-long field rather than clipping it (a clipped
+// requirement is a buyer's words rewritten); the same caps here let the
+// visitor fix the form instead of meeting a server error.
+var CAPS = { name: 300, company: 300, email: 320, phone: 60, country: 100, product: 200, message: 20000 };
+var SUBMISSION_ID = /^[A-Za-z0-9][A-Za-z0-9_-]{7,99}$/;
+var TIMEOUT_MS = 8000;
+
+function clean(v){ return (v == null ? '' : String(v)).trim(); }
+
+// Where the form was sent from, as a path only — never a query string.
+function pageSource(req){
+  try {
+    var ref = req.headers && (req.headers.referer || req.headers.referrer);
+    if (!ref) return null;
+    var u = new URL(String(ref));
+    if (!/(^|\.)abhihome\.in$/i.test(u.hostname)) return null;
+    return u.pathname.slice(0, 500) || null;
+  } catch (e) { return null; }
 }
-function parseId(xml){
-  var f=xml.match(/<fault>[\s\S]*?<\/fault>/);
-  if(f){var m=xml.match(/<name>faultString<\/name>\s*<value><string>([\s\S]*?)<\/string>/);throw new Error('Odoo fault: '+(m?m[1]:'unknown'));}
-  var i=xml.match(/<value><(?:int|i4)>(\d+)<\/(?:int|i4)><\/value>/);
-  if(i) return parseInt(i[1],10);
-  throw new Error('Bad XML-RPC response');
+
+// https only — except a loopback address, which the local proofs use.
+function intakeUrlOk(u){
+  try {
+    var x = new URL(u);
+    if (x.protocol === 'https:') return true;
+    return x.protocol === 'http:' && (x.hostname === '127.0.0.1' || x.hostname === 'localhost');
+  } catch (e) { return false; }
 }
-async function rpc(url,path,body){var r=await fetch(url+path,{method:'POST',headers:{'Content-Type':'text/xml','Accept':'text/xml'},body:body});if(!r.ok)throw new Error('Odoo HTTP '+r.status);return await r.text();}
-module.exports = async function handler(req,res){
+
+var RETRY_MESSAGE = 'We could not submit your enquiry just now. Please try again in a moment, or email hello@abhihome.in and we will reply within 12 working hours.';
+
+module.exports = async function handler(req, res){
   res.setHeader('Access-Control-Allow-Origin','https://www.abhihome.in');
   res.setHeader('Access-Control-Allow-Methods','POST'); res.setHeader('Access-Control-Allow-Headers','Content-Type');
-  if(req.method==='OPTIONS') return res.status(204).end();
-  if(req.method!=='POST') return res.status(405).json({success:false,message:'Method not allowed.'});
-  var U=process.env.ODOO_URL,D=process.env.ODOO_DB,N=process.env.ODOO_USERNAME,K=process.env.ODOO_API_KEY;
-  if(!U||!D||!N||!K){console.error('Missing Odoo env vars');return res.status(500).json({success:false,message:'Server configuration error.'});}
-  var b=req.body||{};
-  if(b.company_website) return res.status(200).json({success:true}); // honeypot
-  var name=(b.name||'').trim(),email=(b.email||'').trim(),company=(b.company||'').trim(),phone=(b.phone||'').trim(),country=(b.country||'').trim(),product=(b.product||'').trim(),message=(b.message||'').trim(),consent=(b.consent||'').toString().trim();
-  if(!name||!email) return res.status(400).json({success:false,message:'Name and email are required.'});
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return res.status(400).json({success:false,message:'Please enter a valid email.'});
-  var title='Website enquiry - '+(company||name)+(product?(' - '+product):'');
-  var desc=[company&&('Company: '+company),country&&('Country: '+country),product&&('Product interest: '+product),phone&&('Phone: '+phone),message&&('Message:\n'+message),'',('Consent: '+(consent?('GIVEN - Privacy Policy accepted at '+new Date().toISOString()):'NOT PROVIDED')),'Source: Website Trade Enquiry (abhihome.in)'].filter(Boolean).join('\n');
-  try{
-    var uid=parseId(await rpc(U,'/xmlrpc/2/common',buildXmlRpc('authenticate',[D,N,K,{}])));
-    if(!uid) throw new Error('Auth failed');
-    var lead=parseId(await rpc(U,'/xmlrpc/2/object',buildXmlRpc('execute_kw',[D,uid,K,'crm.lead','create',[{name:title,contact_name:name,partner_name:(company||''),email_from:email,phone:phone,description:desc}],{}])));
-    console.log('CRM lead '+lead+' - '+name+' ('+email+')');
-    // Also email the enquiry to the team inbox via Odoo's outgoing mail server (never blocks the lead)
-    try{
-      var NOTIFY=process.env.ENQUIRY_NOTIFY_EMAIL||'hello@abhihome.in';
-      var esc=function(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
-      var html='<p>New website enquiry (abhihome.in)</p><table cellpadding="4">'+
-        [['Name',name],['Company',company],['Email',email],['Phone',phone],['Country',country],['Product interest',product]]
-        .filter(function(r){return r[1];}).map(function(r){return '<tr><td><b>'+r[0]+'</b></td><td>'+esc(r[1])+'</td></tr>';}).join('')+
-        '</table>'+(message?'<p><b>Message</b><br>'+esc(message).replace(/\n/g,'<br>')+'</p>':'')+
-        '<p>Consent: '+(consent?'given':'not provided')+'<br>Odoo lead ID: '+lead+'</p>';
-      var mailId=parseId(await rpc(U,'/xmlrpc/2/object',buildXmlRpc('execute_kw',[D,uid,K,'mail.mail','create',[{subject:title,body_html:html,email_to:NOTIFY,reply_to:email,model:'crm.lead',res_id:lead,auto_delete:true}],{}])));
-      var sent=await rpc(U,'/xmlrpc/2/object',buildXmlRpc('execute_kw',[D,uid,K,'mail.mail','send',[[mailId]],{}]));
-      if(/<fault>/.test(sent)) throw new Error('mail.mail send fault');
-      console.log('Notification email '+mailId+' sent to '+NOTIFY);
-    }catch(mailErr){ console.error('Notification email failed (lead '+lead+' still created):',mailErr.message); }
-    return res.status(200).json({success:true,leadId:lead});
-  }catch(err){
-    console.error('Odoo enquiry error:',err.message);
-    return res.status(500).json({success:false,message:'We could not submit your enquiry right now. Please email hello@abhihome.in and we will respond within 48 hours.'});
+  if (req.method === 'OPTIONS') return res.status(204).end();
+  if (req.method !== 'POST') return res.status(405).json({ success:false, message:'Method not allowed.' });
+
+  var URL_ = process.env.SUTRA_INTAKE_URL, SECRET = process.env.SUTRA_INTAKE_SECRET;
+  if (!URL_ || !SECRET || !intakeUrlOk(URL_)) {
+    // Names only; never the values.
+    console.error('Enquiry intake is not configured (SUTRA_INTAKE_URL / SUTRA_INTAKE_SECRET)');
+    return res.status(500).json({ success:false, message:'Server configuration error. Please email hello@abhihome.in.' });
   }
-}
+
+  var b = req.body || {};
+  if (b.company_website) return res.status(200).json({ success:true }); // honeypot
+
+  var f = { name: clean(b.name), email: clean(b.email), company: clean(b.company), phone: clean(b.phone),
+            country: clean(b.country), product: clean(b.product), message: clean(b.message) };
+  var consent = clean(b.consent) !== '';
+  if (!f.name || !f.email) return res.status(400).json({ success:false, message:'Name and email are required.' });
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)) return res.status(400).json({ success:false, message:'Please enter a valid email.' });
+  for (var k in CAPS) {
+    if (f[k].length > CAPS[k]) return res.status(400).json({ success:false, message:'Please shorten the ' + (k === 'message' ? 'message' : k) + ' and send again.' });
+  }
+
+  var sid = clean(b.submission_id);
+  if (!SUBMISSION_ID.test(sid)) {
+    // Refused before anything is written: the page is older than this release.
+    return res.status(400).json({ success:false, refresh:true,
+      message:'This page is out of date. Please refresh the page and send your enquiry again. Nothing has been sent yet.' });
+  }
+
+  var payload = {
+    submission_id: sid,
+    contact_name: f.name,
+    email: f.email,
+    company: f.company || null,
+    phone: f.phone || null,
+    country: f.country || null,
+    product: f.product || null,
+    requirement: f.message || null,
+    page_source: pageSource(req),
+    consent: consent,
+  };
+
+  var ctl = typeof AbortController === 'function' ? new AbortController() : null;
+  var timer = ctl ? setTimeout(function(){ ctl.abort(); }, TIMEOUT_MS) : null;
+  var r, out;
+  try {
+    r = await fetch(URL_, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-Sutra-Intake-Secret': SECRET },
+      body: JSON.stringify(payload),
+      signal: ctl ? ctl.signal : undefined,
+    });
+    out = await r.json().catch(function(){ return null; });
+  } catch (err) {
+    // Timed out or unreachable. Sutra may or may not have recorded it; either
+    // way a retry with the SAME id and the same details is safe.
+    console.error('Sutra intake unreachable:', err && err.name === 'AbortError' ? 'timeout' : 'network');
+    return res.status(503).json({ success:false, retryable:true, message: RETRY_MESSAGE });
+  } finally { if (timer) clearTimeout(timer); }
+
+  if (r.ok && out && out.ok === true && out.case_id) {
+    console.log('Sutra case ' + out.case_id + (out.replayed ? ' (repeat of submission ' + sid + ')' : ''));
+    return res.status(200).json({ success:true, caseId: out.case_id, duplicate: out.replayed === true });
+  }
+  if (r.status === 409 && out && out.code === 'submission_changed') {
+    // An earlier version under this id was recorded; these details were not.
+    console.error('Sutra refused changed details under a used submission id');
+    return res.status(409).json({ success:false, conflict:true,
+      message:'We already received an earlier version of this enquiry, so your changes have not been sent yet.' });
+  }
+  if (r.status === 422) {
+    console.error('Sutra refused the fields:', out && Array.isArray(out.fields) ? out.fields.join('; ') : 'unknown');
+    return res.status(400).json({ success:false, message:'Some details were not accepted. Please check the form and send again.' });
+  }
+  if (r.status === 401) {
+    console.error('Sutra refused the intake secret — check SUTRA_INTAKE_SECRET');
+    return res.status(500).json({ success:false, message:'Server configuration error. Please email hello@abhihome.in.' });
+  }
+  // 429, 5xx, or an answer without a case: nothing is known to be recorded
+  // except by the same id, so the visitor retries it.
+  console.error('Sutra intake failed: HTTP ' + r.status);
+  return res.status(503).json({ success:false, retryable:true, message: RETRY_MESSAGE });
+};
