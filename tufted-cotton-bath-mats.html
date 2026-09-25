@@ -693,17 +693,39 @@ nav{border-top:1px solid var(--stone);background:var(--cream)}
 (function(){
   var f=document.getElementById("ah-enquiry-form"); if(!f) return;
   var s=f.querySelector(".status"), btn=f.querySelector("button");
-  f.addEventListener("submit",function(e){
-    e.preventDefault();
+  // One id per enquiry: a second click, a retry after a slow answer, or a lost answer carry the SAME id,
+  // so Sutra records the enquiry once. Only success, or an explicit "send as new", mints another.
+  function newSubmissionId(){try{var c=window.crypto||window.msCrypto;if(c&&c.randomUUID)return c.randomUUID();var a=new Uint8Array(16);c.getRandomValues(a);a[6]=(a[6]&0x0f)|0x40;a[8]=(a[8]&0x3f)|0x80;var h=[];for(var i=0;i<16;i++){h.push((a[i]+0x100).toString(16).slice(1));}return h.slice(0,4).join("")+"-"+h.slice(4,6).join("")+"-"+h.slice(6,8).join("")+"-"+h.slice(8,10).join("")+"-"+h.slice(10,16).join("");}catch(e){return "m"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,12)+Math.random().toString(36).slice(2,12);}}
+  var sid=newSubmissionId(), busy=false;
+  function fail(){ s.style.color="#B5302A"; s.innerHTML="Sorry, something went wrong. Please try again, or email <a href='mailto:hello@abhihome.in' style='color:var(--green);'>hello@abhihome.in</a>."; }
+  function say(text){ s.style.color="#B5302A"; s.textContent=text; }
+  // The earlier version of THIS enquiry was recorded; the edited details were not. Keep them on screen
+  // and let the visitor decide to send them as a new enquiry.
+  function changed(text){
+    say((text||"We already received an earlier version of this enquiry. Your changes have not been sent.")+" ");
+    var b=document.createElement("button"); b.type="button"; b.textContent="Send these details as a new enquiry";
+    b.style.cssText="background:none;border:0;padding:0;margin-left:4px;color:var(--green);text-decoration:underline;cursor:pointer;font:inherit;";
+    b.addEventListener("click",function(){ sid=newSubmissionId(); send(); });
+    s.appendChild(b);
+  }
+  function send(){
+    if(busy) return;
     var fd=new FormData(f), data={}; fd.forEach(function(v,k){data[k]=v;});
     if(data.company_website){ s.style.color="var(--green)"; s.textContent="Thank you."; f.reset(); return; }
-    btn.disabled=true; s.style.color="var(--gray-mid)"; s.textContent="Sending...";
+    data.submission_id=sid;
+    busy=true; btn.disabled=true; s.style.color="var(--gray-mid)"; s.textContent="Sending...";
     fetch("/api/enquiry",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})
       .then(function(r){return r.json().catch(function(){return {success:r.ok};});})
-      .then(function(j){ if(j&&j.success){ f.reset(); s.style.color="var(--green)"; s.textContent="Thank you \u2014 your enquiry has reached our team. We will reply within 12 working hours."; } else { throw new Error((j&&j.message)||"error"); } })
-      .catch(function(){ s.style.color="#B5302A"; s.innerHTML="Sorry, something went wrong. Please email <a href='mailto:hello@abhihome.in' style='color:var(--green);'>hello@abhihome.in</a>."; })
-      .finally(function(){ btn.disabled=false; });
-  });
+      .then(function(j){
+        if(j&&j.success){ f.reset(); sid=newSubmissionId(); s.style.color="var(--green)"; s.textContent="Thank you \u2014 your enquiry has reached our team. We will reply within 12 working hours."; return; }
+        if(j&&j.conflict){ changed(j.message); return; }
+        if(j&&j.refresh){ say(j.message||"This page is out of date. Please refresh it and send your enquiry again."); return; }
+        fail();
+      })
+      .catch(fail)
+      .finally(function(){ busy=false; btn.disabled=false; });
+  }
+  f.addEventListener("submit",function(e){ e.preventDefault(); send(); });
 })();
 </script>
 </body>
